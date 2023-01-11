@@ -1,0 +1,15 @@
+.org-div {
+  width: 579px;
+  height: 212px;
+  border-radius: 15px;
+  padding: 15px;
+}
+.gold-coin {
+  width: 500px;
+  height: 500px;
+}
+.border-wrap {
+  border: 10px solid #052f52;
+  padding: 50px;
+  background-color: #0d0a3a;
+}

@@ -1,0 +1,18 @@
+.from-wrap {
+  background-image: url(../../images/Page\ 24.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.div-or {
+  height: 2px;
+  border-radius: 10px;
+  width: 150px;
+  background-color: #243673;
+}
+.div-hr {
+  height: 2px;
+  border-radius: 10px;
+  width: 500px;
+  background-color: #243673;
+}

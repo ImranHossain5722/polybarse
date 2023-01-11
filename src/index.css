@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-themeColor;
+  }
+}
+@layer components {
+  img {
+    @apply w-full h-full;
+  }
+  .swiper-wrapper {
+    @apply ease-linear;
+  }
+}
+
+/* font family  */
+@font-face {
+  font-family: "HK Grotesk normal";
+  src: url("../public/fonts/HKGrotesk-Regular.woff2") format("woff2"),
+    url("../public/fonts/HKGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HK Grotesk medium";
+  src: url("../public/fonts/HKGrotesk-Medium.woff2") format("woff2"),
+    url("../public/fonts/HKGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HK Grotesk semibold";
+  src: url("../public/fonts/HKGrotesk-SemiBold.woff2") format("woff2"),
+    url("../public/fonts/HKGrotesk-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HK Grotesk bold";
+  src: url("../public/fonts/HKGrotesk-Bold.woff2") format("woff2"),
+    url("../public/fonts/HKGrotesk-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HK Grotesk extrabold";
+  src: url("../public/fonts/HKGrotesk-ExtraBold.woff2") format("woff2"),
+    url("../public/fonts/HKGrotesk-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HK Grotesk black";
+  src: url("../public/fonts/HKGrotesk-Black.woff2") format("woff2"),
+    url("../public/fonts/HKGrotesk-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
