@@ -43,7 +43,7 @@ const Referrals = () => {
     <div>
       <Container className="max-w-[1200px]">
         <div className="relative">
-          <p className="text-30">Referrals</p>
+          <p className="text-30 my-7">Referrals</p>
           <div className="three-box md:flex items-center justify-around bg-[#0D0A3A] p-8">
             <div className="box-1 bg-[#06042A] p-5 md:w-4/12 m-5 pt-16 pb-16 ">
               <p className="text-30 text-center">Friend Referred</p>
@@ -88,7 +88,7 @@ const Referrals = () => {
           </div>
         </div>
         {/* or div */}
-        <div className="or-div-wrap mt-14">
+        <div className="or-div-wrap mt-20 mb-14">
           <div className="flex items-center justify-center">
             <div className="div-ors"></div>
             <p className="text-white mx-2">OR</p>

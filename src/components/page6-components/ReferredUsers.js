@@ -6,13 +6,16 @@ const ReferredUsers = memo(() => {
     <div>
       <Container classNameName="max-w-[1200px]">
         {/* < component  */}
-        <div className="antialiased  text-gray-600  px-4">
-          <header className="px-5 py-4 ">
-            <h2 className="font-semibold text-white">Customers</h2>
-          </header>
+        <div className="antialiased  text-gray-600  px-4 mt-28 mb-36">
           <div className="flex flex-col justify-center h-full">
             {/* <!-- Table --> */}
+
             <div className="w-[1200px] mx-auto bg-[#0D0A3A] shadow-lg rounded-sm">
+              <div className="px-5 py-5 bg-[#06042A] ">
+                <h2 className="font-semibold text-white text-30">
+                  Referred Users
+                </h2>
+              </div>
               <div className="p-3">
                 <div className="overflow-x-auto">
                   <table className="table-auto w-full">
