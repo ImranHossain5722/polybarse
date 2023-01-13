@@ -10,14 +10,14 @@ const EditMail = () => {
   return (
     <div>
       <div className=" relative bg-themeColor py-36">
-        <div className="absolute max-w-xl -left-32 top-14 z-10">
+        <div className="hidden md:block absolute max-w-xl -left-32 top-14 z-10">
           <img
             src="/images/bg-right.png"
             alt="herobg"
             className="object-contain  object-right"
           />
         </div>
-        <div className="absolute max-w-xl right-0 top-16  z-10">
+        <div className="hidden md:block absolute max-w-xl right-0 top-16  z-10">
           <img
             src="/images/dotsblur.png"
             alt="herobg"

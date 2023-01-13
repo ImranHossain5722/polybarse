@@ -15,14 +15,14 @@ const EditPassword = () => {
   };
   return (
     <div className=" relative bg-themeColor py-36">
-      <div className="absolute max-w-xl -left-32 top-14 z-10">
+      <div className="hidden md:block absolute max-w-xl -left-32 top-14 z-10">
         <img
           src="/images/bg-right.png"
           alt="herobg"
           className="object-contain  object-right"
         />
       </div>
-      <div className="absolute max-w-xl right-0 top-16  z-10">
+      <div className="hidden md:block absolute max-w-xl right-0 top-16  z-10">
         <img
           src="/images/dotsblur.png"
           alt="herobg"
@@ -38,7 +38,7 @@ const EditPassword = () => {
 
       <Container className="max-w-[1200px]  pt-32">
         <div className="md:flex items-center justify-around">
-          <div className="from-div">
+          <div className="from-div ">
             <p className="text-45 mb-6">Edit Password</p>
             <p className="text-xl  mb-6">
               For your security, we highly recommend that you choose a unique

@@ -13,7 +13,10 @@ const Page2Hero = () => {
         <Container className="max-w-[1200px]">
           <div className="flex">
             <div className="flex items-start  ">
-              <img className="w-80 h-80 mr-4 -mt-32" src={userProfile} />
+              <img
+                className="w-40 h-40 md:w-80 md:h-80 mr-4 -mt-32"
+                src={userProfile}
+              />
               <div className="">
                 <p className="text-30">Mike White</p>
                 <p className="text-sm">@Mike123</p>
@@ -24,7 +27,7 @@ const Page2Hero = () => {
               </div>
             </div>
 
-            <div className="flex gap-1 -mt-3">
+            <div className="md:flex gap-1 -mt-3">
               <EditButton />
               <ViewPublicProfile />
             </div>

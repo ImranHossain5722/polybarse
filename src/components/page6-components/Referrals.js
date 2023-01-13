@@ -13,6 +13,9 @@ import {
   AiOutlineLink,
 } from "react-icons/ai";
 import "./Referrals.css";
+import greenshapbg from "../../images/green-shap.png";
+import Popup from "../animations/popup";
+import rightshap from "../../images/shapesix.png";
 const Referrals = () => {
   // social media array
   const s = [
@@ -40,17 +43,32 @@ const Referrals = () => {
     },
   ];
   return (
-    <div>
+    <div className="relative">
+      <div className=" hidden md:block absolute max-w-xl -left-32 top-1/2 -translate-y-[45%] -z-10">
+        <img
+          src="/images/dottss.png"
+          alt="herobg"
+          className="object-contain object-right"
+        />
+      </div>
+      <Popup className="hidden md:block w-32 h-32 top-1/4 left-5 bottom-0 z-10">
+        <img src={greenshapbg} alt="shape" />
+      </Popup>
+      <Popup className="hidden md:block right-0 top-2/3 w-32  z-10">
+        <img src={rightshap} alt="shape" />
+      </Popup>
       <Container className="max-w-[1200px]">
-        <div className="relative">
+        <div className="relative max-w-[1170px]">
           <p className="text-30 my-7">Referrals</p>
           <div className="three-box md:flex items-center justify-around bg-[#0D0A3A] p-8">
             <div className="box-1 bg-[#06042A] p-5 md:w-4/12 m-5 pt-16 pb-16 ">
-              <p className="text-30 text-center">Friend Referred</p>
-              <p className="text-50 text-center">04</p>
+              <p className="text-18 md:text-30 text-center">Friend Referred</p>
+              <p className="text-18 md:text-50 text-center">04</p>
             </div>
             <div className="box-2 bg-[#06042A] p-5 md:w-4/12 m-5 ">
-              <p className="text-30 text-center">Invite your friend</p>
+              <p className="text-18 md:text-30 text-center">
+                Invite your friend
+              </p>
               <div className="email">
                 <input
                   id="email"
@@ -70,8 +88,8 @@ const Referrals = () => {
               </div>
             </div>
             <div className="box-3 bg-[#06042A] p-5 md:w-4/12 m-5 ">
-              <p className="text-30 text-center">Your Earnings</p>
-              <p className="text-40 text-center">4000,15 PLV</p>
+              <p className=" text-18 md:text-30 text-center">Your Earnings</p>
+              <p className="text-18 md:text-40 text-center">4000,15 PLV</p>
               <button
                 type="submit"
                 className="uppercase mt-14 bg-btnbg py-4 px-6 w-full"
@@ -82,7 +100,7 @@ const Referrals = () => {
           </div>
           <div>
             <img
-              className="absolute lg:block md:hidden sm:hidden -right-16 bottom-0 w-36 h-52"
+              className="absolute hidden lg:block md:hidden  -right-16 bottom-0 w-36 h-52"
               src="/images/gold-bag.png"
             />
           </div>
@@ -99,7 +117,9 @@ const Referrals = () => {
         <div>
           <div className="flex items-center justify-center">
             <div className="box-2 bg-[#0D0A3A] p-5 w-4/6 m-5 rounded-md ">
-              <p className="text-30 text-center">Share your referrals link</p>
+              <p className="text-18 md:text-30 text-center">
+                Share your referrals link
+              </p>
               <div className="text">
                 <input
                   id="text"
@@ -136,7 +156,7 @@ const Referrals = () => {
                   key={i.id}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-block text-xl md:text-3xl text-black bg-white p-4 rounded-full hover:text-btnbg"
+                  className="inline-block text-lg md:text-3xl text-black bg-white p-4 rounded-full hover:text-btnbg"
                 >
                   {i.icon}
                 </a>

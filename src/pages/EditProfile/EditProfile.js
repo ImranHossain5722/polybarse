@@ -16,23 +16,23 @@ import Popup from "../../components/animations/popup";
 const EditProfile = () => {
   return (
     <div className="relative pt-32">
-      <div className="absolute max-w-xl -left-32 top-1/2 -translate-y-[45%] -z-10">
+      <div className="hidden md:block absolute max-w-xl -left-32 top-1/2 -translate-y-[45%] -z-10">
         <img
           src="/images/dots.png"
           alt="herobg"
           className="object-contain object-right"
         />
       </div>
-      <Popup className="w-32 h-32 top-1/2 left-5 bottom-0">
+      <Popup className="hidden md:block w-32 h-32 top-1/2 left-5 bottom-0">
         <img src={greenshapbg} alt="shape" />
       </Popup>
-      <Popup className="right-0 top-1/4 w-32  z-10">
+      <Popup className="hidden md:block right-0 top-1/4 w-32  z-10">
         <img src={rightRedShap} alt="shape" />
       </Popup>
-      <Popup className="right-0 top-2/3 w-32  z-10">
+      <Popup className="hidden md:block right-0 top-2/3 w-32  z-10">
         <img src={Shapsix} alt="shape" />
       </Popup>
-      <Popup className=" bottom-48 w-44 h-44 z-10">
+      <Popup className="hidden md:block bottom-48 w-44 h-44 z-10">
         <img src={purpaleShape} alt="shape" />
       </Popup>
       <div className="page2Hero">
@@ -52,12 +52,12 @@ const EditProfile = () => {
 
         <Container className="max-w-[1200px]">
           <from>
-            <div className="flex justify-between">
+            <div className="flex justify-center md:justify-between">
               {/* from image div */}
               <div className="flex ">
                 <label>
                   <img
-                    className="w-96 h-96 mr-4 -mt-32 bg-gray-600 rounded-full cursor-pointer
+                    className="w-40 h-40 md:w-96 md:h-96 mr-4 -mt-32 bg-gray-600 rounded-full cursor-pointer
                     "
                     src={fils}
                   />
