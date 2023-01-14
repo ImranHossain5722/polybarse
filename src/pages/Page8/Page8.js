@@ -1,9 +1,11 @@
 import React from "react";
-import Page2Hero from "../../components/page2Hero/page2Hero";
+import Hero from "../../components/Page8Components/Hero";
+import InventoryTab from "../../components/Page8Components/InventoryTab";
 const Page8 = () => {
   return (
     <div>
-      <Page2Hero></Page2Hero>
+      <Hero></Hero>
+      <InventoryTab></InventoryTab>
     </div>
   );
 };

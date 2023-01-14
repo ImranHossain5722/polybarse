@@ -1,10 +1,12 @@
 import React from "react";
-import Page2Hero from "../../components/page2Hero/page2Hero";
+import Hero from "../../components/Page7Components/Hero";
+import TabSection from "../../components/Page7Components/TabSection";
 
 const Page7 = () => {
   return (
     <div>
-      <Page2Hero></Page2Hero>
+      <Hero></Hero>
+      <TabSection></TabSection>
     </div>
   );
 };
