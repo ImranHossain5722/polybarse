@@ -6,11 +6,10 @@ import { IoMdClose } from "react-icons/io";
 import { AnimatePresence, motion } from "framer-motion";
 import PlaynowBtn from "./buttons/playnow-btn";
 import Container from "./container";
-import SigninBtn from "./buttons/signin";
 // custom hook
 import useWindowsize from "../hooks/useWindowsize";
 import useFreezescroll from "../hooks/useFreezescroll";
-import SignUp from "../pages/SignUp/signUp";
+import Login from "../pages/Login/Login";
 
 export default function Navbar() {
   const [setFreezescroll] = useFreezescroll();
@@ -36,7 +35,7 @@ export default function Navbar() {
           </div>
           <AnimatePresence>{mobileNav && <List />}</AnimatePresence>
           <div className="flex flex-shrink-0 items-center">
-            <SignUp></SignUp>
+            <Login></Login>
             <div className="hidden sm:block ml-5">
               <PlaynowBtn texthidden={true} />
             </div>
