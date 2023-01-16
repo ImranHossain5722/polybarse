@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../container";
+import ProgressBar from "./ProgressBar";
 import TimerReword from "./TimerReword";
 
 const RewardBanner = () => {
@@ -7,7 +8,7 @@ const RewardBanner = () => {
     <div>
       <Container className="max-w-[1200px]">
         <div className="">
-          <div className="flex ">
+          <div className="flex justify-between ">
             <div className="img-box">
               <img
                 className="w-[506px] h-[309px]"
@@ -20,6 +21,9 @@ const RewardBanner = () => {
             <div className="timerBox flex items-end">
               <TimerReword></TimerReword>
             </div>
+          </div>
+          <div>
+            <ProgressBar></ProgressBar>
           </div>
         </div>
       </Container>

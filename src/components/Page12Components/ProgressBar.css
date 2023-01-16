@@ -1,0 +1,7 @@
+.prog-t {
+  background: linear-gradient(180deg, #912a01 0%, #cc815f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-colo: transparent;
+}

@@ -30,6 +30,7 @@ module.exports = {
         oxanium: "'Oxanium', cursive",
       },
       fontSize: {
+        16: "16px",
         18: "18px",
         20: "20px",
         24: "24px",

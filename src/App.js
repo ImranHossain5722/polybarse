@@ -54,7 +54,7 @@ export default function App() {
       </Routes>
       <Footer />
       <Copyright />
-      <div className="absolute w-64 h-64 top-80 right-1/4 -z-10 bg-bgblur blur-[227px] mix-blend-normal opacity-70"></div>
+      {/* <div className="absolute w-64 h-64 top-80 right-1/4 -z-10 bg-bgblur blur-[227px] mix-blend-normal opacity-70"></div>
       <div className="absolute w-64 h-64 top-1/4 left-0 -z-10 bg-bgblur blur-[227px] mix-blend-normal opacity-70"></div>
       <div className="absolute left-1/2 bottom-40 md:bottom-96 -translate-x-1/2 max-w-6xl w-full -z-10">
         <img
@@ -62,7 +62,7 @@ export default function App() {
           alt="shape"
           className="object-contain"
         />
-      </div>
+      </div> */}
     </div>
   );
 }

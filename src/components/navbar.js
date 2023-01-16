@@ -10,6 +10,7 @@ import SigninBtn from "./buttons/signin";
 // custom hook
 import useWindowsize from "../hooks/useWindowsize";
 import useFreezescroll from "../hooks/useFreezescroll";
+import SignUp from "../pages/SignUp/signUp";
 
 export default function Navbar() {
   const [setFreezescroll] = useFreezescroll();
@@ -35,7 +36,7 @@ export default function Navbar() {
           </div>
           <AnimatePresence>{mobileNav && <List />}</AnimatePresence>
           <div className="flex flex-shrink-0 items-center">
-            <SigninBtn />
+            <SignUp></SignUp>
             <div className="hidden sm:block ml-5">
               <PlaynowBtn texthidden={true} />
             </div>

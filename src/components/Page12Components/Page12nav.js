@@ -6,6 +6,7 @@ import greenshapbg from "../../images/green-shap.png";
 import Popup from "../animations/popup";
 import rightshap from "../../images/redShape.png";
 import RewardBanner from "./RewardBanner";
+import Level from "./Level";
 
 const Page12nav = () => {
   return (
@@ -192,6 +193,7 @@ const Page12nav = () => {
                   >
                     <div className="my-[10px]">
                       <RewardBanner></RewardBanner>
+                      <Level></Level>
                     </div>
                   </TabGroup.TabPanel>
                 </TabGroup>
