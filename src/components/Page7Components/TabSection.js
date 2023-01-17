@@ -5,6 +5,7 @@ import { TabGroup } from "@statikly/funk";
 import greenshapbg from "../../images/green-shap.png";
 import Popup from "../animations/popup";
 import rightshap from "../../images/shapeseven.png";
+import "./TabSection.css";
 
 const TabSection = () => {
   // tab data
@@ -119,7 +120,7 @@ const TabSection = () => {
             <div className="bt-1 mr-5">
               <Link
                 to="#"
-                className="uppercase bg-[#322F6F] text-white text-18 hover:bg-btnbg rounded-3xl py-3 px-10"
+                className="uppercase bg-btnbg text-white text-18 hover:bg-btnbg rounded-3xl py-3 px-10 font-extraBold"
               >
                 05 on sale
               </Link>
@@ -127,9 +128,9 @@ const TabSection = () => {
             <div className="bt-2">
               <Link
                 to="#"
-                className="uppercase bg-[#322F6F] text-white text-18 hover:bg-btnbg rounded-3xl py-3 px-10"
+                className="uppercase bg-[#322F6F] text-white text-18 hover:bg-btnbg rounded-3xl py-3 px-10 font-extraBold"
               >
-                05 on sale
+                20 Inventory
               </Link>
             </div>
           </div>
@@ -142,32 +143,32 @@ const TabSection = () => {
                 <TabGroup.TabList className="bg-[#322F6F] ">
                   <TabGroup.Tab
                     index={0}
-                    className="h-12 px-12 transition-colors duration-150 uppercase"
-                    activeClassName="text-white bg-black"
+                    className="h-12 px-12 transition-colors duration-150 uppercase font-semibold border-b "
+                    activeClassName="text-white border-b-2 border-[#D75D29] "
                     inactiveClassName="text-white"
                   >
                     All
                   </TabGroup.Tab>
                   <TabGroup.Tab
                     index={1}
-                    className="h-12 px-12 transition-colors duration-150 uppercase"
-                    activeClassName="bg-black text-white"
+                    className="h-12 px-12 transition-colors duration-150 uppercase font-semibold"
+                    activeClassName=" text-white"
                     inactiveClassName="text-white"
                   >
                     Avatar
                   </TabGroup.Tab>
                   <TabGroup.Tab
                     index={2}
-                    className="h-12 px-12 transition-colors duration-150 uppercase"
-                    activeClassName="bg-black text-white"
+                    className="h-12 px-12 transition-colors duration-150 uppercase font-semibold"
+                    activeClassName=" text-white"
                     inactiveClassName="text-white"
                   >
                     Equipments
                   </TabGroup.Tab>
                   <TabGroup.Tab
                     index={3}
-                    className="h-12 px-12 transition-colors duration-150 uppercase"
-                    activeClassName="bg-black text-white"
+                    className="h-12 px-12 transition-colors duration-150 uppercase font-semibold"
+                    activeClassName="text-white"
                     inactiveClassName="text-white"
                   >
                     Land
@@ -207,11 +208,11 @@ const TabSection = () => {
                     {s.map((i) => (
                       <div className="mb-10 ">
                         <img className="w-52 h-52" src={i.img} alt="" />
-                        <p className="text-24 mt-5">
+                        <p className="text-24 mt-5 font-semibold">
                           {i.name} {i.number}{" "}
                         </p>
                         <div className="flex items-center mt-3">
-                          <p className="text-18 ">By {i.author}</p>
+                          <p className="text-18 font-semibold">By {i.author}</p>
                           <img className="w-4 h-4 ml-5" src={i.img2} alt="" />
                         </div>
                       </div>
@@ -229,11 +230,11 @@ const TabSection = () => {
                     {s.map((i) => (
                       <div className="mb-10 ">
                         <img className="w-52 h-52" src={i.img} alt="" />
-                        <p className="text-24 mt-5">
+                        <p className="text-24 mt-5 font-semibold">
                           {i.name} {i.number}{" "}
                         </p>
                         <div className="flex items-center mt-3">
-                          <p className="text-18 ">By {i.author}</p>
+                          <p className="text-18 font-semibold">By {i.author}</p>
                           <img className="w-4 h-4 ml-5" src={i.img2} alt="" />
                         </div>
                       </div>
@@ -251,12 +252,12 @@ const TabSection = () => {
                     {s.map((i) => (
                       <div className="mb-10 ">
                         <img className="w-52 h-52" src={i.img} alt="" />
-                        <p className="text-24 mt-5">
+                        <p className="text-24 mt-5 font-semibold">
                           {i.name} {i.number}{" "}
                         </p>
                         <div className="flex items-center mt-3">
-                          <p className="text-18 ">By {i.author}</p>
-                          <img className="w-4 h-4 ml-5" src={i.img2} alt="" />
+                          <p className="text-18 font-semibold">By {i.author}</p>
+                          <img className="w-4 h-4 ml-5 " src={i.img2} alt="" />
                         </div>
                       </div>
                     ))}

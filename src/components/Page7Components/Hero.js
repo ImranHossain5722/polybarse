@@ -35,10 +35,14 @@ const Hero = () => {
                   src={userProfile}
                 />
                 <div className="">
-                  <p className="text-30">Mike White</p>
-                  <p className="text-sm">@Mike123</p>
+                  <p className="text-30 font-extraBold ">Mike White</p>
+                  <p className="text-sm font-normal hover:text-[#497BEE]">
+                    @Mike123
+                  </p>
                   <div className="flex items-center">
-                    <p>0x990x9dhduehdd30u.........3u3ifh</p>
+                    <p className=" font-normal hover:text-[#497BEE]">
+                      0x990x9dhduehdd30u.........3u3ifh
+                    </p>
                     <img className="w-3 h-3 ml-2" src={file} />
                   </div>
                 </div>
@@ -61,7 +65,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="mb-36">
-              <p className="text-18 text-white p-10">
+              <p className="text-18 text-white p-10 font-normal">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour, or randomised words which don't look even
