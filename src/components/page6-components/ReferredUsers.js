@@ -16,10 +16,10 @@ const ReferredUsers = memo(() => {
                   Referred Users
                 </h2>
               </div>
-              <div className="p-3">
+              <div className="px-7 py-5">
                 <div className="overflow-x-auto">
                   <table className="table-auto w-full">
-                    <thead className="font-semibold capitalize text-white border-b-8 border-[#0D0A3A] bg-[#06042A]">
+                    <thead className=" h-16 font-semibold capitalize text-white border-b-8 border-[#0D0A3A] bg-[#06042A]">
                       <tr className="">
                         <th className="p-2 whitespace-nowrap">
                           <div className="font-semibold text-center text-white text-20">
@@ -39,7 +39,7 @@ const ReferredUsers = memo(() => {
                       </tr>
                     </thead>
                     <tbody className="text-sm divide-y-8 divide-[#0D0A3A]">
-                      <tr className=" bg-[#06042A]">
+                      <tr className=" bg-[#06042A] h-20">
                         <td className="p-2 whitespace-nowrap">
                           <div className="flex items-center justify-center">
                             <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
@@ -76,7 +76,7 @@ const ReferredUsers = memo(() => {
                           </div>
                         </td>
                       </tr>
-                      <tr className=" bg-[#06042A]">
+                      <tr className=" bg-[#06042A] h-20 ">
                         <td className="p-2 whitespace-nowrap">
                           <div className="flex items-center justify-center">
                             <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
@@ -113,7 +113,7 @@ const ReferredUsers = memo(() => {
                           </div>
                         </td>
                       </tr>
-                      <tr className=" bg-[#06042A]">
+                      <tr className=" bg-[#06042A] h-20">
                         <td className="p-2 whitespace-nowrap">
                           <div className="flex items-center justify-center">
                             <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
@@ -150,7 +150,7 @@ const ReferredUsers = memo(() => {
                           </div>
                         </td>
                       </tr>
-                      <tr className=" bg-[#06042A]">
+                      <tr className=" bg-[#06042A] h-20">
                         <td className="p-2 whitespace-nowrap">
                           <div className="flex items-center justify-center">
                             <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
@@ -187,7 +187,7 @@ const ReferredUsers = memo(() => {
                           </div>
                         </td>
                       </tr>
-                      <tr className=" bg-[#06042A]">
+                      <tr className=" bg-[#06042A] h-20">
                         <td className="p-2 whitespace-nowrap">
                           <div className="flex items-center justify-center">
                             <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
@@ -224,7 +224,7 @@ const ReferredUsers = memo(() => {
                           </div>
                         </td>
                       </tr>
-                      <tr className=" bg-[#06042A]">
+                      <tr className=" bg-[#06042A] h-20">
                         <td className="p-2 whitespace-nowrap">
                           <div className="flex items-center justify-center">
                             <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">

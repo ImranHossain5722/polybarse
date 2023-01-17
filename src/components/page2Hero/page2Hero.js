@@ -5,6 +5,7 @@ import userProfile from "../../images/user-profileImage.png";
 import file from "../../images/fileicon.png";
 import EditButton from "../buttons/EditButton";
 import ViewPublicProfile from "../buttons/ViewPublicProfile";
+import "./page2Hero.css";
 const Page2Hero = () => {
   return (
     <div className="pt-32">
@@ -18,11 +19,21 @@ const Page2Hero = () => {
                 src={userProfile}
               />
               <div className="">
-                <p className="text-30">Mike White</p>
-                <p className="text-sm">@Mike123</p>
-                <div className="flex items-center">
-                  <p>0x990x9dhduehdd30u.........3u3ifh</p>
-                  <img className="w-3 h-3 ml-2" src={file} />
+                <p className="text-30 font-extraBold">Mike White</p>
+                <a
+                  href="#"
+                  className="text-sm font-normal hover:text-[#497BEE]"
+                >
+                  @Mike123
+                </a>
+                <div className=" cursor-pointer flex items-center">
+                  <a href="#" className=" hover:text-[#497BEE]">
+                    0x990x9dhduehdd30u.........3u3ifh
+                  </a>
+                  <img
+                    className="w-3 h-3 ml-2 hover:text-[#497BEE]"
+                    src={file}
+                  />
                 </div>
               </div>
             </div>

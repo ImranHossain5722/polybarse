@@ -12,6 +12,7 @@ import {
   AiOutlineYoutube,
   AiOutlineLink,
 } from "react-icons/ai";
+import { VscFiles } from "react-icons/vsc";
 import "./Referrals.css";
 import greenshapbg from "../../images/green-shap.png";
 import Popup from "../animations/popup";
@@ -59,14 +60,18 @@ const Referrals = () => {
       </Popup>
       <Container className="max-w-[1200px]">
         <div className="relative max-w-[1170px]">
-          <p className="text-30 my-7">Referrals</p>
-          <div className="three-box md:flex items-center justify-around bg-[#0D0A3A] p-8">
-            <div className="box-1 bg-[#06042A] p-5 md:w-4/12 m-5 pt-16 pb-16 ">
-              <p className="text-18 md:text-30 text-center">Friend Referred</p>
-              <p className="text-18 md:text-50 text-center">04</p>
+          <p className="text-30 my-7 font-extraBold">Referrals</p>
+          <div className="three-box md:flex items-center justify-around bg-[#0D0A3A] p-8 rounded-md">
+            <div className="box-1 bg-[#06042A] p-5 md:w-4/12 m-5 pt-16 pb-16  rounded-md ">
+              <p className="text-18 md:text-30 text-center font-extraBold">
+                Friend Referred
+              </p>
+              <p className="text-18 md:text-50 text-center font-extraBold">
+                04
+              </p>
             </div>
-            <div className="box-2 bg-[#06042A] p-5 md:w-4/12 m-5 ">
-              <p className="text-18 md:text-30 text-center">
+            <div className="box-2 bg-[#06042A] p-5 md:w-4/12 m-5  rounded-md">
+              <p className="text-18 md:text-30 text-center font-extraBold">
                 Invite your friend
               </p>
               <div className="email">
@@ -76,23 +81,27 @@ const Referrals = () => {
                   type="email"
                   autoComplete="email"
                   required
-                  className="my-3 bg-themeColor border border-[#0D0A3A] text-white sm:text-sm  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
+                  className="my-3 bg-[#0D0A3A] border border-[#0D0A3A] text-white sm:text-sm  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
                   placeholder="Enter Email"
                 />
                 <button
                   type="submit"
-                  className="uppercase mt-14 bg-btnbg py-4 px-6 w-full"
+                  className="uppercase mt-14 bg-btnbg py-4 px-6 w-full rounded-md font-bold button-hero"
                 >
                   Invite Now
                 </button>
               </div>
             </div>
-            <div className="box-3 bg-[#06042A] p-5 md:w-4/12 m-5 ">
-              <p className=" text-18 md:text-30 text-center">Your Earnings</p>
-              <p className="text-18 md:text-40 text-center">4000,15 PLV</p>
+            <div className="box-3 bg-[#06042A] p-5 md:w-4/12 m-5  rounded-md ">
+              <p className=" text-18 md:text-30 text-center font-extraBold">
+                Your Earnings
+              </p>
+              <p className="text-18 md:text-40 text-center font-extraBold">
+                4000,15 PLV
+              </p>
               <button
                 type="submit"
-                className="uppercase mt-14 bg-btnbg py-4 px-6 w-full"
+                className="button-hero uppercase mt-14 bg-btnbg py-4 px-6 w-full rounded-md font-bold"
               >
                 CLAIM
               </button>
@@ -109,36 +118,38 @@ const Referrals = () => {
         <div className="or-div-wrap mt-20 mb-14">
           <div className="flex items-center justify-center">
             <div className="div-ors"></div>
-            <p className="text-white mx-2">OR</p>
+            <p className="text-white mx-2 font-extraBold capitalize">Or</p>
             <div className="div-ors"></div>
           </div>
         </div>
         {/* share your referrals link section */}
-        <div>
+        <div className="mt-16 ">
           <div className="flex items-center justify-center">
             <div className="box-2 bg-[#0D0A3A] p-5 w-4/6 m-5 rounded-md ">
-              <p className="text-18 md:text-30 text-center">
+              <p className="text-18 md:text-30 text-center font-extraBold pt-9">
                 Share your referrals link
               </p>
-              <div className="text">
+              <div className="text mx-10 mt-9 relative">
                 <input
                   id="text"
                   name="text"
                   type="text"
                   autoComplete="text"
                   required
-                  className="my-3 bg-themeColor border border-[#0D0A3A] text-white sm:text-sm  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
+                  className=" my-3 w-full px-2 h-16 rounded-md bg-themeColor border border-[#0D0A3A] text-white sm:text-sm  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600"
                   placeholder="https://www.deioheieheuhcjehehih.comjdihihd"
                 />
-                <div className="flex items-center justify-center">
+                <VscFiles className="absolute top-8 right-3 text-white w-3 h-4 " />
+
+                <div className="flex items-center justify-center pb-9">
                   <button
                     type="submit"
-                    className="flex items-center justify-center uppercase mt-14 text-center bg-btnbg  rounded-lg py-4 px-6 w-1/2"
+                    className="flex items-center justify-center uppercase mt-2 text-center bg-btnbg  rounded-lg py-4 px-6 w-1/2 button-hero"
                   >
                     <span>
                       <AiOutlineLink className="w-5 h-5 mr-1" />
                     </span>
-                    <span>Copy link</span>
+                    <span className="font-bold">Copy link</span>
                   </button>
                 </div>
               </div>

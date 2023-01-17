@@ -11,12 +11,14 @@ const MyInventory = () => {
       <div>
         <Container className="max-w-[1200px]">
           <div>
-            <p className="text-45 mb-6">My Inventory </p>
-            <div className="div-wrap flex items-center justify-center ">
+            <p className="text-45 mb-6 font-extraBold">My Inventory </p>
+            <div className="div-wrap md:flex items-center justify-center ">
               <div>
-                <p className="text-center text-30 mb-7">AVATARS</p>
+                <p className="md:text-center text-30 mb-7 font-extraBold">
+                  AVATARS
+                </p>
                 <div className="div1 mx-1">
-                  <img className="" src={img1} />
+                  <img className="z-40" src={img1} />
                   <div className="flex justify-end w-4/3 relative">
                     <p className="bg-[#0b5d7e] text-wrap p-3 absolute top-0 bottom-0 right-0">
                       x50
@@ -25,9 +27,11 @@ const MyInventory = () => {
                 </div>
               </div>
               <div>
-                <p className="text-center text-30 mb-7">EQUIPMENT </p>
+                <p className=" md:text-center text-30 mb-7 font-extraBold">
+                  EQUIPMENT{" "}
+                </p>
                 <div className="div2 mx-1">
-                  <img className="" src={img2} />
+                  <img className="z-40" src={img2} />
                   <div className="flex justify-end w-4/3 relative">
                     <p className="bg-[#0b5d7e] text-wrap p-3 absolute top-0 bottom-0 right-0">
                       x100
@@ -37,9 +41,11 @@ const MyInventory = () => {
               </div>
 
               <div>
-                <p className="text-center text-30 mb-7">LAND</p>
+                <p className=" md:text-center text-30 mb-7 font-extraBold">
+                  LAND
+                </p>
                 <div className="div3 mx-1">
-                  <img className="" src={img3} />
+                  <img className="z-40" src={img3} />
                   <div className="flex justify-end w-4/3 relative">
                     <p className="bg-[#0b5d7e] text-wrap p-3 absolute top-0 bottom-0 right-0">
                       x5

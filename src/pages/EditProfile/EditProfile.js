@@ -5,7 +5,8 @@ import file from "../../images/fileicon.png";
 import EditButton from "../../components/buttons/EditButton";
 import Container from "../../components/container";
 import uparow from "../../images/upArow.png";
-import fils from "../../images/file.png";
+import fils from "../../images/userP.png";
+import userC from "../../images/userC.png";
 import editicon from "../../images/edit.png";
 import greenshapbg from "../../images/green-shap.png";
 import rightRedShap from "../../images/right-shap-red.png";
@@ -50,25 +51,37 @@ const EditProfile = () => {
           </div>
         </div>
 
-        <Container className="max-w-[1200px]">
+        <Container className="max-w-[1200px] pb-14">
           <from>
             <div className="flex justify-center md:justify-between">
               {/* from image div */}
-              <div className="flex ">
+              <div className=" ">
                 <label>
                   <img
-                    className="w-40 h-40 md:w-96 md:h-96 mr-4 -mt-32 bg-gray-600 rounded-full cursor-pointer
+                    className="relative  w-36 h-36 md:w-80 md:h-80 mr-4 -mt-24  md:-mt-32 bg-gray-600 rounded-full cursor-pointer
                     "
                     src={fils}
+                    alt="Upload"
+                  />
+                  <img
+                    className="absolute left-14 top-[480px] md:left-[600px] md:top-[600px] w-[76px] h-[76px] md:w-[85px] md:h-[85px]  bg-gray-600 rounded-full cursor-pointer
+                    "
+                    src={userC}
+                    alt="Upload"
                   />
                   <input type="file" class="opacity-0" />
                 </label>
               </div>
               {/* from inputs div */}
-              <div className="">
-                <p className="text-30 mb-6">Personal Information</p>
+              <div className=" grow md:grow-0 w-full h-full md:mx-9">
+                <p className="text-30 mb-6 font-extraBold">
+                  Personal Information
+                </p>
                 <div className="userName">
-                  <label htmlFor="UserName" className="text-white text-24 pb-4">
+                  <label
+                    htmlFor="UserName"
+                    className="text-white text-24 pb-4 font-semibold"
+                  >
                     User Name
                   </label>
                   <input
@@ -77,12 +90,15 @@ const EditProfile = () => {
                     type="text"
                     autoComplete="text"
                     required
-                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                     placeholder="Mike 123"
                   />
                 </div>
                 <div className="name">
-                  <label htmlFor="name" className="text-white text-24">
+                  <label
+                    htmlFor="name"
+                    className="text-white text-24 font-semibold"
+                  >
                     Name
                   </label>
                   <input
@@ -91,7 +107,7 @@ const EditProfile = () => {
                     type="text"
                     autoComplete="text"
                     required
-                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                     placeholder="Mike White"
                   />
                 </div>
@@ -105,12 +121,15 @@ const EditProfile = () => {
                     type="text"
                     autoComplete="text"
                     required
-                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                     placeholder="www.mysite.com"
                   />
                 </div>
                 <div className="Bio">
-                  <label htmlFor="Bio" className="text-white text-24">
+                  <label
+                    htmlFor="Bio"
+                    className="text-white text-24 font-semibold"
+                  >
                     Bio
                   </label>
                   <textarea
@@ -120,15 +139,20 @@ const EditProfile = () => {
                     autoComplete="text"
                     required
                     rows="8"
-                    className="mt-4 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="mt-4 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                     placeholder="www.mysite.com"
                   />
                 </div>
 
-                <p className="text-30 mt-20 mb-16">Email & Password</p>
+                <p className="text-30 mt-20 mb-16 font-extraBold">
+                  Email & Password
+                </p>
 
                 <div className="email">
-                  <label htmlFor="email" className="text-white text-24">
+                  <label
+                    htmlFor="email"
+                    className="text-white text-24 font-semibold"
+                  >
                     Email
                   </label>
                   <input
@@ -137,7 +161,7 @@ const EditProfile = () => {
                     type="email"
                     autoComplete="email"
                     required
-                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                     placeholder="test@email.it"
                   />
                   <div className="flex items-center justify-end">
@@ -146,7 +170,10 @@ const EditProfile = () => {
                   </div>
                 </div>
                 <div className="password">
-                  <label htmlFor="password" className="text-white text-24">
+                  <label
+                    htmlFor="password"
+                    className="text-white text-24 font-semibold"
+                  >
                     Password
                   </label>
                   <input
@@ -155,7 +182,7 @@ const EditProfile = () => {
                     type="password"
                     autoComplete="passwordl"
                     required
-                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                     placeholder="*********"
                   />
                   <div className="flex items-center justify-end">
@@ -166,7 +193,10 @@ const EditProfile = () => {
                 <p className="text-30 my-14">Social</p>
                 {/* telegram */}
                 <div className="telegram">
-                  <label htmlFor="telegram" className="text-white text-24">
+                  <label
+                    htmlFor="telegram"
+                    className="text-white text-24 font-semibold"
+                  >
                     Telegram
                   </label>
                   <input
@@ -174,13 +204,16 @@ const EditProfile = () => {
                     name="telegram"
                     type="text"
                     autoComplete="text"
-                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                     placeholder="Telegram Name"
                   />
                 </div>
                 {/* instagram */}
                 <div className="instagram">
-                  <label htmlFor="instagram" className="text-white text-24">
+                  <label
+                    htmlFor="instagram"
+                    className="text-white text-24 font-semibold"
+                  >
                     Instagram
                   </label>
                   <input
@@ -188,13 +221,16 @@ const EditProfile = () => {
                     name="instagram"
                     type="text"
                     autoComplete="text"
-                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                     placeholder="Instagram Name"
                   />
                 </div>
                 {/* discord */}
                 <div className="discord">
-                  <label htmlFor="discord" className="text-white text-24">
+                  <label
+                    htmlFor="discord"
+                    className="text-white text-24 font-semibold"
+                  >
                     Discord
                   </label>
                   <input
@@ -202,13 +238,16 @@ const EditProfile = () => {
                     name="discord"
                     type="text"
                     autoComplete="text"
-                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                     placeholder="Discord Name"
                   />
                 </div>
                 {/* facebook */}
                 <div className="facebook">
-                  <label htmlFor="facebook" className="text-white text-24">
+                  <label
+                    htmlFor="facebook"
+                    className="text-white text-24 font-semibold"
+                  >
                     Facebook
                   </label>
                   <input
@@ -216,13 +255,16 @@ const EditProfile = () => {
                     name="facebook"
                     type="text"
                     autoComplete="text"
-                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                     placeholder="Facebook Name"
                   />
                 </div>
                 {/* youtube */}
                 <div className="youtube">
-                  <label htmlFor="youtube" className="text-white text-24">
+                  <label
+                    htmlFor="youtube"
+                    className="text-white text-24 font-semibold"
+                  >
                     Youtube
                   </label>
                   <input
@@ -230,13 +272,16 @@ const EditProfile = () => {
                     name="youtube"
                     type="text"
                     autoComplete="text"
-                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                     placeholder="Youtube Name"
                   />
                 </div>
                 {/* tiktok */}
                 <div className="tiktok">
-                  <label htmlFor="tiktok" className="text-white text-24">
+                  <label
+                    htmlFor="tiktok"
+                    className="text-white text-24 font-semibold"
+                  >
                     Tiktok
                   </label>
                   <input
@@ -244,13 +289,13 @@ const EditProfile = () => {
                     name="tiktok"
                     type="text"
                     autoComplete="text"
-                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                     placeholder="Tiktok Name"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="uppercase mt-14 bg-btnbg py-4 px-6 w-full rounded-3xl"
+                  className="uppercase mt-14 bg-btnbg py-4 px-6 w-full rounded-3xl font-bold button-hero"
                 >
                   save
                 </button>
