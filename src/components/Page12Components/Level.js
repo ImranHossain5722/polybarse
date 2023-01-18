@@ -3,19 +3,18 @@ import Container from "../container";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
+import "./Level.css";
+import { Link } from "react-router-dom";
 const Level = () => {
   return (
     <div>
-      <Container className="max-w-[1300px] z-20">
-        <h2 className="text-center capitalize text-2xl lg:text-50 font-black">
-          team members
-        </h2>
-        <div className="lg:flex items-center gap-3">
+      <Container className="max-w-[1200px] z-20">
+        <div className="lg:flex items-center gap-3  w-full">
           <div className="translate-y-full">
             <SwiperPrev />
           </div>
           <Swiper
-            spaceBetween={30}
+            spaceBetween={0}
             slidesPerView={1}
             loop={true}
             navigation={{
@@ -28,8 +27,14 @@ const Level = () => {
               640: {
                 slidesPerView: 2,
               },
-              1024: {
+              768: {
                 slidesPerView: 3,
+              },
+              992: {
+                slidesPerView: 3,
+              },
+              1024: {
+                slidesPerView: 4,
               },
               1200: {
                 slidesPerView: 5,
@@ -39,10 +44,10 @@ const Level = () => {
             {m.map((i) => (
               <SwiperSlide key={i.id}>
                 <div className="w-52">
-                  <div className="bg-[#044C6B] w-48 h-7 my-1 mx-3 rounded-md">
+                  <div className="bg-[#044C6B] mx-4 mb-2 rounded-md">
                     <p className="text-center text-18 text-white">Level</p>
                   </div>
-                  <div className="bg-[#061E42] mx-3 ">
+                  <div className="bg-[#061E42] mx-3">
                     <div className="flex justify-center">
                       <img
                         className=" w-[157px] h-[157px]"
@@ -58,11 +63,44 @@ const Level = () => {
                     </div>
                   </div>
                 </div>
+                {/* Gold pass div */}
+                <div className="bg-[#FBC637] ">
+                  <div className="w-52 mt-4">
+                    <div className="gold-pass mx-3">
+                      <div className="flex justify-center">
+                        <img
+                          className=" w-[157px] h-[157px]"
+                          src="/images/goldPass.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="">
+                        <p className="text-30 text-center text-white">
+                          Free Pass
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
           <div className="translate-y-full">
             <SwiperNext />
+          </div>
+        </div>
+        <div>
+          <div className=" md:flex justify-end mt-6 mr-10">
+            <Link to="#">
+              <button className="mr-4 py-6 px-20 uppercase md:text-24 font-black bg-btnbg rounded-full button-hero">
+                Stake for pass
+              </button>
+            </Link>
+            <Link to="#">
+              <button className="gold-btn py-6 px-20 uppercase md:text-24 text-[#793512] font-black rounded-full button-hero">
+                GET GOLD PASS
+              </button>
+            </Link>
           </div>
         </div>
       </Container>

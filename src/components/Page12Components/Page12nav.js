@@ -7,6 +7,7 @@ import Popup from "../animations/popup";
 import rightshap from "../../images/redShape.png";
 import RewardBanner from "./RewardBanner";
 import Level from "./Level";
+import OwnerRewards from "./OwnerRewards";
 
 const Page12nav = () => {
   return (
@@ -187,13 +188,14 @@ const Page12nav = () => {
                   </TabGroup.TabPanel>
                   <TabGroup.TabPanel
                     index={1}
-                    className="p-16 transition-all transform"
+                    className="py-16 transition-all transform"
                     activeClassName="opacity-100 duration-500 translate-x-0"
                     inactiveClassName="absolute opacity-0 -translate-x-2"
                   >
                     <div className="my-[10px]">
                       <RewardBanner></RewardBanner>
                       <Level></Level>
+                      <OwnerRewards></OwnerRewards>
                     </div>
                   </TabGroup.TabPanel>
                 </TabGroup>

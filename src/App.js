@@ -12,9 +12,9 @@ import useWindowscroll from "./hooks/useWindowscroll";
 import AOS from "aos";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import SignUp from "./pages/SignUp/signUp";
+// import SignUp from "./pages/SignUp/signUp";
+// import Login from "./pages/Login/Login";
 import NotFound from "./pages/NotFound/NotFound";
-import Login from "./pages/Login/Login";
 import Page2 from "./pages/Page2/Page2";
 import EditProfile from "./pages/EditProfile/EditProfile";
 import EditPassword from "./pages/Page4/EditPassword";
@@ -36,8 +36,8 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} /> */}
         <Route path="/page2" element={<Page2 />} />
         <Route path="/page6" element={<Page6 />} />
         <Route path="/page7" element={<Page7 />} />
