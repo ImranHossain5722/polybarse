@@ -14,7 +14,7 @@ const Level = () => {
             <SwiperPrev />
           </div>
           <Swiper
-            spaceBetween={0}
+            spaceBetween={100}
             slidesPerView={1}
             loop={true}
             navigation={{
@@ -37,7 +37,7 @@ const Level = () => {
                 slidesPerView: 4,
               },
               1200: {
-                slidesPerView: 5,
+                slidesPerView: 6,
               },
             }}
           >
@@ -125,7 +125,7 @@ function SwiperNext() {
   );
 }
 
-// members array
+// array
 const m = [
   {
     id: window.crypto.randomUUID(),
@@ -136,21 +136,35 @@ const m = [
   },
   {
     id: window.crypto.randomUUID(),
-    img: "/images/membertwo.png",
-    name: "Serena Wilkerson",
-    title: "Illustrator",
+    img: "/images/member.png",
+    name: "Oliver Giustia",
+    title: "PhP Developer",
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.",
   },
   {
     id: window.crypto.randomUUID(),
-    img: "/images/memberthree.png",
-    name: "Rebecca Stiepock",
-    title: "Creative Director",
+    img: "/images/member.png",
+    name: "Oliver Giustia",
+    title: "PhP Developer",
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.",
   },
   {
     id: window.crypto.randomUUID(),
-    img: "/images/memberfour.png",
+    img: "/images/member.png",
+    name: "Oliver Giustia",
+    title: "PhP Developer",
+    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.",
+  },
+  {
+    id: window.crypto.randomUUID(),
+    img: "/images/member.png",
+    name: "Oliver Giustia",
+    title: "PhP Developer",
+    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.",
+  },
+  {
+    id: window.crypto.randomUUID(),
+    img: "/images/member.png",
     name: "Oliver Giustia",
     title: "PhP Developer",
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.",
