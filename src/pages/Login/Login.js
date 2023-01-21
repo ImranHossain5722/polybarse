@@ -6,6 +6,7 @@ import fb from "../../images/fb.png";
 import go from "../../images/google.png";
 import walit from "../../images/walit.png";
 import arow from "../../images/arow.png";
+import "./Login.css";
 const Login = () => {
   const [showLoginPopUp, setShowLoginPopUp] = useState(false);
   const [showSignPopUp, setShowSignPopUp] = useState(false);
