@@ -23,14 +23,14 @@ const History = () => {
             <p className="text-24 font-extraBold uppercase">History</p>
           </div>
           <table className="table-auto w-[475px] md:w-full">
-            <thead className=" h-16 font-semibold capitalize text-white border-2 border-[#0D0A3A] bg-[#0C2B58] rounded-5">
+            <thead className=" h-16 font-semibold capitalize text-white bg-[#0C2B58] rounded-5">
               <tr className="">
-                <th className="py-2 px-8 whitespace-nowrap border-2 border-[#0D0A3A]">
+                <th className="py-2 px-8 whitespace-nowrap ">
                   <div className="font-extraBold text-center text-white text-18 m-1 uppercase">
                     From
                   </div>
                 </th>
-                <th className="py-2 px-8 whitespace-nowrap border-2 border-[#0D0A3A]">
+                <th className="py-2 px-8 whitespace-nowrap ">
                   <div className="font-extraBold text-center text-white text-18 uppercase">
                     To
                   </div>
@@ -52,29 +52,233 @@ const History = () => {
                 </th>
               </tr>
             </thead>
-            <tbody className="text-sm  divide-[#0D0A3A]">
-              <tr className=" bg-[#133568] h-10">
-                <td className="p-2 whitespace-nowrap border-2 border-[#0D0A3A]">
+            <tbody className="text-sm  ">
+              <tr className=" bg-[#061E42] h-10">
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
                   <div className="flex items-center justify-center">
-                    <div className="font-medium text-20 text-white">1</div>
+                    <div className="">
+                      <img
+                        className="w-24 h-16"
+                        src="images/logoPolyVerse.png"
+                        alt="check"
+                      />
+                    </div>
                   </div>
                 </td>
-                <td className="p-2 whitespace-nowrap border-2 border-[#0D0A3A]">
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
                   <div className="text-center text-white text-20">
-                    <p>Mike</p>
+                    <img
+                      className="w-12 h-12 rounded-full"
+                      src="images/tol.png"
+                      alt="profile"
+                    />
                   </div>
                 </td>
-                <td className="p-2 whitespace-nowrap border-2 border-[#0D0A3A]">
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <p>Mint</p>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <p>10/10/23</p>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
                   <div className="flex items-center justify-center">
-                    <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
+                    <div className="font-medium text-20 text-center text-white">
+                      <p className="uppercase">150,00</p>
+                    </div>
+                    <div className="w-10 h-10 flex items-center ml-2 sm:mr-3">
                       <img
                         className="rounded-full w-5 h-5 "
                         src="/images/singleCoin.png"
                         alt="coin"
                       />
                     </div>
+                  </div>
+                </td>
+              </tr>
+              <tr className=" bg-[#061E42] h-10">
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="flex items-center justify-center">
+                    <div className="">
+                      <img
+                        className="w-24 h-16"
+                        src="images/logoPolyVerse.png"
+                        alt="check"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <img
+                      className="w-12 h-12 rounded-full"
+                      src="images/tol.png"
+                      alt="profile"
+                    />
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <p>Mint</p>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <p>10/10/23</p>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="flex items-center justify-center">
                     <div className="font-medium text-20 text-center text-white">
-                      <p className="uppercase">1M</p>
+                      <p className="uppercase">150,00</p>
+                    </div>
+                    <div className="w-10 h-10 flex items-center ml-2 sm:mr-3">
+                      <img
+                        className="rounded-full w-5 h-5 "
+                        src="/images/singleCoin.png"
+                        alt="coin"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr className=" bg-[#061E42] h-10">
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="flex items-center justify-center">
+                    <div className="">
+                      <img
+                        className="w-24 h-16"
+                        src="images/logoPolyVerse.png"
+                        alt="check"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <img
+                      className="w-12 h-12 rounded-full"
+                      src="images/tol.png"
+                      alt="profile"
+                    />
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <p>Mint</p>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <p>10/10/23</p>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="flex items-center justify-center">
+                    <div className="font-medium text-20 text-center text-white">
+                      <p className="uppercase">150,00</p>
+                    </div>
+                    <div className="w-10 h-10 flex items-center ml-2 sm:mr-3">
+                      <img
+                        className="rounded-full w-5 h-5 "
+                        src="/images/singleCoin.png"
+                        alt="coin"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr className=" bg-[#061E42] h-10">
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="flex items-center justify-center">
+                    <div className="">
+                      <img
+                        className="w-24 h-16"
+                        src="images/logoPolyVerse.png"
+                        alt="check"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <img
+                      className="w-12 h-12 rounded-full"
+                      src="images/tol.png"
+                      alt="profile"
+                    />
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <p>Mint</p>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <p>10/10/23</p>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="flex items-center justify-center">
+                    <div className="font-medium text-20 text-center text-white">
+                      <p className="uppercase">150,00</p>
+                    </div>
+                    <div className="w-10 h-10 flex items-center ml-2 sm:mr-3">
+                      <img
+                        className="rounded-full w-5 h-5 "
+                        src="/images/singleCoin.png"
+                        alt="coin"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr className=" bg-[#061E42] h-10">
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="flex items-center justify-center">
+                    <div className="">
+                      <img
+                        className="w-24 h-16"
+                        src="images/logoPolyVerse.png"
+                        alt="check"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <img
+                      className="w-12 h-12 rounded-full"
+                      src="images/tol.png"
+                      alt="profile"
+                    />
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <p>Mint</p>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="text-center text-white text-20">
+                    <p>10/10/23</p>
+                  </div>
+                </td>
+                <td className="p-2 whitespace-nowrap border-b-2 border-[#20477E]">
+                  <div className="flex items-center justify-center">
+                    <div className="font-medium text-20 text-center text-white">
+                      <p className="uppercase">150,00</p>
+                    </div>
+                    <div className="w-10 h-10 flex items-center ml-2 sm:mr-3">
+                      <img
+                        className="rounded-full w-5 h-5 "
+                        src="/images/singleCoin.png"
+                        alt="coin"
+                      />
                     </div>
                   </div>
                 </td>
