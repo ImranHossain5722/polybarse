@@ -33,6 +33,7 @@ import Page16 from "./pages/Page16/Page16";
 import Page17 from "./pages/Page17/Page17";
 import Page18 from "./pages/Page18/Page18";
 import Page19 from "./pages/Page19/Page19";
+import Page20 from "./pages/Page20/Page20";
 // the css file added to the public index file a cdn link
 AOS.init();
 
@@ -60,6 +61,7 @@ export default function App() {
         <Route path="/page17" element={<Page17 />} />
         <Route path="/page18" element={<Page18 />} />
         <Route path="/page19" element={<Page19 />} />
+        <Route path="/page20" element={<Page20 />} />
         <Route path="/editprofile" element={<EditProfile />} />
         <Route path="/editpassword" element={<EditPassword />} />
         <Route path="/editmail" element={<EditMail />} />
