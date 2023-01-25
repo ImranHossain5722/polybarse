@@ -35,45 +35,6 @@ const Filter1 = () => {
     });
   };
 
-  //   const [check, setCheck] = useState({
-  //     buyNow: false,
-  //     ourAuction: false,
-  //     head: false,
-  //     body: false,
-  //     arms: false,
-  //     legs: false,
-  //     large: false,
-  //     medium: false,
-  //     small: false,
-  //     mini: false,
-  //   });
-
-  //   const { large, medium, small, mini, buyNow } = check;
-
-  //   const changeHandler = (e) => {
-  //     setCheck({
-  //       ...check,
-  //       [e.target.name]: e.target.checked,
-  //     });
-  //   };
-
-  //   const applyFilters = (e) => {
-  //     setCheck({
-  //       ...check,
-  //       leather: false,
-  //       cotton: false,
-  //       fabric: false,
-  //       crocodile: false,
-  //       wool: false,
-  //       large: false,
-  //       medium: false,
-  //       small: false,
-  //       mini: false,
-  //       luxesignatire: false,
-  //       luxelondon: false,
-  //     });
-  //   };
-
   return (
     <div className="">
       <div

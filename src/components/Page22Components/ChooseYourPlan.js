@@ -13,15 +13,19 @@ import "./ChooseYourPlan.css";
 
 const ChooseYourPlan = () => {
   return (
-    <div className="mt-24 relative">
+    <div className="mt-32 relative">
+      <div className="mb-12">
+        <p className="font-extraBold text-white text-center text-30">
+          Choose Your Plan
+        </p>
+      </div>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={5}
         initialSlide={2}
-        loop={false}
-        spaceBetween={100}
+        spaceBetween={30}
         keyboard={{
           enabled: true,
         }}
@@ -80,7 +84,7 @@ const ChooseYourPlan = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 left-[145px] ">
+            <div className="absolute -bottom-6 left-[120px] ">
               <button className=" flex items-center justify-center bg-[#373371] py-2 px-4 rounded-full">
                 <p className="uppercase font-bold text-24 ">Free</p>
               </button>
@@ -117,7 +121,7 @@ const ChooseYourPlan = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 left-[145px] ">
+            <div className="absolute -bottom-6 left-[120px] ">
               <button className=" flex items-center justify-center bg-[#373371] py-2 px-4 rounded-full">
                 <p className="uppercase font-bold text-24 ">3k</p>
                 <div className="flex items-center ">
@@ -161,7 +165,7 @@ const ChooseYourPlan = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 left-[145px] ">
+            <div className="absolute -bottom-6 left-[120px] ">
               <button className=" flex items-center justify-center bg-[#373371] py-2 px-4 rounded-full">
                 <p className="uppercase font-bold text-24 ">5k</p>
                 <div className="flex items-center ">
@@ -205,7 +209,7 @@ const ChooseYourPlan = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 left-[145px] ">
+            <div className="absolute -bottom-6 left-[120px] ">
               <button className=" flex items-center justify-center bg-[#373371] py-2 px-4 rounded-full">
                 <p className="uppercase font-bold text-24 ">10k</p>
                 <div className="flex items-center ">
@@ -239,7 +243,7 @@ const ChooseYourPlan = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 left-[145px] ">
+            <div className="absolute -bottom-6 left-[120px] ">
               <button className=" flex items-center justify-center bg-[#373371] py-2 px-4 rounded-full">
                 <p className="uppercase font-bold text-24 ">20k</p>
                 <div className="flex items-center ">

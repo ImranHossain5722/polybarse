@@ -4,12 +4,8 @@ import Container from "../container";
 import greenshapbg from "../../images/green-shap.png";
 import Popup from "../animations/popup";
 import rightshap from "../../images/redShape.png";
-import Balance from "./Balance";
-import PalyCard from "./PalyCard";
-import ChooseYourPlan from "./ChooseYourPlan";
-import ComparePlans from "./ComparePlans";
-
-const Page22Nav = () => {
+import Map from "./Map";
+const Page23nav = () => {
   return (
     <div>
       <div>
@@ -216,18 +212,15 @@ const Page22Nav = () => {
                       className="p-16 transition-all transform"
                       activeClassName="opacity-100 duration-500 translate-x-0"
                       inactiveClassName="absolute opacity-0 -translate-x-2"
-                    ></TabGroup.TabPanel>
+                    >
+                      <Map />
+                    </TabGroup.TabPanel>
                     <TabGroup.TabPanel
                       index={4}
                       className="p-16 transition-all transform"
                       activeClassName="opacity-100 duration-500 translate-x-0"
                       inactiveClassName="absolute opacity-0 -translate-x-2"
-                    >
-                      <Balance />
-                      <PalyCard />
-                      <ChooseYourPlan />
-                      <ComparePlans />
-                    </TabGroup.TabPanel>
+                    ></TabGroup.TabPanel>
                   </TabGroup>
                 </div>
               </div>
@@ -239,4 +232,4 @@ const Page22Nav = () => {
   );
 };
 
-export default Page22Nav;
+export default Page23nav;

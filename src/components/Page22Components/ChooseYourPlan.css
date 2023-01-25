@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 .swiper-pagination-bullet-active {
@@ -16,5 +16,8 @@
   border-radius: 5px;
 }
 .swiper-slide-active .div {
-  width: 350px;
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -60px;
 }

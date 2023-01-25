@@ -5,17 +5,17 @@ const Balance = () => {
   return (
     <div>
       <div>
-        <p className="text-30 font-extraBold my-10">Balance</p>
+        <p className=" text-20 md:text-30 font-extraBold my-10">Balance</p>
       </div>
-      <div className=" flex gap-4 bg-[#0D0A3A] p-8 pb-11 rounded-5">
-        <div className="w-[370px] ">
+      <div className=" md:flex gap-4 bg-[#0D0A3A] p-8 pb-11 rounded-5">
+        <div className="w-full md:w-[370px] ">
           <div className="flex gap-2 items-center bg-[#BC4D1E] p-6 pb-11 rounded-t-15 ">
             <img
-              className="w-16 h-16 "
+              className="w-5 h-5  md:w-16 md:h-16 "
               src="images/white-bg.png"
               alt="images"
             />
-            <p className="text-30 font-extraBold">Total Balance:</p>
+            <p className="text-16 text-30 font-extraBold">Total Balance:</p>
           </div>
           <div className="overflow-x-auto">
             <table className="table-auto w-[475px] md:w-full ">
@@ -70,7 +70,7 @@ const Balance = () => {
             </table>
           </div>
         </div>
-        <div className="w-[710px] bg-[#06042A] rounded-5 px-5 p-8">
+        <div className="w-full md:w-[710px] mt-8 md:mt-0  bg-[#06042A] rounded-5 px-5 p-8">
           <div>
             <p className="text-30 font-extraBold">Swap</p>
           </div>
@@ -140,7 +140,7 @@ const Balance = () => {
                 </div>
               </label>
             </div>
-            <div className="absolute left-60 top-56 form-button bg-[#D75D29] px-7 py-3 rounded-full flex items-center justify-center button-hero">
+            <div className="absolute left-0 md:left-20 lg:left-60 top-56 form-button bg-[#D75D29] px-7 py-3 rounded-full flex items-center justify-center button-hero">
               <button className="uppercase font-bold text-24 ">Confirm</button>
             </div>
           </form>
