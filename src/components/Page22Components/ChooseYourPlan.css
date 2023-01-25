@@ -1,0 +1,20 @@
+.mySwiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d75d29 !important;
+}
+.swiper-slide-active button {
+  background-color: #d75d29;
+}
+.swiper-slide-active .div {
+  border: 1px solid #d75d29;
+  border-radius: 5px;
+}
+.swiper-slide-active .div {
+  width: 350px;
+}

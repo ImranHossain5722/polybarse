@@ -15,6 +15,7 @@ const TopPlayersArchery = () => {
         </div>
         <div className="w-[780px] mx-auto shadow-lg rounded-sm">
           <div className="px-7 py-5">
+            {/* table player archery */}
             <div className="overflow-x-auto">
               <table className="table-auto w-[475px] md:w-full">
                 <thead className=" h-16 font-semibold capitalize text-white border-2 border-[#0D0A3A] bg-[#0C2B58] rounded-5">
@@ -320,13 +321,6 @@ const TopPlayersArchery = () => {
                     </td>
                     <td className="p-2 whitespace-nowrap  ">
                       <div className="flex items-center justify-center">
-                        {/* <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
-                          <img
-                            className="rounded-full w-5 h-5 "
-                            src="/images/singleCoin.png"
-                            alt="coin"
-                          />
-                        </div> */}
                         <div className="">
                           <AiOutlineArrowRight className="font-medium text-20  text-white text-right" />
                         </div>
