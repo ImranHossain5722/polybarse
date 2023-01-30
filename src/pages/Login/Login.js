@@ -7,9 +7,11 @@ import go from "../../images/google.png";
 import walit from "../../images/walit.png";
 import arow from "../../images/arow.png";
 import "./Login.css";
+import SelectWallet from "../../components/PopUp/SelectWallet";
 const Login = () => {
   const [showLoginPopUp, setShowLoginPopUp] = useState(false);
   const [showSignPopUp, setShowSignPopUp] = useState(false);
+  const [selectWallet, setSelectWallet] = useState(false);
   return (
     <div>
       <button
@@ -100,14 +102,20 @@ const Login = () => {
                         </div>
                       </div>
                       <div className="flex justify-around ">
-                        <a href="#">
+                        <div>
                           <div className=" p-3 border flex items-center  border-inputBorder rounded-lg mt-5 cursor-pointer button-shrink">
                             <img className="w-7 h-7 mr-4" src={walit} />
-                            <p className="text-18 text-white uppercase">
+                            <p
+                              onClick={() => setSelectWallet(!selectWallet)}
+                              className="text-18 text-white uppercase"
+                            >
                               Connect with wallet
                             </p>
                           </div>
-                        </a>
+                          {selectWallet && (
+                            <SelectWallet setSelectWallet={setSelectWallet} />
+                          )}
+                        </div>
                       </div>
                       <div className="flex items-center py-5">
                         <div className="div-hr "></div>

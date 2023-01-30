@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../components/buttons/button.css";
 import {
   FaFacebookF,
@@ -14,7 +14,10 @@ import {
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import PlaceBid from "../buttons/PlaceBid";
-import Sell from "../buttons/Sell";
+
+import Sell from "../PopUp/Sell";
+import Transfer from "../PopUp/Transfer";
+import Auction from "../PopUp/Auction";
 
 const AvatarProfile = () => {
   // social media array
@@ -42,6 +45,9 @@ const AvatarProfile = () => {
       link: "https://telegram.com",
     },
   ];
+  const [transfer, setTransfer] = useState(false);
+  const [auction, setAuction] = useState(false);
+  const [sell, setSell] = useState(false);
   return (
     <div className="mt-[110px]">
       <div className="flex justify-between">
@@ -155,24 +161,37 @@ const AvatarProfile = () => {
           </div>
           <div className="button-wrap mt-6">
             <div className="flex justify-start gap-6">
-              <Link
-                to="#"
+              <button
+                onClick={() => {
+                  setAuction(!auction);
+                }}
                 className=" flex gap-3 text-18 font-bold text-white  border-2 border-[#497BEE] py-4 px-9 rounded-full button-hero uppercase"
               >
                 <img className="w-4" src="images/axe.png" alt="axe" />
                 AUCTION
-              </Link>
-              <Link
-                to="#"
+              </button>
+
+              <button
+                onClick={() => {
+                  setTransfer(!transfer);
+                }}
                 className=" flex gap-3 text-18 font-bold text-white border-2 border-[#497BEE] py-4 px-9 rounded-full button-hero uppercase"
               >
                 <img className="w-4 " src="images/transfer 448.png" alt="axe" />
                 Transfer
-              </Link>
+              </button>
             </div>
+            {transfer && <Transfer setTransfer={setTransfer} />}
+            {auction && <Auction setAuction={setAuction} />}
+            {sell && <Sell setSell={setSell} />}
           </div>
           <div>
-            <Sell />
+            <button
+              onClick={() => setSell(!sell)}
+              className="inline-flex items-center text-xs sm:text-sm lg:text-18 border-2 border-[#497BEE] font-semibold font-inter px-3 md:px-7 py-2  bg-[#497BEE] hover:bg-transparent rounded-full lg:px-44 lg:py-3 uppercase text-center mt-8 button-hero"
+            >
+              Sell
+            </button>
           </div>
         </div>
       </div>

@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Approve from "../buttons/Approve";
 import Container from "../container";
+import StakePlv from "../PopUp/StakePlv";
 
 const ThirdSection = () => {
+  const [stakePlv, setStakePlv] = useState(false);
   return (
     <Container className="max-w-[1200px]">
       <div className="mt-10">
+        {stakePlv && <StakePlv setStakePlv={setStakePlv} />}
         <div className="overflow-x-auto">
           <table className="table-auto w-[475px] md:w-full">
             <thead className=" h-16 font-semibold capitalize text-white  rounded-5">
@@ -58,7 +61,10 @@ const ThirdSection = () => {
                   </div>
                 </td>
                 <td className="p-2 whitespace-nowrap ">
-                  <div className="text-center text-white text-20">
+                  <div
+                    onClick={() => setStakePlv(!stakePlv)}
+                    className="text-center text-white text-20"
+                  >
                     <Approve />
                   </div>
                 </td>

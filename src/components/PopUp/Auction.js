@@ -1,7 +1,9 @@
 import React from "react";
-import close from "../../images/Vector.png";
 import "./PopUp.css";
-const Sell = ({ setSell }) => {
+import close from "../../images/Vector.png";
+import { RiCalendar2Line } from "react-icons/ri";
+import { FiClock } from "react-icons/fi";
+const Auction = ({ setAuction }) => {
   return (
     <div>
       <div className="fixed  inset-0 z-50">
@@ -9,11 +11,14 @@ const Sell = ({ setSell }) => {
           <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0 ">
             <div class="from-wrap  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative">
               <h1 class="text-35 font-extraBold text-white  text-center  md:py-4">
-                Sell
+                Auction
+              </h1>
+              <h1 class="text-20 font-bold text-white  text-center  md:py-4">
+                Reserve Price
               </h1>
               <div
                 onClick={() => {
-                  setSell(false);
+                  setAuction(false);
                 }}
                 className="close-wrap flex justify-end cursor-pointer absolute top-2 right-0"
               >
@@ -27,22 +32,6 @@ const Sell = ({ setSell }) => {
                 <form class="  space-y-4 md:space-y-6" action="#">
                   {/* user Name */}
                   <div className="from-div">
-                    <div className="flex items-center justify-between">
-                      <p className="capitalize font-semibold text-[14px] text-center text-white">
-                        Price
-                      </p>
-                      <div className="flex items-center">
-                        <p className="uppercase font-semibold text-[14px] text-center text-white">
-                          $0.00
-                        </p>
-                        <img
-                          className="rounded-full w-4 h-4 flex items-center ml-2 sm:mr-3"
-                          src="/images/singleCoin.png"
-                          alt="coin"
-                        />
-                      </div>
-                    </div>
-
                     <div className="from-div">
                       <label className="relative">
                         <input
@@ -65,6 +54,39 @@ const Sell = ({ setSell }) => {
                         </div>
                       </label>
                     </div>
+                    <h1 class="text-20 font-bold text-white  text-center  md:py-4">
+                      Auction end date/time
+                    </h1>
+                  </div>
+                  <div className="flex gap-6">
+                    <div className="from-date">
+                      <label className="relative">
+                        <input
+                          id="date"
+                          name="date"
+                          type="date"
+                          required
+                          className="d my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 "
+                        />
+                        {/* <div className="flex items-center absolute top-6 right-3">
+                          <div className="flex items-center">
+                            <RiCalendar2Line className="w-8 h-8 text-[#497BEE]" />
+                          </div>
+                        </div> */}
+                      </label>
+                    </div>
+                    <div className="from-Time">
+                      <label className="relative">
+                        <input
+                          id="time"
+                          name="time"
+                          type="time"
+                          required
+                          className="t my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                          placeholder="00:00:00"
+                        />
+                      </label>
+                    </div>
                   </div>
                   <button
                     type="submit"
@@ -83,4 +105,4 @@ const Sell = ({ setSell }) => {
   );
 };
 
-export default Sell;
+export default Auction;

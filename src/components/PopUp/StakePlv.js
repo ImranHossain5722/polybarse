@@ -1,19 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import close from "../../images/Vector.png";
-import "../../pages/SignUp/SignUp.css";
+import "./PopUp.css";
 
-const StakePlv = () => {
+const StakePlv = ({ setStakePlv }) => {
   return (
     <div>
-      <div className="pt-36">
+      <div className="fixed  inset-0 z-50">
         <section class="pt-32 mb-32">
           <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0 ">
             <div class="from-wrap  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative">
               <h1 class="text-35 font-extraBold text-white  text-center  md:py-4">
                 Stake PLV
               </h1>
-              <div className="close-wrap flex justify-end cursor-pointer absolute top-2 right-0">
+              <div
+                onClick={() => setStakePlv(false)}
+                className="close-wrap flex justify-end cursor-pointer absolute top-2 right-0"
+              >
                 <img
                   className="pt-5 pr-5 w-[30px] h-[30px]"
                   src={close}

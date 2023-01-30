@@ -6,7 +6,7 @@ import fb from "../../images/fb.png";
 import go from "../../images/google.png";
 import walit from "../../images/walit.png";
 import arow from "../../images/arow.png";
-import "../../pages/SignUp/SignUp.css";
+import "./PopUp.css";
 
 const YourAreAlmostDone = () => {
   return (
