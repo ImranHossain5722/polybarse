@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import greenshapbg from "../../images/green-shap.png";
 import Popup from "../animations/popup";
 import rightshap from "../../images/redShape.png";
+
 const Page9NavBar = () => {
   return (
     <div className="mt-40">
@@ -309,7 +310,7 @@ const Page9NavBar = () => {
                       <div className="bt-2 mt-12 flex justify-center">
                         <Link
                           to="#"
-                          className="uppercase text-white text-sm bg-btnbg rounded-3xl py-3 px-10"
+                          className="uppercase text-white text-sm bg-btnbg rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
                         >
                           CHOOSE YOUR AVATAR
                         </Link>
@@ -325,7 +326,7 @@ const Page9NavBar = () => {
                       <div className="bt-2 mt-12 flex justify-center">
                         <Link
                           to="#"
-                          className="uppercase text-white text-sm bg-btnbg rounded-3xl py-3 px-10"
+                          className="uppercase text-white text-sm bg-btnbg rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
                         >
                           CHOOSE YOUR AVATAR
                         </Link>

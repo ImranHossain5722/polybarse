@@ -49,7 +49,7 @@ const Page12nav = () => {
                   {/* tab header */}
                   <TabGroup.TabList className="bg-[#100E4F] ">
                     <TabGroup.Tab
-                      index={0}
+                      index={1}
                       className="h-12 px-7 text-[12px] transition-colors duration-150 uppercase "
                       activeClassName="text-white border-b-2 border-btnbg"
                       inactiveClassName="text-white"
@@ -65,7 +65,7 @@ const Page12nav = () => {
                     </TabGroup.Tab>
 
                     <TabGroup.Tab
-                      index={1}
+                      index={0}
                       className="h-12 px-7 text-[12px] transition-colors duration-150 uppercase "
                       activeClassName="text-white border-b-2 border-btnbg"
                       inactiveClassName="text-white"
@@ -180,14 +180,6 @@ const Page12nav = () => {
                   {/* tab body */}
                   <TabGroup.TabPanel
                     index={0}
-                    className="p-16 transition-all transform"
-                    activeClassName="opacity-100 duration-500 translate-x-0"
-                    inactiveClassName="absolute opacity-0 -translate-x-2"
-                  >
-                    <div className="my-[110px]">Tab all no content</div>
-                  </TabGroup.TabPanel>
-                  <TabGroup.TabPanel
-                    index={1}
                     className="py-16 transition-all transform"
                     activeClassName="opacity-100 duration-500 translate-x-0"
                     inactiveClassName="absolute opacity-0 -translate-x-2"

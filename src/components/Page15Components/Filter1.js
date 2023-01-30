@@ -169,24 +169,28 @@ const Filter1 = () => {
             </p>
           </div>
           <div className="flex items-center justify-around mt-4">
-            <div>
-              <Link
-                className="py-2 px-3 border border-[#497bee] rounded-full"
-                to="#"
-              >
-                Min
-              </Link>
+            <div className="min-div px-2">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                className="bg-[#061E42] border border-[#497bee] rounded-full text-white sm:text-sm  h-9 font-normal placeholder-[#497bee]  w-full p-4"
+                placeholder="Min"
+                required=""
+              />
             </div>
             <div>
               <p>To</p>
             </div>
-            <div>
-              <Link
-                className="py-2 px-3 border border-[#497bee] rounded-full"
-                to="#"
-              >
-                Max
-              </Link>
+            <div className="max-div px-2">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                className="bg-[#061E42] border border-[#497bee] rounded-full text-white sm:text-sm  h-9 font-normal placeholder-[#497bee]  w-full p-4 "
+                placeholder="Max"
+                required=""
+              />
             </div>
           </div>
         </div>

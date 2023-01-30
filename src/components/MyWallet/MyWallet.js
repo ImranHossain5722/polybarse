@@ -29,7 +29,7 @@ const MyWallet = () => {
         <div>
           <p className="text-45 from-btnText font-extraBold ">My Wallet</p>
           <div className=" flex item-center border-wrap relative ">
-            <div className="org-div bg-arrwoActive">
+            <div className="org-div bg-arrwoActive ">
               <div className=" flex justify-between">
                 <div className="flex items-center justify-center">
                   <img className="w-16 h-16 mr-2" src={whitecoin} />
@@ -41,13 +41,13 @@ const MyWallet = () => {
               </div>
               <hr className=" my-4 md:my-10" />
               <div className="singleCoin-wrap md:flex items-center justify-around ">
-                <div className="flex items-center justify-center md:mb-6">
+                <div className="flex items-center justify-center gap-2 md:mb-7">
                   <p className=" text-16 md:text-30 font-extraBold">
                     1000 V-COIN
                   </p>
                   <img className="w-12 h-12" src={signCoin} />
                 </div>
-                <div className="flex items-center justify-center md:mb-6">
+                <div className="flex items-center justify-center gap-2 md:mb-7">
                   <p className="text-16 md:text-30 font-extraBold">
                     150.50 PLV
                   </p>

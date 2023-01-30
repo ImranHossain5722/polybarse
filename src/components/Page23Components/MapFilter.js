@@ -54,10 +54,10 @@ const MapFilter = () => {
           "relative w-full h-full" + (showFilters ? "block" : "hidden")
         }
       >
-        {/* Status */}
-        <div className="status px-1 md:px-6">
+        {/* availability */}
+        <div className="availability px-1 md:px-6">
           <div>
-            <p className="text-20 md:text-35 font-extraBold text-white text-left px-4">
+            <p className="text-20 md:text-35 font-extraBold text-white text-left px-4 pt-5">
               Map
             </p>
           </div>
@@ -113,7 +113,7 @@ const MapFilter = () => {
           </div>
         </div>
         {/* size */}
-        <div className="type mt-4 px-1 md:px-6">
+        <div className="size mb-5 px-1 md:px-6">
           <div className=" flex space-x-2">
             <p className="text-20 font-semibold text-white pt-2">Size</p>
           </div>

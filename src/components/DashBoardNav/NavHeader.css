@@ -1,0 +1,36 @@
+/* .mane_menu {
+  background-color: aliceblue;
+}
+.mane_menu li a {
+  color: #090b17;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px;
+  padding: 22.5px 19px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.mane_menu li a::before {
+  background: #28af62;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: auto;
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+  width: 0;
+}
+
+.active {
+  background: rgba(#28af62, 0.1);
+}
+.mane_menu li :active {
+  background: #28af62;
+  color: #28af62;
+}
+.mane_menu li::before {
+  left: 0;
+  right: auto;
+  width: 100%;
+} */

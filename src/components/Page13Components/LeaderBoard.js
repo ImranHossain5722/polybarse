@@ -13,7 +13,7 @@ const LeaderBoard = () => {
         <Container className="max-w-[1200px] z-20">
           <div className="">
             <div className="flex items-start">
-              <img className="w-14 h-14" src="images/tofe.png" alt="cup" />
+              <img className="w-14 h-14" src="images/leader.png" alt="cup" />
               <p className="font-extraBold text-45 text-white ml-3">
                 Leaderboard
               </p>

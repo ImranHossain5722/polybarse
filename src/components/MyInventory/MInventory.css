@@ -5,8 +5,8 @@
 .div1 {
   width: 290px;
   height: 335px;
-  border: 6px solid #0b5d7e;
-  border-radius: 18px;
+  border: 8px solid #0b5d7e;
+  border-radius: 50px;
   background: radial-gradient(
     45% 45% at 45% 45%,
     #0b5d7e 0%,
@@ -16,8 +16,8 @@
 .div2 {
   width: 290px;
   height: 335px;
-  border: 6px solid #0b5d7e;
-  border-radius: 18px;
+  border: 8px solid #0b5d7e;
+  border-radius: 50px;
   background: radial-gradient(
     45% 45% at 45% 45%,
     #0b5d7e 0%,
@@ -27,8 +27,8 @@
 .div3 {
   width: 290px;
   height: 335px;
-  border: 6px solid #0b5d7e;
-  border-radius: 18px;
+  border: 8px solid #0b5d7e;
+  border-radius: 50px;
   background: radial-gradient(
     45% 45% at 45% 45%,
     #0b5d7e 0%,
@@ -38,5 +38,12 @@
 
 .text-wrap {
   border-radius: 15px;
-  margin: -43px -5px -8px 0px;
+  margin: -51px 0px 0px 0px;
+  padding: 20px 16px 0px 0px;
+}
+.bg-image {
+  background: url(../../images/bg-p.png);
+  background-position: 0px 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

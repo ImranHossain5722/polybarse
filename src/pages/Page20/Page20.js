@@ -1,10 +1,19 @@
 import React from "react";
+import NaveHeader from "../../components/DashBoardNav/NaveHeader";
 import Page20Nav from "../../components/Page20Components/Page20Nav";
+import SecondSection from "../../components/Page20Components/SecondSection";
+import StakingBanner from "../../components/Page20Components/StakingBanner";
+import ThirdSection from "../../components/Page20Components/ThirdSection";
 
 const Page20 = () => {
   return (
     <div>
-      <Page20Nav></Page20Nav>
+      <NaveHeader></NaveHeader>
+      <div className="my-[110px]">
+        <StakingBanner></StakingBanner>
+        <SecondSection></SecondSection>
+        <ThirdSection></ThirdSection>
+      </div>
     </div>
   );
 };

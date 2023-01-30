@@ -180,9 +180,7 @@ const Page11naveBar = () => {
                   activeClassName="opacity-100 duration-500 translate-x-0"
                   inactiveClassName="absolute opacity-0 -translate-x-2"
                 >
-                  <div className="my-[110px]">
-                    <ChildeNavBar></ChildeNavBar>
-                  </div>
+                  <div className="my-[110px]"></div>
                 </TabGroup.TabPanel>
               </TabGroup>
             </div>

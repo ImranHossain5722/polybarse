@@ -22,7 +22,7 @@ const EditPassword = () => {
           className="object-contain  object-right"
         />
       </div>
-      <div className="hidden md:block absolute max-w-xl right-0 top-16  z-10">
+      <div className="hidden md:block absolute max-w-2xl right-0 top-16  z-10">
         <img
           src="/images/dotsblur.png"
           alt="herobg"
@@ -39,14 +39,17 @@ const EditPassword = () => {
       <Container className="max-w-[1200px]  pt-32">
         <div className="md:flex items-center justify-around">
           <div className="from-div ">
-            <p className="text-45 mb-6">Edit Password</p>
+            <p className="text-45 mb-6 font-extraBold">Edit Password</p>
             <p className="text-xl  mb-6">
               For your security, we highly recommend that you choose a unique
               password that you don’t use for any other online account.
             </p>
             <div className="w-1/2">
               <div className="old-password relative">
-                <label htmlFor="password" className="text-white text-24">
+                <label
+                  htmlFor="password"
+                  className="text-white text-24 font-semibold"
+                >
                   Old Password
                 </label>
                 <input
@@ -55,20 +58,26 @@ const EditPassword = () => {
                   type={open === false ? "password" : "text"}
                   autoComplete="passwordl"
                   required
-                  className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
-                  placeholder="*********"
+                  className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
+                  placeholder=""
                 />
                 <div className="absolute mt-4 top-12 right-5">
                   {open === false ? (
-                    <AiFillEye onClick={toggle} />
+                    <AiFillEye onClick={toggle} className="text-[#4A7297]" />
                   ) : (
-                    <AiFillEyeInvisible onClick={toggle} />
+                    <AiFillEyeInvisible
+                      onClick={toggle}
+                      className="text-[#4A7297]"
+                    />
                   )}
                 </div>
               </div>
               {/* new password div */}
               <div className="new-password pt-11 relative">
-                <label htmlFor="password" className="text-white text-24">
+                <label
+                  htmlFor="password"
+                  className="text-white text-24 font-semibold"
+                >
                   New Password
                 </label>
                 <input
@@ -77,21 +86,27 @@ const EditPassword = () => {
                   type={open === false ? "password" : "text"}
                   autoComplete="passwordl"
                   required
-                  className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
-                  placeholder="*********"
+                  className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
+                  placeholder=""
                 />
 
                 <div className="absolute pt-1 mt-14 top-12 right-5">
                   {open === false ? (
-                    <AiFillEye onClick={toggle} />
+                    <AiFillEye onClick={toggle} className="text-[#4A7297]" />
                   ) : (
-                    <AiFillEyeInvisible onClick={toggle} />
+                    <AiFillEyeInvisible
+                      onClick={toggle}
+                      className="text-[#4A7297]"
+                    />
                   )}
                 </div>
               </div>
               {/* confirm  password*/}
               <div className="confirm-password pt-11 relative">
-                <label htmlFor="password" className="text-white text-24">
+                <label
+                  htmlFor="password"
+                  className="text-white text-24 font-semibold"
+                >
                   Confirm Password
                 </label>
                 <input
@@ -100,15 +115,18 @@ const EditPassword = () => {
                   type={open === false ? "password" : "text"}
                   autoComplete="passwordl"
                   required
-                  className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
-                  placeholder="*********"
+                  className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
+                  placeholder=""
                 />
 
                 <div className="absolute pt-1 mt-14 top-12 right-5">
                   {open === false ? (
-                    <AiFillEye onClick={toggle} />
+                    <AiFillEye onClick={toggle} className="text-[#4A7297]" />
                   ) : (
-                    <AiFillEyeInvisible onClick={toggle} />
+                    <AiFillEyeInvisible
+                      onClick={toggle}
+                      className="text-[#4A7297]"
+                    />
                   )}
                 </div>
               </div>
@@ -122,8 +140,8 @@ const EditPassword = () => {
           </div>
 
           {/* image */}
-          <div className="img w-1/2">
-            <img className="" src={lock} />
+          <div className="img w-1/2 flex justify-end">
+            <img className="w-[650px] h-[620px]" src={lock} alt="lock" />
           </div>
         </div>
       </Container>

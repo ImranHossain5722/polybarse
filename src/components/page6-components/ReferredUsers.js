@@ -62,7 +62,7 @@ const ReferredUsers = memo(() => {
                           </div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="flex items-center justify-center">
+                          <div className="flex items-center justify-center gap-2">
                             <div className="font-medium text-20 text-center text-white">
                               2000,00 PLV
                             </div>
@@ -99,7 +99,7 @@ const ReferredUsers = memo(() => {
                           </div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="flex items-center justify-center">
+                          <div className="flex items-center justify-center gap-2">
                             <div className="font-medium text-20 text-center text-white">
                               2000,00 PLV
                             </div>
@@ -136,7 +136,7 @@ const ReferredUsers = memo(() => {
                           </div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="flex items-center justify-center">
+                          <div className="flex items-center justify-center gap-2">
                             <div className="font-medium text-20 text-center text-white">
                               2000,00 PLV
                             </div>
@@ -173,7 +173,7 @@ const ReferredUsers = memo(() => {
                           </div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="flex items-center justify-center">
+                          <div className="flex items-center justify-center gap-2">
                             <div className="font-medium text-20 text-center text-white">
                               2000,00 PLV
                             </div>
@@ -210,7 +210,7 @@ const ReferredUsers = memo(() => {
                           </div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="flex items-center justify-center">
+                          <div className="flex items-center justify-center gap-2">
                             <div className="font-medium text-20 text-center text-white">
                               2000,00 PLV
                             </div>
@@ -247,7 +247,7 @@ const ReferredUsers = memo(() => {
                           </div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
-                          <div className="flex items-center justify-center">
+                          <div className="flex items-center justify-center gap-2">
                             <div className="font-medium text-20 text-center text-white">
                               2000,00 PLV
                             </div>

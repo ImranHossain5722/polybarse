@@ -17,7 +17,7 @@ const EditMail = () => {
             className="object-contain  object-right"
           />
         </div>
-        <div className="hidden md:block absolute max-w-xl right-0 top-0  z-10">
+        <div className="hidden md:block absolute max-w-2xl right-0 top-0  z-10">
           <img
             src="/images/dotsblur.png"
             alt="herobg"
@@ -53,7 +53,7 @@ const EditMail = () => {
                     type="email"
                     autoComplete="email"
                     required
-                    className="my-3 h-16 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
+                    className="my-3 h-16 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
                     placeholder="test@email.it"
                   />
                 </div>
@@ -71,7 +71,7 @@ const EditMail = () => {
                     type="email"
                     autoComplete="email"
                     required
-                    className="my-3 h-16 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
+                    className="my-3 h-16 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full placeholder-inputbgColor focus:ring-primary-600 focus:border-primary-600 block w-full p-3"
                     placeholder=""
                   />
                 </div>

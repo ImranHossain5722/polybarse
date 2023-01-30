@@ -35,10 +35,13 @@ const Page2Hero = () => {
                     src={file}
                   />
                 </div>
+                <div className="mt-3">
+                  <img src="images/chart.png" alt="chart" />
+                </div>
               </div>
             </div>
 
-            <div className="md:flex gap-1 -mt-3">
+            <div className="md:flex gap-4 -mt-3">
               <EditButton />
               <ViewPublicProfile />
             </div>

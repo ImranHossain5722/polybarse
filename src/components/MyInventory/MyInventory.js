@@ -12,15 +12,15 @@ const MyInventory = () => {
         <Container className="max-w-[1200px]">
           <div>
             <p className="text-45 mb-6 font-extraBold">My Inventory </p>
-            <div className="div-wrap md:flex items-center justify-center ">
+            <div className="div-wrap md:flex items-center justify-center gap-10 w-full">
               <div>
                 <p className="md:text-center text-30 mb-7 font-extraBold">
                   AVATARS
                 </p>
                 <div className="div1 mx-1">
-                  <img className="z-40" src={img1} />
-                  <div className="flex justify-end w-4/3 relative">
-                    <p className="bg-[#0b5d7e] text-wrap p-3 absolute top-0 bottom-0 right-0">
+                  <img className="z-40" src={img1} alt="avatar" />
+                  <div className="flex justify-end">
+                    <p className="text-wrap text-right z-20 w-[65px] h-[74px] bg-image pr-3 pt-[18px]">
                       x50
                     </p>
                   </div>
@@ -31,9 +31,9 @@ const MyInventory = () => {
                   EQUIPMENT{" "}
                 </p>
                 <div className="div2 mx-1">
-                  <img className="z-40" src={img2} />
-                  <div className="flex justify-end w-4/3 relative">
-                    <p className="bg-[#0b5d7e] text-wrap p-3 absolute top-0 bottom-0 right-0">
+                  <img className="z-40" src={img2} alt="cap" />
+                  <div className="flex justify-end">
+                    <p className=" text-wrap text-right z-20 w-[65px] h-[74px] bg-image pr-4 pt-4 pl-[26px]">
                       x100
                     </p>
                   </div>
@@ -44,10 +44,14 @@ const MyInventory = () => {
                 <p className=" md:text-center text-30 mb-7 font-extraBold">
                   LAND
                 </p>
-                <div className="div3 mx-1">
-                  <img className="z-40" src={img3} />
-                  <div className="flex justify-end w-4/3 relative">
-                    <p className="bg-[#0b5d7e] text-wrap p-3 absolute top-0 bottom-0 right-0">
+                <div className="div3 mx-1 relative">
+                  <img className="rounded-[42px]" src={img3} alt="location" />
+                  <div className="flex justify-end">
+                    {/* <img
+                      className="absolute -right-4 bottom-0 w-24 h-16"
+                      src="images/bg-p.png"
+                    /> */}
+                    <p className="text-wrap text-right z-20 w-[65px] h-[74px] bg-image pr-4">
                       x5
                     </p>
                   </div>

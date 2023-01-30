@@ -103,7 +103,7 @@ const Equipments = () => {
   ];
 
   return (
-    <div>
+    <div className="mt-[110px]">
       <div className="flex justify-between">
         <div>
           <p className="text-20 md:text-35 font-extraBold text-white text-left mb-11">
@@ -178,13 +178,17 @@ const Equipments = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {s.map((i) => (
                   <div className="mb-10 ">
-                    <img className="w-52 h-52" src={i.img} alt="" />
+                    <img
+                      className="w-52 h-52  hover:scale-110 hover:transition duration-1000 ease-in-out cursor-pointer"
+                      src={i.img}
+                      alt=""
+                    />
                     <p className="text-24 mt-5">
                       {i.name} {i.number}{" "}
                     </p>
                     <div className="flex items-center mt-3">
                       <p className="text-18 ">By {i.author}</p>
-                      <img className="w-4 h-4 ml-5" src={i.img2} alt="" />
+                      <img className="w-4 h-4 ml-2" src={i.img2} alt="" />
                     </div>
                   </div>
                 ))}

@@ -1,1 +1,15 @@
-
+.down-arrow::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 40px solid #322f6e;
+  top: 48%;
+  left: 20%;
+}
+/* .down-arrow ::before {
+  background: url("../../images/tabDownAro.png");
+  background-repeat: no-repeat;
+} */

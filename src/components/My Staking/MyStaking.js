@@ -8,6 +8,7 @@ import greenshapbg from "../../images/green-bg-shap.png";
 import rightRedShap from "../../images/shapesix.png";
 import Container from "../container";
 import "./Mystaking.css";
+import StakeNow from "../buttons/StakeNow";
 
 const MyStaking = () => {
   return (
@@ -27,6 +28,9 @@ const MyStaking = () => {
                 EARN $PLV AND REWARDS BY CHOOSING BETWEEN FLEXIBLE AND FIXED
                 STAKE.
               </p>
+              <div className="flex justify-end p-4">
+                <StakeNow></StakeNow>
+              </div>
             </div>
           </div>
         </div>

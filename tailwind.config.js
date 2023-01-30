@@ -65,5 +65,8 @@ module.exports = {
       "2xl": "1536px",
     },
   },
-  plugins: [],
+  variants: {
+    // borderBottom: ["active"],
+  },
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };

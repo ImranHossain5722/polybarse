@@ -8,7 +8,7 @@ import { MdDelete } from "react-icons/md";
 import "../../components/buttons/button.css";
 const Cart = () => {
   return (
-    <div>
+    <div className="my-[110px] ">
       <div className=" md:flex gap-16 justify-between">
         <div className="w-[740px]">
           <div className="flex items-center justify-between border-b-1 border-[#444172] py-14 ">
@@ -79,30 +79,30 @@ const Cart = () => {
           </div>
         </div>
 
-        <div className="relative w-[302px] h-[500px] bg-[#061E42] rounded-2xl">
+        <div className="relative w-[302px] h-[430px] bg-[#061E42] rounded-2xl">
           <div className="bg-[#0C2B58] p-5 rounded-t-2xl ">
             <p className="text-35 text-white font-extraBold text-center">
               Total Cart
             </p>
           </div>
           <div className="mt-5">
-            <div className="flex gap-8 items-center px-5">
+            <div className="flex gap-1 items-center justify-center px-5">
               <img
                 className="w-9 h-9 rounded-5"
                 src="images/singleCoin.png"
                 alt="images"
               />
-              <p className="font-extraBold text-35 text-white text-left">
+              <p className="font-extraBold text-35 text-white text-center w-48">
                 100,00
               </p>
             </div>
-            <div className="flex gap-8 items-center px-5">
+            <div className="flex gap-1 items-center justify-center px-5">
               <img
                 className="w-8 h-8 rounded-5"
                 src="images/doler.png"
                 alt="images"
               />
-              <p className="font-extraBold text-35 text-white text-left">
+              <p className="font-extraBold text-35 text-white text-center w-48">
                 100,00
               </p>
             </div>

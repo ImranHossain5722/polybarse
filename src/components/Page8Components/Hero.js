@@ -31,6 +31,9 @@ const Hero = () => {
                       connect the wallet
                     </Link>
                   </div>
+                  <div className="mt-5">
+                    <img src="images/chart.png" alt="chart" />
+                  </div>
                 </div>
               </div>
 

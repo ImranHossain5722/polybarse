@@ -42,7 +42,7 @@ const AvatarProfile = () => {
     },
   ];
   return (
-    <div>
+    <div className="mt-[110px]">
       <div className="flex justify-between">
         <div className="w-2/4 pr-14">
           <img
@@ -73,19 +73,22 @@ const AvatarProfile = () => {
         </div>
         <div className="w-2/4 pl-14">
           <div className="">
-            <p className="text-35 text-white font-extrabold">Avatar #001</p>
+            <p className="text-35 text-white font-bold">Avatar #001</p>
           </div>
           <div className="mt-4">
-            <Link className="py-2 px-8 bg-[#A2D132] rounded-2xl" to="#">
+            <Link
+              className="py-2 px-10 bg-[#A2D132] rounded-2xl text-18"
+              to="#"
+            >
               Epic
             </Link>
           </div>
-          <div className="flex items-center justify-between mt-6">
+          <div className="flex items-center gap-20 mt-6">
             <div className="box-1">
               <div className="flex items-center mt-3">
                 <p className="text-20 font-semibold uppercase">Creator</p>
                 <img
-                  className="w-4 h-4 ml-5"
+                  className="w-4 h-4 ml-2"
                   src="images/check.png"
                   alt="check"
                 />
@@ -97,19 +100,19 @@ const AvatarProfile = () => {
               />
             </div>
             <div className="bpx-2">
-              <p className="text-20 font-semibold uppercase">Type</p>
+              <p className="text-20 font-semibold uppercase">Stock</p>
               <div className="flex items-center mt-3">
                 <p className="text-[14px] font-semibold uppercase">6/10</p>
 
                 <img
-                  className="w-3 h-3 ml-5"
+                  className="w-3 h-3 ml-2"
                   src="images/greenCheck.png"
                   alt="check"
                 />
               </div>
             </div>
             <div className="bpx-2">
-              <p className="text-20 font-semibold uppercase">Stock</p>
+              <p className="text-20 font-semibold uppercase">Type</p>
               <div className="flex items-center mt-3">
                 <p className="text-[14px] font-semibold">Head</p>
               </div>

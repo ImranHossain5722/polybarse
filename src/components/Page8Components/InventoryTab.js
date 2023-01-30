@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Container from "../container";
 import { TabGroup } from "@statikly/funk";
 import greenshapbg from "../../images/green-shap.png";
@@ -7,6 +7,9 @@ import Popup from "../animations/popup";
 import rightshap from "../../images/shapeseven.png";
 
 const InventoryTab = () => {
+  const activeLink =
+    "border-b-2 border-[#D75D29] text-white pb-[10px] w-[100px]";
+  const normalLink = "";
   const s = [
     {
       id: window.crypto.randomUUID(),
@@ -122,144 +125,87 @@ const InventoryTab = () => {
           </div>
 
           {/* tab items */}
-          <div className="tab-wrap my-12 ">
-            <div className="flex flex-col justify-center">
-              <TabGroup numTabs={3} direction={TabGroup.direction.HORIZONTAL}>
-                {/* tab header */}
-                <TabGroup.TabList className="bg-[#322F6F] ">
-                  <TabGroup.Tab
-                    index={0}
-                    className="h-12 px-12 transition-colors duration-150 uppercase"
-                    activeClassName="text-white bg-black"
-                    inactiveClassName="text-white"
-                  >
+          <section className="mt-9">
+            <div className="w-full h-16 bg-[#322F6F] rounded-5  grid grid-cols-8   px-9 py-6 overflow-hidden">
+              {/* nav1 */}
+              <NavLink
+                to="/page8"
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                <div className="flex items-center gap-2">
+                  <p className="uppercase text-white text-18 font-extraBold">
                     All
-                  </TabGroup.Tab>
-                  <TabGroup.Tab
-                    index={1}
-                    className="h-12 px-12 transition-colors duration-150 uppercase"
-                    activeClassName="bg-black text-white"
-                    inactiveClassName="text-white"
-                  >
-                    Avatar
-                  </TabGroup.Tab>
-                  <TabGroup.Tab
-                    index={2}
-                    className="h-12 px-12 transition-colors duration-150 uppercase"
-                    activeClassName="bg-black text-white"
-                    inactiveClassName="text-white"
-                  >
-                    Equipments
-                  </TabGroup.Tab>
-                  <TabGroup.Tab
-                    index={3}
-                    className="h-12 px-12 transition-colors duration-150 uppercase"
-                    activeClassName="bg-black text-white"
-                    inactiveClassName="text-white"
-                  >
+                  </p>
+                </div>
+              </NavLink>
+
+              {/* nav2 */}
+              <NavLink
+                to="/avatar"
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                <div className="flex items-center gap-2">
+                  <p className="uppercase text-white text-18 font-extraBold">
+                    AVATAR
+                  </p>
+                </div>
+              </NavLink>
+              {/* nav3 */}
+              <NavLink
+                to="/equipment"
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                <div className="flex items-center ">
+                  <p className="uppercase text-white text-18 font-extraBold">
+                    EQUIPMENTS
+                  </p>
+                </div>
+              </NavLink>
+              {/* nav4 */}
+              <NavLink
+                to="/land"
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                <div className="flex items-center  pl-8">
+                  <p className="uppercase text-white text-18 font-extraBold">
                     Land
-                  </TabGroup.Tab>
-                </TabGroup.TabList>
-
-                {/* tab body */}
-                <TabGroup.TabPanel
-                  index={0}
-                  className="p-16 transition-all transform"
-                  activeClassName="opacity-100 duration-500 translate-x-0"
-                  inactiveClassName="absolute opacity-0 -translate-x-2"
-                >
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    {s.map((i) => (
-                      <div className="mb-10 ">
-                        <img className="w-52 h-52" src={i.img} alt="" />
-                        <div className="bt-2 flex justify-center -mt-5">
-                          <Link
-                            to="#"
-                            className="uppercase text-white text-sm bg-btnbg rounded-3xl py-3 px-10"
-                          >
-                            CLAIM NFT
-                          </Link>
-                        </div>
-                        <p className="text-24 mt-5">
-                          {i.name} {i.number}{" "}
-                        </p>
-                        <div className="flex items-center mt-3">
-                          <p className="text-18 ">By {i.author}</p>
-                          <img className="w-4 h-4 ml-5" src={i.img2} alt="" />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </TabGroup.TabPanel>
-
-                <TabGroup.TabPanel
-                  index={1}
-                  className="p-16 transition-all transform"
-                  activeClassName="opacity-100 duration-500 translate-x-0"
-                  inactiveClassName="absolute opacity-0 -translate-x-2"
-                >
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    {s.map((i) => (
-                      <div className="mb-10 ">
-                        <img className="w-52 h-52" src={i.img} alt="" />
-
-                        <p className="text-24 mt-5">
-                          {i.name} {i.number}{" "}
-                        </p>
-                        <div className="flex items-center mt-3">
-                          <p className="text-18 ">By {i.author}</p>
-                          <img className="w-4 h-4 ml-5" src={i.img2} alt="" />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </TabGroup.TabPanel>
-
-                <TabGroup.TabPanel
-                  index={2}
-                  className="p-16 transition-all transform"
-                  activeClassName="opacity-100 duration-500 translate-x-0"
-                  inactiveClassName="absolute opacity-0 -translate-x-2"
-                >
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    {s.map((i) => (
-                      <div className="mb-10 ">
-                        <img className="w-52 h-52" src={i.img} alt="" />
-                        <p className="text-24 mt-5">
-                          {i.name} {i.number}{" "}
-                        </p>
-                        <div className="flex items-center mt-3">
-                          <p className="text-18 ">By {i.author}</p>
-                          <img className="w-4 h-4 ml-5" src={i.img2} alt="" />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </TabGroup.TabPanel>
-
-                <TabGroup.TabPanel
-                  index={3}
-                  className="p-16 transition-all transform"
-                  activeClassName="opacity-100 duration-500 translate-x-0"
-                  inactiveClassName="absolute opacity-0 -translate-x-2"
-                >
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    {s.map((i) => (
-                      <div className="mb-10 ">
-                        <img className="w-52 h-52" src={i.img} alt="" />
-                        <p className="text-24 mt-5">
-                          {i.name} {i.number}{" "}
-                        </p>
-                        <div className="flex items-center mt-3">
-                          <p className="text-18 ">By {i.author}</p>
-                          <img className="w-4 h-4 ml-5" src={i.img2} alt="" />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </TabGroup.TabPanel>
-              </TabGroup>
+                  </p>
+                </div>
+              </NavLink>
             </div>
+          </section>
+
+          {/* content */}
+
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-16">
+            {s.map((i) => (
+              <div className="mb-10 ">
+                <img className="w-52 h-52" src={i.img} alt="" />
+                <div className="bt-2 flex justify-center -mt-5">
+                  <Link
+                    to="#"
+                    className="uppercase text-white text-sm bg-btnbg rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
+                  >
+                    CLAIM NFT
+                  </Link>
+                </div>
+                <p className="text-24 mt-5 font-semibold">
+                  {i.name} {i.number}{" "}
+                </p>
+                <div className="flex items-center mt-3">
+                  <p className="text-18 ">By {i.author}</p>
+                  <img className="w-4 h-4 ml-5" src={i.img2} alt="" />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </Container>

@@ -9,6 +9,12 @@
   body {
     @apply bg-themeColor;
   }
+
+  ul,
+  li,
+  a {
+    list-style: none;
+  }
 }
 @layer components {
   img {
