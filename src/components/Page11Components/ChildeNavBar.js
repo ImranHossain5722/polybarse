@@ -61,13 +61,13 @@ const ChildeNavBar = () => {
   return (
     <div>
       <Container className="max-w-[1200px]">
-        <div className="mt-48">
+        <div className="mt-28">
           {/* tab items */}
-          <div className="tab-wrap my-12 flex justify-center ml-[170px]">
+          <div className="tab-wrap my-12 flex justify-center ml-[250px]">
             <div className="flex flex-col justify-center">
               <TabGroup numTabs={3} direction={TabGroup.direction.HORIZONTAL}>
                 {/* tab header */}
-                <TabGroup.TabList className="bg-[#100E4F] w-[750px] ">
+                <TabGroup.TabList className="bg-[#322F6F] w-[750px] rounded-5">
                   <TabGroup.Tab
                     index={0}
                     className="h-12 px-7 text-[12px] transition-colors duration-150 uppercase border-r-4 border-[#534F9C] py-3 "
@@ -84,7 +84,7 @@ const ChildeNavBar = () => {
                     inactiveClassName="text-white"
                   >
                     <div className="relative">
-                      <div className=" absolute -top-11 bottom-0 -left-5 right-0 w-[80px] ">
+                      <div className=" absolute -top-[40px] bottom-0 -left-5 right-0 w-[80px] ">
                         <p className="text-white text-[8px] text-center uppercase bg-red-700 p-2 rounded-md">
                           coming soon
                         </p>
@@ -99,7 +99,7 @@ const ChildeNavBar = () => {
                     inactiveClassName="text-white"
                   >
                     <div className="relative">
-                      <div className=" absolute -top-11 bottom-0 -left-3 right-0 w-[80px] ">
+                      <div className=" absolute -top-[40px] bottom-0 -left-3 right-0 w-[80px] ">
                         <p className="text-white text-[8px] text-center uppercase bg-red-700 p-2 rounded-md">
                           coming soon
                         </p>
@@ -116,7 +116,7 @@ const ChildeNavBar = () => {
                   activeClassName="opacity-100 duration-500 translate-x-0"
                   inactiveClassName="absolute opacity-0 -translate-x-2"
                 >
-                  <div className=" md:flex items-center justify-center my-[105px] gap-4">
+                  <div className=" md:flex items-center justify-center my-[60px] gap-4">
                     <div className=" grid grid-cols-1 md:grid-cols-3  bg-[#322F6F] w-full md:w-1/2 h-[475px] p-3 overflow-x-auto  scrollbar-thin scrollbar-h-4  scrollbar-track-[#6F81C7] scrollbar-thumb-[#06042B] scrollbar-track-rounded-15 scrollbar-thumb-rounded-15">
                       {s.map((i) => (
                         <div className="my-1 flex justify-center hover:bg-[#282561]  ">

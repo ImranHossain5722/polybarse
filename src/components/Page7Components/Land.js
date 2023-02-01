@@ -121,7 +121,7 @@ const Land = () => {
           <div className="bt-1 mr-5">
             <Link
               to="#"
-              className="uppercase bg-btnbg text-white text-18 hover:bg-btnbg rounded-3xl py-3 px-10 font-extraBold"
+              className="uppercase bg-btnbg text-white text-sm  md:text-18 hover:bg-btnbg rounded-3xl py-3 px-5 md:px-10 font-extraBold"
             >
               05 on sale
             </Link>
@@ -129,14 +129,14 @@ const Land = () => {
           <div className="bt-2">
             <Link
               to="#"
-              className="uppercase bg-[#322F6F] text-white text-18 hover:bg-btnbg rounded-3xl py-3 px-10 font-extraBold"
+              className="uppercase bg-[#322F6F] text-white text-sm md:text-18 hover:bg-btnbg rounded-3xl py-3 px-5 md:px-10 font-extraBold"
             >
               20 Inventory
             </Link>
           </div>
         </div>
-        <section className="mt-9">
-          <div className="w-full h-16 bg-[#322F6F] rounded-5  grid grid-cols-8   px-9 py-6 overflow-hidden">
+        <section className=" mt-5 md:mt-9">
+          <div className=" grid grid-cols-2 md:grid-cols-5 lg:grid-cols-8 place-content-center w-full h-20 bg-[#322F6F] rounded-5 px-9 py-6 overflow-hidden">
             {/* nav1 */}
             <NavLink
               to="/page7"
@@ -185,7 +185,7 @@ const Land = () => {
           </div>
         </section>
         {/* content*/}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-content-center  gap-4 mt-16">
           {s.map((i) => (
             <div className="mb-10 ">
               <img
@@ -193,7 +193,7 @@ const Land = () => {
                 src={i.img}
                 alt=""
               />
-              <p className="text-24 font-semibold mt-5">
+              <p className="text-24 mt-5 font-semibold">
                 {i.name} {i.number}{" "}
               </p>
               <div className="flex items-center mt-3">

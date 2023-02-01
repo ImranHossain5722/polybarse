@@ -79,7 +79,7 @@ const AvatarProfile = () => {
           </div>
           <div className="mt-4">
             <Link
-              className="py-2 px-10 text-18 bg-[#A2D132] rounded-2xl"
+              className="py-2 px-10 text-18 bg-[#A2D132] font-semibold rounded-full"
               to="#"
             >
               Epic

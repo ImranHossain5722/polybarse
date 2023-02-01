@@ -6,6 +6,7 @@ import file from "../../images/fileicon.png";
 import EditButton from "../buttons/EditButton";
 import ViewPublicProfile from "../buttons/ViewPublicProfile";
 import { Link } from "react-router-dom";
+import Chart from "../page2Hero/Chart";
 const Hero = () => {
   return (
     <div>
@@ -16,13 +17,13 @@ const Hero = () => {
             <div className="flex">
               <div className="flex items-start  ">
                 <img
-                  className="w-40 h-40 md:w-80 md:h-80 mr-4 -mt-32"
+                  className="w-40 h-40 md:w-80 md:h-80 mr-4 -mt-52"
                   src={userProfile}
                   alt="useImage"
                 />
                 <div className="">
-                  <p className="text-30">Mike White</p>
-                  <p className="text-sm">@Mike123</p>
+                  <p className="text-30 font-extraBold">Mike White</p>
+                  <p className="text-sm font-bold">@Mike123</p>
                   <div className="bt-2 mt-5">
                     <Link
                       to="#"
@@ -32,12 +33,12 @@ const Hero = () => {
                     </Link>
                   </div>
                   <div className="mt-5">
-                    <img src="images/chart.png" alt="chart" />
+                    <Chart />
                   </div>
                 </div>
               </div>
 
-              <div className="md:flex gap-1 -mt-3">
+              <div className="md:flex gap-1 -mt-3  md:ml-[100px]">
                 <EditButton />
                 <ViewPublicProfile />
               </div>

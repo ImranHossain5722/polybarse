@@ -73,7 +73,7 @@ const EditProfile = () => {
                       alt="Upload"
                     />
                     <img
-                      className="absolute left-14 top-[480px] md:left-[625px] md:top-[600px]  w-[76px] h-[76px] md:w-[85px] md:h-[85px]  bg-gray-600 rounded-full cursor-pointer
+                      className="absolute left-14 top-[480px] md:left-[625px] md:top-[600px]  w-[76px] h-[76px] md:w-[85px] md:h-[85px]  bg-[#A5A5A5] rounded-full cursor-pointer
                     "
                       src={userC}
                       alt="Upload"
@@ -101,7 +101,7 @@ const EditProfile = () => {
                       type="text"
                       autoComplete="text"
                       required
-                      className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
+                      className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                       placeholder="Mike 123"
                     />
                   </div>
@@ -118,7 +118,7 @@ const EditProfile = () => {
                       type="text"
                       autoComplete="text"
                       required
-                      className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
+                      className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                       placeholder="Mike White"
                     />
                   </div>
@@ -132,7 +132,7 @@ const EditProfile = () => {
                       type="text"
                       autoComplete="text"
                       required
-                      className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
+                      className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                       placeholder="www.mysite.com"
                     />
                   </div>
@@ -150,7 +150,7 @@ const EditProfile = () => {
                       autoComplete="text"
                       required
                       rows="8"
-                      className="mt-4 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      className="mt-4 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-lg  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                       placeholder="www.mysite.com"
                     />
                   </div>
@@ -172,7 +172,7 @@ const EditProfile = () => {
                       type="email"
                       autoComplete="email"
                       required
-                      className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
+                      className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                       placeholder="test@email.it"
                     />
                     <div className="flex items-center justify-end">
@@ -193,7 +193,7 @@ const EditProfile = () => {
                       type="password"
                       autoComplete="passwordl"
                       required
-                      className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
+                      className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                       placeholder="*********"
                     />
                     <div className="flex items-center justify-end">
@@ -215,7 +215,7 @@ const EditProfile = () => {
                       name="telegram"
                       type="text"
                       autoComplete="text"
-                      className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
+                      className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                       placeholder="Telegram Name"
                     />
                   </div>
@@ -232,7 +232,7 @@ const EditProfile = () => {
                       name="instagram"
                       type="text"
                       autoComplete="text"
-                      className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
+                      className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                       placeholder="Instagram Name"
                     />
                   </div>
@@ -249,7 +249,7 @@ const EditProfile = () => {
                       name="discord"
                       type="text"
                       autoComplete="text"
-                      className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
+                      className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                       placeholder="Discord Name"
                     />
                   </div>
@@ -266,7 +266,7 @@ const EditProfile = () => {
                       name="facebook"
                       type="text"
                       autoComplete="text"
-                      className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
+                      className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                       placeholder="Facebook Name"
                     />
                   </div>
@@ -283,7 +283,7 @@ const EditProfile = () => {
                       name="youtube"
                       type="text"
                       autoComplete="text"
-                      className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
+                      className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                       placeholder="Youtube Name"
                     />
                   </div>
@@ -300,7 +300,7 @@ const EditProfile = () => {
                       name="tiktok"
                       type="text"
                       autoComplete="text"
-                      className="my-3 bg-themeColor border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
+                      className="my-3 bg-[#0E0B3B] border border-[#A2D132] text-white sm:text-sm rounded-full  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5"
                       placeholder="Tiktok Name"
                     />
                   </div>

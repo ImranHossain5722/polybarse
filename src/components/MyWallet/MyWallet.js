@@ -3,6 +3,7 @@ import Popup from "../animations/popup";
 import coin from "../../images/gold2.png";
 import whitecoin from "../../images/white-bg.png";
 import signCoin from "../../images/singleCoin.png";
+import starCoin from "../../images/starCoin.png";
 import Whitearow from "../../images/white-arrow.png";
 import greenshapbg from "../../images/green-shap.png";
 import rightRedShap from "../../images/right-shap-red.png";
@@ -27,11 +28,13 @@ const MyWallet = () => {
       </Popup>
       <Container className="max-w-[1200px]">
         <div>
-          <p className="text-45 from-btnText font-extraBold ">My Wallet</p>
+          <p className="text-center md:text-left lg:text-left text-45 from-btnText font-extraBold  ">
+            My Wallet
+          </p>
           <div className=" flex item-center border-wrap relative ">
             <div className="org-div bg-arrwoActive ">
-              <div className=" flex justify-between">
-                <div className="flex items-center justify-center">
+              <div className=" flex items-center gap-x-72">
+                <div className="flex items-center ">
                   <img className="w-16 h-16 mr-2" src={whitecoin} />
                   <p className="text-16 md:text-30 font-extraBold">Balance</p>
                 </div>
@@ -39,23 +42,31 @@ const MyWallet = () => {
                   <img className="w-6 h-6" src={Whitearow} />
                 </div>
               </div>
-              <hr className=" my-4 md:my-10" />
+              <hr className=" my-4 md:my-6" />
               <div className="singleCoin-wrap md:flex items-center justify-around ">
                 <div className="flex items-center justify-center gap-2 md:mb-7">
-                  <p className=" text-16 md:text-30 font-extraBold">
+                  <p className="w-30 text-16 md:text-30 font-extraBold">
                     1000 V-COIN
                   </p>
-                  <img className="w-12 h-12" src={signCoin} />
+                  <img
+                    className="w-10 h-10 md:w-12 md:h-12"
+                    src={signCoin}
+                    alt="coin"
+                  />
                 </div>
                 <div className="flex items-center justify-center gap-2 md:mb-7">
-                  <p className="text-16 md:text-30 font-extraBold">
+                  <p className="w-30 text-16 md:text-30 font-extraBold">
                     150.50 PLV
                   </p>
-                  <img className="w-12 h-12" src={signCoin} />
+                  <img
+                    className="w-10 h-10 md:w-12 md:h-12"
+                    src={starCoin}
+                    alt="coin"
+                  />
                 </div>
               </div>
             </div>
-            <div className="hidden md:block img absolute  top-[-100px] -right-28 bottom-0 ">
+            <div className="hidden md:block img absolute  top-[-100px] -right-44 bottom-0 ">
               <img className="gold-coin" src={coin} />
             </div>
           </div>

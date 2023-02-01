@@ -47,14 +47,14 @@ const LeaderBoard = () => {
                   slidesPerView: 4,
                 },
                 1200: {
-                  slidesPerView: 6,
+                  slidesPerView: 5,
                 },
               }}
             >
               {m.map((i) => (
                 <SwiperSlide key={i.id}>
-                  <div className="relative mt-8 bg-[#061E42] p-3 ">
-                    <Link className="absolute -top-3 right-8" to="#">
+                  <div className="relative mt-8 bg-[#061E42] p-3 rounded-5 ">
+                    <Link className="absolute -top-3 right-16" to="#">
                       <button className="py-2 px-2 uppercase text-[12px] font-extraBold bg-[#A2D132] rounded-5 button-hero">
                         Archery
                       </button>
@@ -81,7 +81,7 @@ const LeaderBoard = () => {
 // slide previous button
 function SwiperPrev() {
   return (
-    <button className="hidden lg:flex w-8 h-8 rounded-full border-2 border-white text-white justify-center items-center text-xl hover:bg-arrwoActive prevslide">
+    <button className="hidden lg:flex w-8 h-8 rounded-full border-2 border-white text-white justify-center items-center text-xl hover:bg-arrwoActive prevslide md:mr-[12px] md:mt-[18px]">
       <FiChevronLeft />
     </button>
   );
@@ -89,7 +89,7 @@ function SwiperPrev() {
 // slide next button
 function SwiperNext() {
   return (
-    <button className="hidden lg:flex w-8 h-8 rounded-full border-2 border-white text-white justify-center items-center text-xl hover:bg-arrwoActive nextslide">
+    <button className="hidden lg:flex w-8 h-8 rounded-full border-2 border-white text-white justify-center items-center text-xl hover:bg-arrwoActive nextslide md:ml-[12px] md:mt-[18px]">
       <FiChevronRight />
     </button>
   );

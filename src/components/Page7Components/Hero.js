@@ -7,6 +7,7 @@ import EditButton from "../buttons/EditButton";
 import ViewPublicProfile from "../buttons/ViewPublicProfile";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
+import Chart from "../page2Hero/Chart";
 const Hero = () => {
   // social media array
   const s = [
@@ -31,12 +32,12 @@ const Hero = () => {
             <div className="flex justify-around">
               <div className="flex items-start  ">
                 <img
-                  className="w-40 h-40 md:w-80 md:h-80 mr-4 -mt-32"
+                  className="w-36 h-36 md:w-80 md:h-80 md:mr-4 -mt-20 md:-mt-52"
                   src={userProfile}
                 />
-                <div className="">
+                <div className="mt-[77px] -ml-[140px] md:ml-0 md:mt-0">
                   <p className="text-30 font-extraBold ">Mike White</p>
-                  <p className="text-sm font-normal hover:text-[#497BEE]">
+                  <p className="text-sm font-bold hover:text-[#497BEE]">
                     @Mike123
                   </p>
                   <div className="flex items-center">
@@ -46,7 +47,7 @@ const Hero = () => {
                     <img className="w-3 h-3 ml-2" src={file} />
                   </div>
                   <div className="mt-3">
-                    <img src="images/chart.png" alt="chart" />
+                    <Chart />
                   </div>
                 </div>
               </div>

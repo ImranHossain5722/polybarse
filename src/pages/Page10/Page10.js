@@ -173,7 +173,7 @@ const Page10 = () => {
           </div>
         </section>
         {/*  */}
-        <div className=" md:flex items-center justify-between my-[275px]">
+        <div className=" md:flex items-center justify-between my-[175px]">
           <div className="boxAvatar">
             <img
               className="w-[276px] h-[547px]"
@@ -183,7 +183,7 @@ const Page10 = () => {
             <div className="bt-2 my-12 flex justify-center">
               <Link
                 to="#"
-                className="uppercase text-white text-sm bg-btnbg rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
+                className="uppercase text-white text-sm font-semibold bg-btnbg rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
               >
                 CHOOSE YOUR AVATAR
               </Link>
@@ -199,11 +199,11 @@ const Page10 = () => {
             <div className="bt-2 my-12 flex items-center justify-center">
               <Link
                 to="#"
-                className="uppercase flex items-center justify-center text-black border-2 border-black  text-sm font-bold bg-btnBorder rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
+                className="uppercase flex items-center justify-center border-4 border-black text-[25px] font-extraBold text-black bg-btnBorder rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
               >
                 Play now
                 <img
-                  className="w-7 h-7"
+                  className="w-8 h-7"
                   src="/images/playGrernIcon.png"
                   alt="playicon"
                 />

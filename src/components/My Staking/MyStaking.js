@@ -12,23 +12,25 @@ import StakeNow from "../buttons/StakeNow";
 
 const MyStaking = () => {
   return (
-    <div className="relative pt-28">
-      <Popup className="w-32 right-0 bottom-1/2 z-10">
+    <div className=" relative pt-28">
+      <Popup className="hidden md:block  w-32 right-0 bottom-1/2 z-10">
         <img src={rightRedShap} alt="shape" />
       </Popup>
       <Container className="max-w-[1200px]">
         <div className="pb-40">
-          <p className="text-45 font-extraBold mb-8">My Staking</p>
+          <p className="text-center md:text-left lg:text-left text-45 font-extraBold mb-8">
+            My Staking
+          </p>
           <div className=" flex item-center border-8 border-[#052f52] ">
             <div className=" hidden md:block img -my-16">
               <img className="" src={box} />
             </div>
             <div className="">
-              <p className="flex items-center justify-center text-left text-20 md:text-35 w-2/3 font-extraBold ml-5 py-9">
+              <p className="text-center md:text-left text-20 md:text-35 md:w-2/3 font-extraBold md:ml-5 py-9">
                 EARN $PLV AND REWARDS BY CHOOSING BETWEEN FLEXIBLE AND FIXED
                 STAKE.
               </p>
-              <div className="flex justify-end p-4">
+              <div className="flex justify-center md:justify-end p-4">
                 <StakeNow></StakeNow>
               </div>
             </div>

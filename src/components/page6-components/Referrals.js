@@ -139,17 +139,19 @@ const Referrals = () => {
                   className=" my-3 w-full px-2 h-16 rounded-md bg-themeColor border border-[#0D0A3A] text-white sm:text-sm  placeholder-[#474574] focus:ring-primary-600 focus:border-primary-600"
                   placeholder="https://www.deioheieheuhcjehehih.comjdihihd"
                 />
-                <VscFiles className="absolute top-8 right-3 text-white w-3 h-4 " />
+                <VscFiles className=" hidden md:block absolute top-8 right-3 text-white w-3 h-4 " />
 
                 <div className="flex items-center justify-center pb-9">
                   <button
                     type="submit"
-                    className="flex items-center justify-center uppercase mt-2 text-center bg-btnbg  rounded-lg py-4 px-6 w-1/2 button-hero"
+                    className="flex items-center justify-center uppercase mt-2 text-center bg-btnbg  rounded-lg py-4 px-6  w-full md:w-1/2 button-hero"
                   >
                     <span>
-                      <AiOutlineLink className="w-5 h-5 mr-1" />
+                      <AiOutlineLink className="w-3 h-3 md:w-5 md:h-5 mr-1" />
                     </span>
-                    <span className="font-bold">Copy link</span>
+                    <span className="font-bold text-[14px] md:text-18">
+                      Copy link
+                    </span>
                   </button>
                 </div>
               </div>
@@ -160,7 +162,7 @@ const Referrals = () => {
             <p className="md:text-24 font-semibold capitalize mt-5 mr-3 md:mt-8">
               Share this on:
             </p>
-            <div className="flex justify-center items-center gap-5 mt-5 md:mt-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 md:mt-8">
               {s.map((i) => (
                 <a
                   href={i.link}

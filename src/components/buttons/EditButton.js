@@ -6,7 +6,7 @@ const EditButton = () => {
   return (
     <div>
       <a className="" href="#">
-        <button className="button-hero flex items-center justify-between bg-editbtnbg text-sm lg:text-18 font-semibold px-6 py-2 rounded-full lg:px-10 lg:py-3">
+        <button className="button-hero flex items-center justify-between bg-editbtnbg text-sm lg:text-18 font-semibold -ml-[63px] md:ml-0 px-6 py-2 rounded-full lg:px-10 lg:py-3">
           Edit
           <img src={edit} alt="icon" className="w-3 h-3 ml-2" />
         </button>

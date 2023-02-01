@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Container from "../container";
+import TimerReword from "../Page13Components/TimerReword";
 const TopPlayersArchery = () => {
   return (
     <Container className="max-w-[1200px]">
@@ -11,9 +12,12 @@ const TopPlayersArchery = () => {
             <p className="font-extraBold text-30 text-white">
               Top Players Archery
             </p>
-            <p className="font-medium text-[12px]">
-              Next Leaderboard Update in 10 : 00 : 00 : 15 : 00
-            </p>
+            <div className="flex items-center  ">
+              <p className="font-medium text-[12px] ">
+                Next Leaderboard Update in
+              </p>
+              <TimerReword />
+            </div>
           </div>
           <div className="w-[780px] mx-auto shadow-lg rounded-sm">
             <div className="px-7 py-5">
@@ -57,7 +61,7 @@ const TopPlayersArchery = () => {
                         <div className="flex items-center justify-center gap-2">
                           <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
                             <img
-                              className="rounded-full w-5 h-5 "
+                              className="rounded-full w-6 h-6 "
                               src="/images/singleCoin.png"
                               alt="coin"
                             />
@@ -85,7 +89,7 @@ const TopPlayersArchery = () => {
                         <div className="flex items-center justify-center gap-2">
                           <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
                             <img
-                              className="rounded-full w-5 h-5 "
+                              className="rounded-full w-6 h-6 "
                               src="/images/singleCoin.png"
                               alt="coin"
                             />
@@ -113,7 +117,7 @@ const TopPlayersArchery = () => {
                         <div className="flex items-center justify-center gap-2">
                           <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
                             <img
-                              className="rounded-full w-5 h-5 "
+                              className="rounded-full w-6 h-6 "
                               src="/images/singleCoin.png"
                               alt="coin"
                             />
@@ -141,7 +145,7 @@ const TopPlayersArchery = () => {
                         <div className="flex items-center justify-center gap-2">
                           <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
                             <img
-                              className="rounded-full w-5 h-5 "
+                              className="rounded-full w-6 h-6 "
                               src="/images/singleCoin.png"
                               alt="coin"
                             />
@@ -169,7 +173,7 @@ const TopPlayersArchery = () => {
                         <div className="flex items-center justify-center gap-2">
                           <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
                             <img
-                              className="rounded-full w-5 h-5 "
+                              className="rounded-full w-6 h-6 "
                               src="/images/singleCoin.png"
                               alt="coin"
                             />
@@ -197,7 +201,7 @@ const TopPlayersArchery = () => {
                         <div className="flex items-center justify-center gap-2">
                           <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
                             <img
-                              className="rounded-full w-5 h-5 "
+                              className="rounded-full w-6 h-6 "
                               src="/images/singleCoin.png"
                               alt="coin"
                             />
@@ -225,7 +229,7 @@ const TopPlayersArchery = () => {
                         <div className="flex items-center justify-center gap-2">
                           <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
                             <img
-                              className="rounded-full w-5 h-5 "
+                              className="rounded-full w-6 h-6 "
                               src="/images/singleCoin.png"
                               alt="coin"
                             />
@@ -253,7 +257,7 @@ const TopPlayersArchery = () => {
                         <div className="flex items-center justify-center gap-2">
                           <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
                             <img
-                              className="rounded-full w-5 h-5 "
+                              className="rounded-full w-6 h-6 "
                               src="/images/singleCoin.png"
                               alt="coin"
                             />
@@ -281,7 +285,7 @@ const TopPlayersArchery = () => {
                         <div className="flex items-center justify-center gap-2">
                           <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
                             <img
-                              className="rounded-full w-5 h-5 "
+                              className="rounded-full w-6 h-6 "
                               src="/images/singleCoin.png"
                               alt="coin"
                             />
@@ -309,7 +313,7 @@ const TopPlayersArchery = () => {
                         <div className="flex items-center justify-center gap-2">
                           <div className="w-10 h-10 flex items-center mr-2 sm:mr-3">
                             <img
-                              className="rounded-full w-5 h-5 "
+                              className="rounded-full w-6 h-6 "
                               src="/images/singleCoin.png"
                               alt="coin"
                             />
@@ -365,7 +369,7 @@ const TopPlayersArchery = () => {
           <div className="flex items-center justify-center pt-3">
             <div className="w-10 h-10 flex items-center ">
               <img
-                className="rounded-full w-5 h-5 "
+                className="rounded-full w-6 h-6 "
                 src="/images/singleCoin.png"
                 alt="coin"
               />
@@ -394,7 +398,7 @@ const TopPlayersArchery = () => {
                     <div className="flex items-center justify-center">
                       <div className="w-10 h-10 flex items-center gap-2 mr-2 sm:mr-3">
                         <img
-                          className="rounded-full w-5 h-5 "
+                          className="rounded-full w-6 h-6 "
                           src="/images/singleCoin.png"
                           alt="coin"
                         />
@@ -416,7 +420,7 @@ const TopPlayersArchery = () => {
                     <div className="flex items-center justify-center">
                       <div className="w-10 h-10 flex items-center gap-2 mr-2 sm:mr-3">
                         <img
-                          className="rounded-full w-5 h-5 "
+                          className="rounded-full w-6 h-6 "
                           src="/images/singleCoin.png"
                           alt="coin"
                         />
@@ -437,7 +441,7 @@ const TopPlayersArchery = () => {
                     <div className="flex items-center justify-center">
                       <div className="w-10 h-10 flex items-center gap-2 mr-2 sm:mr-3">
                         <img
-                          className="rounded-full w-5 h-5 "
+                          className="rounded-full w-6 h-6 "
                           src="/images/singleCoin.png"
                           alt="coin"
                         />

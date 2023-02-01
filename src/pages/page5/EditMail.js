@@ -31,15 +31,15 @@ const EditMail = () => {
           <img src={rightRedShap} alt="shape" />
         </Popup>
 
-        <Container className="max-w-[1200px]  pt-32">
-          <div className="md:flex items-center justify-around">
-            <div className="from-div">
+        <Container className="max-w-[1200px]  pt-5 md:pt-32 lg:pt-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center gap-8 ">
+            <div className="from-div order-2 md:order-1 px-6 md:px-0 lg:px-0">
               <p className="text-45 mb-6 font-extraBold">Edit Mail</p>
               <p className="text-xl  mb-6 font-normal">
                 For your security, we highly recommend that you choose a unique
                 password that you don’t use for any other online account.
               </p>
-              <div className="w-1/2">
+              <div className="w-full md:w-2/3 lg:w-2/3">
                 <div className="old-mail">
                   <label
                     htmlFor="password"
@@ -86,8 +86,8 @@ const EditMail = () => {
             </div>
 
             {/* image */}
-            <div className="img w-1/2">
-              <img className="" src="/images/mail.png" />
+            <div className="order-1 md:order-2">
+              <img className="md:w-full md:h-full" src="/images/mail.png" />
             </div>
           </div>
         </Container>

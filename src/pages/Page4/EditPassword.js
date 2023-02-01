@@ -36,15 +36,15 @@ const EditPassword = () => {
         <img src={rightRedShap} alt="shape" />
       </Popup>
 
-      <Container className="max-w-[1200px]  pt-32">
-        <div className="md:flex items-center justify-around">
-          <div className="from-div ">
+      <Container className="max-w-[1200px] pt-5 md:pt-32 lg:pt-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center gap-8 ">
+          <div className="from-div order-2 md:order-1 px-6 md:px-0 lg:px-0">
             <p className="text-45 mb-6 font-extraBold">Edit Password</p>
             <p className="text-xl  mb-6">
               For your security, we highly recommend that you choose a unique
               password that you don’t use for any other online account.
             </p>
-            <div className="w-1/2">
+            <div className="w-full md:w-2/3 lg:w-2/3">
               <div className="old-password relative">
                 <label
                   htmlFor="password"
@@ -132,16 +132,15 @@ const EditPassword = () => {
               </div>
               <button
                 type="submit"
-                className="uppercase mt-14 bg-btnbg py-4 px-6 w-full rounded-3xl"
+                className="uppercase mt-14 bg-btnbg py-4 px-6 w-full rounded-3xl font-bold"
               >
                 save
               </button>
             </div>
           </div>
-
           {/* image */}
-          <div className="img w-1/2 flex justify-end">
-            <img className="w-[650px] h-[620px]" src={lock} alt="lock" />
+          <div className=" order-1 md:order-2">
+            <img className=" md:w-full md:h-full" src={lock} alt="lock" />
           </div>
         </div>
       </Container>

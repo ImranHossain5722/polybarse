@@ -6,6 +6,7 @@ import file from "../../images/fileicon.png";
 import EditButton from "../buttons/EditButton";
 import ViewPublicProfile from "../buttons/ViewPublicProfile";
 import "./page2Hero.css";
+import Chart from "./Chart";
 const Page2Hero = () => {
   return (
     <div className="pt-32">
@@ -15,15 +16,12 @@ const Page2Hero = () => {
           <div className="flex">
             <div className="flex items-start  ">
               <img
-                className="w-40 h-40 md:w-80 md:h-80 mr-4 -mt-32"
+                className="w-36 h-36 md:w-80 md:h-80 md:mr-4 -mt-20 md:-mt-52"
                 src={userProfile}
               />
-              <div className="">
+              <div className="mt-[77px] -ml-[140px] md:ml-0 md:mt-0">
                 <p className="text-30 font-extraBold">Mike White</p>
-                <a
-                  href="#"
-                  className="text-sm font-normal hover:text-[#497BEE]"
-                >
+                <a href="#" className="text-sm font-bold hover:text-[#497BEE]">
                   @Mike123
                 </a>
                 <div className=" cursor-pointer flex items-center">
@@ -36,12 +34,12 @@ const Page2Hero = () => {
                   />
                 </div>
                 <div className="mt-3">
-                  <img src="images/chart.png" alt="chart" />
+                  <Chart />
                 </div>
               </div>
             </div>
 
-            <div className="md:flex gap-4 -mt-3">
+            <div className=" gap-2 flex md:gap-4 -mt-3 md:ml-[100px]">
               <EditButton />
               <ViewPublicProfile />
             </div>

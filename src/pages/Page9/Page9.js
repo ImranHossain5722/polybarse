@@ -10,7 +10,7 @@ const Page9 = () => {
     <div>
       <NaveHeader></NaveHeader>
       <Container className="max-w-[1200px]">
-        <div className=" flex items-center justify-between my-[275px]">
+        <div className=" flex items-center justify-between my-[175px]">
           <div className="boxAvatar">
             <img
               className="w-[474px] h-[547px]"
@@ -20,7 +20,7 @@ const Page9 = () => {
             <div className="bt-2 mt-12 flex justify-center">
               <Link
                 to="#"
-                className="uppercase text-white text-sm bg-btnbg rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
+                className="uppercase text-white text-sm bg-btnbg rounded-3xl font-semibold py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
               >
                 CHOOSE YOUR AVATAR
               </Link>
@@ -36,7 +36,7 @@ const Page9 = () => {
             <div className="bt-2 mt-12 flex justify-center">
               <Link
                 to="#"
-                className="uppercase text-white text-sm bg-btnbg rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
+                className="uppercase text-white text-sm bg-btnbg rounded-3xl font-semibold py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
               >
                 CHOOSE YOUR AVATAR
               </Link>
