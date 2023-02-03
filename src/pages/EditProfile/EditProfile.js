@@ -65,15 +65,15 @@ const EditProfile = () => {
               {/* from image div */}
               <div className="w-full flex justify-start gap-4 ">
                 <label>
-                  <div>
+                  <div className="relative">
                     <img
-                      className="relative  w-36 h-36 md:w-[305px] md:h-[310px] mr-4 -mt-24  md:-mt-32 bg-gray-600  cursor-pointer rounded-full
+                      className="  w-36 h-36 md:w-[305px] md:h-[310px] mr-4 -mt-24  md:-mt-32 bg-[#A5A5A5]  cursor-pointer rounded-full
                     "
                       src={fils}
                       alt="Upload"
                     />
                     <img
-                      className="absolute left-14 top-[480px] md:left-[625px] md:top-[600px]  w-[76px] h-[76px] md:w-[85px] md:h-[85px]  bg-[#A5A5A5] rounded-full cursor-pointer
+                      className="absolute top-[235px] right-[55px] w-[76px] h-[76px] md:w-[85px] md:h-[85px]  bg-[#DEE0E6] rounded-full cursor-pointer
                     "
                       src={userC}
                       alt="Upload"

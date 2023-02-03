@@ -44,7 +44,7 @@ const AvatarProfile = () => {
     },
   ];
   return (
-    <div className="mt-40">
+    <div className="mt-[110px]">
       <div className="flex justify-between">
         <div className="w-2/4 pr-14">
           <img

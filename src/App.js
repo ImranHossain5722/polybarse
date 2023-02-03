@@ -40,6 +40,8 @@ import DashBoardNav from "./components/DashBoardNav/DashBoardNav";
 import AvaterTab from "./components/Page7Components/AvaterTab";
 import Equipments from "./components/Page7Components/Equipments";
 import Land from "./components/Page7Components/Land";
+import Home2 from "./pages/Home2/Home2";
+import Home3 from "./pages/Home3/Home3";
 
 // the css file added to the public index file a cdn link
 AOS.init();
@@ -77,6 +79,8 @@ export default function App() {
         <Route path="/editprofile" element={<EditProfile />} />
         <Route path="/editpassword" element={<EditPassword />} />
         <Route path="/editmail" element={<EditMail />} />
+        <Route path="/home2" element={<Home2 />} />
+        <Route path="/home3" element={<Home3 />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

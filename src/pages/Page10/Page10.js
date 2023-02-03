@@ -173,14 +173,14 @@ const Page10 = () => {
           </div>
         </section>
         {/*  */}
-        <div className=" md:flex items-center justify-between my-[175px]">
+        <div className=" grid grid-cols-1 md:grid-cols-2  place-content-center my-[175px]">
           <div className="boxAvatar">
             <img
-              className="w-[276px] h-[547px]"
+              className="w-full h-full md:w-[276px] md:h-[547px]"
               src="/images/avatat2.png"
               alt="avatar"
             />
-            <div className="bt-2 my-12 flex justify-center">
+            <div className="bt-2 my-12 flex items-center justify-center md:flex-none md:items-start md:justify-start ">
               <Link
                 to="#"
                 className="uppercase text-white text-sm font-semibold bg-btnbg rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
@@ -189,9 +189,9 @@ const Page10 = () => {
               </Link>
             </div>
           </div>
-          <div className="boxPlay">
+          <div className="boxPlay mt-44 md:mt-0">
             <img
-              className="w-[523px] h-[523px]"
+              className="w-full h-full md:w-[523px] md:h-[523px]"
               src="/images/play.png"
               alt="play"
             />

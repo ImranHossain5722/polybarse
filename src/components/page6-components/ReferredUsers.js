@@ -19,18 +19,18 @@ const ReferredUsers = memo(() => {
                 <table className="table-auto w-[475px] md:w-full">
                   <thead className=" h-16 font-semibold capitalize text-white border-b-8 border-[#0D0A3A] bg-[#06042A]">
                     <tr className="">
-                      <th className="p-2 ">
-                        <div className="font-semibold text-center text-white text-20">
+                      <th className="py-2">
+                        <div className="font-semibold text-left text-white text-20 pl-6">
                           Username
                         </div>
                       </th>
-                      <th className="p-2 ">
-                        <div className="font-semibold text-center text-white text-20">
+                      <th className="py-2 ">
+                        <div className="font-semibold flex justify-end text-white text-20">
                           NFT Buyed
                         </div>
                       </th>
-                      <th className="p-2 ">
-                        <div className="font-semibold text-center text-white text-20">
+                      <th className="py-2 ">
+                        <div className="font-semibold text-right text-white text-20 pr-6">
                           Your Earn
                         </div>
                       </th>
@@ -39,7 +39,10 @@ const ReferredUsers = memo(() => {
                   <tbody className="text-sm divide-y-8 divide-[#0D0A3A]">
                     <tr className=" bg-[#06042A] h-20">
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center">
+                        <div
+                          className="flex items-center justify-start pl-3
+                        "
+                        >
                           <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
                             <img
                               className="rounded-full"
@@ -55,10 +58,12 @@ const ReferredUsers = memo(() => {
                         </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="text-center text-white text-20">1</div>
+                        <div className="text-right text-white text-20 pr-8">
+                          1
+                        </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center gap-2">
+                        <div className="flex items-center justify-end gap-2">
                           <div className="font-medium text-20 text-center text-white">
                             2000,00 PLV
                           </div>
@@ -74,7 +79,7 @@ const ReferredUsers = memo(() => {
                     </tr>
                     <tr className=" bg-[#06042A] h-20 ">
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-start pl-3">
                           <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
                             <img
                               className="rounded-full"
@@ -90,10 +95,12 @@ const ReferredUsers = memo(() => {
                         </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="text-center text-white text-20">1</div>
+                        <div className="text-right pr-8 text-white text-20">
+                          1
+                        </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center gap-2">
+                        <div className="flex items-center justify-end gap-2">
                           <div className="font-medium text-20 text-center text-white">
                             2000,00 PLV
                           </div>
@@ -109,7 +116,7 @@ const ReferredUsers = memo(() => {
                     </tr>
                     <tr className=" bg-[#06042A] h-20">
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-start pl-3">
                           <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
                             <img
                               className="rounded-full"
@@ -125,10 +132,12 @@ const ReferredUsers = memo(() => {
                         </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="text-center text-white text-20">1</div>
+                        <div className="text-right pr-8 text-white text-20">
+                          1
+                        </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center gap-2">
+                        <div className="flex items-center justify-end gap-2">
                           <div className="font-medium text-20 text-center text-white">
                             2000,00 PLV
                           </div>
@@ -144,7 +153,7 @@ const ReferredUsers = memo(() => {
                     </tr>
                     <tr className=" bg-[#06042A] h-20">
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-start pl-3">
                           <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
                             <img
                               className="rounded-full"
@@ -160,10 +169,12 @@ const ReferredUsers = memo(() => {
                         </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="text-center text-white text-20">1</div>
+                        <div className="text-right pr-8 text-white text-20">
+                          1
+                        </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center gap-2">
+                        <div className="flex items-center justify-end gap-2">
                           <div className="font-medium text-20 text-center text-white">
                             2000,00 PLV
                           </div>
@@ -179,7 +190,7 @@ const ReferredUsers = memo(() => {
                     </tr>
                     <tr className=" bg-[#06042A] h-20">
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-start pl-3">
                           <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
                             <img
                               className="rounded-full"
@@ -195,10 +206,12 @@ const ReferredUsers = memo(() => {
                         </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="text-center text-white text-20">1</div>
+                        <div className="text-right pr-8 text-white text-20">
+                          1
+                        </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center gap-2">
+                        <div className="flex items-center justify-end gap-2">
                           <div className="font-medium text-20 text-center text-white">
                             2000,00 PLV
                           </div>
@@ -214,7 +227,7 @@ const ReferredUsers = memo(() => {
                     </tr>
                     <tr className=" bg-[#06042A] h-20">
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-start pl-3">
                           <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
                             <img
                               className="rounded-full"
@@ -230,10 +243,12 @@ const ReferredUsers = memo(() => {
                         </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="text-center text-white text-20">1</div>
+                        <div className="text-right pr-8 text-white text-20">
+                          1
+                        </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="flex items-center justify-center gap-2">
+                        <div className="flex items-center justify-end gap-2">
                           <div className="font-medium text-20 text-center text-white">
                             2000,00 PLV
                           </div>

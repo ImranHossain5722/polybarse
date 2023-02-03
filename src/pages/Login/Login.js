@@ -28,10 +28,10 @@ const Login = () => {
         // Login Components form
         // ***********************
         <>
-          <div className="fixed overflow-y-scroll inset-0 z-50 flex justify-center bg-themeColor bg-opacity-50">
+          <div className="fixed overflow-y-scroll inset-0 z-50 flex justify-center bg-themeColor bg-opacity-50 ">
             <section class="py-28">
               <div class=" flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-                <div class="from-wrap  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md">
+                <div class="from-wrap  w-full  rounded-[20px] shadow-2xl  md:mt-0 sm:max-w-md border-1 border-[#497BEE]">
                   <div
                     onClick={() => {
                       setShowLoginPopUp(false);
@@ -117,23 +117,25 @@ const Login = () => {
                           )}
                         </div>
                       </div>
-                      <div className="flex items-center py-5">
+                      <div className="flex items-center py-4">
                         <div className="div-hr "></div>
                       </div>
                       <div className="flex items-center justify-center">
                         <p class="text-sm text-center font-light  text-gray-500 dark:text-gray-400">
                           Don’t have an account?
-                          <p
-                            className="font-bold text-white mx-1 hover:underline dark:text-primary-500"
-                            onClick={() => {
-                              setShowLoginPopUp(false);
-                              setShowSignPopUp(true);
-                            }}
-                          >
+                        </p>
+                        <div
+                          className="flex items-center justify-center cursor-pointer"
+                          onClick={() => {
+                            setShowLoginPopUp(false);
+                            setShowSignPopUp(true);
+                          }}
+                        >
+                          <p className="font-bold text-white mx-1 hover:underline dark:text-primary-500">
                             Create One
                           </p>
-                        </p>
-                        <img className="w-2 h-2 " src={arow} alt="" />
+                          <img className="w-2 h-2 " src={arow} alt="" />
+                        </div>
                       </div>
                     </form>
                   </div>
@@ -151,7 +153,7 @@ const Login = () => {
           <div className="fixed overflow-y-scroll inset-0 z-50 flex justify-center bg-themeColor bg-opacity-50">
             <section class="pt-28">
               <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0">
-                <div class="from-wrap  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md">
+                <div class="from-wrap  w-full  rounded-[20px] shadow-2xl  md:mt-0 sm:max-w-md">
                   <div
                     className="close-wrap flex justify-end cursor-pointer "
                     onClick={() => {
@@ -246,23 +248,25 @@ const Login = () => {
                           </div>
                         </a>
                       </div>
-                      <div className="flex items-center py-12">
-                        <div className="div-hr "></div>
+                      <div className="flex items-center py-4">
+                        <div className="div-hr"></div>
                       </div>
                       <div className="flex items-center justify-center">
                         <p class="text-sm text-center font-light  text-gray-500 dark:text-gray-400">
                           Already have an account?
-                          <p
-                            onClick={() => {
-                              setShowLoginPopUp(true);
-                              setShowSignPopUp(false);
-                            }}
-                            className="font-bold text-white mx-1 hover:underline dark:text-primary-500"
-                          >
+                        </p>
+                        <div
+                          className="flex items-center justify-center cursor-pointer"
+                          onClick={() => {
+                            setShowLoginPopUp(true);
+                            setShowSignPopUp(false);
+                          }}
+                        >
+                          <p className="font-bold text-white mx-1 hover:underline dark:text-primary-500">
                             Sign in
                           </p>
-                        </p>
-                        <img className="w-2 h-2 " src={arow} />
+                          <img className="w-2 h-2 " src={arow} />
+                        </div>
                       </div>
                     </form>
                   </div>

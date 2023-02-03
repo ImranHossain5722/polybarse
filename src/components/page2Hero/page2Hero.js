@@ -18,6 +18,7 @@ const Page2Hero = () => {
               <img
                 className="w-36 h-36 md:w-80 md:h-80 md:mr-4 -mt-20 md:-mt-52"
                 src={userProfile}
+                alt="user profile"
               />
               <div className="mt-[77px] -ml-[140px] md:ml-0 md:mt-0">
                 <p className="text-30 font-extraBold">Mike White</p>

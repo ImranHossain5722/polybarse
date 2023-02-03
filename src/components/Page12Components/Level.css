@@ -1,6 +1,16 @@
 .gold-pass {
   background: linear-gradient(180deg, #ffcb5b 0%, rgba(135, 97, 16, 0.55) 100%);
 }
+
+.gold-bg {
+  background: linear-gradient(
+    180deg,
+    #ffcb5b -70.5%,
+    rgba(223, 175, 71, 0.879117) -43.64%,
+    rgba(135, 97, 16, 0.55) 29.5%
+  );
+  border-radius: 5px;
+}
 .gold-btn {
   background: linear-gradient(180deg, #b67529 0%, #fedf58 100%);
 }

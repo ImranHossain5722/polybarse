@@ -10,10 +10,10 @@ const Page9 = () => {
     <div>
       <NaveHeader></NaveHeader>
       <Container className="max-w-[1200px]">
-        <div className=" flex items-center justify-between my-[175px]">
-          <div className="boxAvatar">
+        <div className=" grid grid-cols-1 md:grid-cols-2  place-content-center my-[175px]">
+          <div className="boxAvatar ">
             <img
-              className="w-[474px] h-[547px]"
+              className="w-full h-full md:w-[474px] md:h-[547px]"
               src="/images/avatar.png"
               alt="avatar"
             />
@@ -26,9 +26,9 @@ const Page9 = () => {
               </Link>
             </div>
           </div>
-          <div className="boxPlay">
+          <div className="boxMap mt-44 md:mt-0">
             <img
-              className="w-[523px] h-[523px]"
+              className="w-full h-full md:w-[523px] md:h-[523px]"
               src="/images/play.png"
               alt="play"
             />

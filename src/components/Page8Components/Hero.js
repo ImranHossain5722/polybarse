@@ -17,11 +17,11 @@ const Hero = () => {
             <div className="flex">
               <div className="flex items-start  ">
                 <img
-                  className="w-40 h-40 md:w-80 md:h-80 mr-4 -mt-52"
+                  className="w-36 h-36 md:w-80 md:h-80 md:mr-4 -mt-20 md:-mt-52"
                   src={userProfile}
                   alt="useImage"
                 />
-                <div className="">
+                <div className="mt-[77px] -ml-[140px] md:ml-0 md:mt-0">
                   <p className="text-30 font-extraBold">Mike White</p>
                   <p className="text-sm font-bold">@Mike123</p>
                   <div className="bt-2 mt-5">
@@ -38,7 +38,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="md:flex gap-1 -mt-3  md:ml-[100px]">
+              <div className=" gap-2 flex md:gap-4 -mt-3 md:ml-[100px]">
                 <EditButton />
                 <ViewPublicProfile />
               </div>

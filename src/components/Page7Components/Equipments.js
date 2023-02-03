@@ -189,15 +189,17 @@ const Equipments = () => {
           {s.map((i) => (
             <div className="mb-10 ">
               <img
-                className="w-52 h-52 hover:scale-110 hover:transition duration-1000 ease-in-out cursor-pointer"
+                className="w-52 h-48 md:w-52 md:h-52  hover:scale-110 hover:transition duration-1000 ease-in-out cursor-pointer"
                 src={i.img}
                 alt=""
               />
-              <p className="text-24 mt-5 font-semibold">
+              <p className="text-24 mt-5 font-semibold hover:text-[#497BEE] cursor-pointer">
                 {i.name} {i.number}{" "}
               </p>
               <div className="flex items-center mt-3">
-                <p className="text-18 ">By {i.author}</p>
+                <p className="text-18 hover:text-[#497BEE] cursor-pointer">
+                  By {i.author}
+                </p>
                 <img className="w-4 h-4 ml-5" src={i.img2} alt="" />
               </div>
             </div>

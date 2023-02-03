@@ -119,14 +119,17 @@ const InventoryTab = () => {
           {/* button */}
 
           <div className="bt-1 mt-28">
-            <Link to="#" className="capitalize text-white text-30">
+            <Link
+              to="#"
+              className="capitalize text-white text-30 font-extraBold"
+            >
               Inventory
             </Link>
           </div>
 
           {/* tab items */}
-          <section className="mt-9">
-            <div className="w-full h-16 bg-[#322F6F] rounded-5  grid grid-cols-8   px-9 py-6 overflow-hidden">
+          <section className="mt-5 md:mt-9">
+            <div className=" grid grid-cols-2 md:grid-cols-5 lg:grid-cols-8 place-content-center w-full h-20 bg-[#322F6F] rounded-5 px-9 py-6 overflow-hidden">
               {/* nav1 */}
               <NavLink
                 to="/page8"
@@ -185,19 +188,19 @@ const InventoryTab = () => {
 
           {/* content */}
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-content-center  gap-4 mt-16">
             {s.map((i) => (
-              <div className="mb-10 ">
-                <img className="w-52 h-52" src={i.img} alt="" />
-                <div className="bt-2 flex justify-center -mt-5">
+              <div className=" relative mb-10 ">
+                <img className="w-52 h-48 md:w-52 md:h-52" src={i.img} alt="" />
+                <div className="bt-2 md:flex justify-center -mt-5">
                   <Link
                     to="#"
-                    className="uppercase text-white text-sm bg-btnbg rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
+                    className="absolute top-[184px] left-[13px] md:left-[34px] uppercase text-white text-sm bg-btnbg rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
                   >
                     CLAIM NFT
                   </Link>
                 </div>
-                <p className="text-24 mt-5 font-semibold">
+                <p className="text-24 mt-14 font-semibold">
                   {i.name} {i.number}{" "}
                 </p>
                 <div className="flex items-center mt-3">

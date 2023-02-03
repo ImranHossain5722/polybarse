@@ -9,7 +9,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Page16 = () => {
   const activeLink =
-    "border-b-2 border-[#D75D29] text-white pb-[16px] w-[100px]";
+    "border-b-2 border-[#D75D29] text-white pb-[35px] w-[100px]";
   const normalLink = "";
   return (
     <div>
@@ -44,7 +44,7 @@ const Page16 = () => {
         <Container className="max-w-[1200px]">
           {/* nav */}
           <section className="mt-40">
-            <div className="w-full h-16 bg-[#100E4F] rounded-5 font-bold grid grid-cols-8  px-9 py-6 overflow-hidden">
+            <div className="w-full h-full md:h-[63px] bg-[#100E4F] rounded-5 font-bold   flex flex-col md:flex-row gap-14 px-9 py-6 overflow-hidden ">
               {/* nav1 */}
 
               <NavLink
@@ -53,7 +53,7 @@ const Page16 = () => {
                   isActive ? activeLink : normalLink
                 }
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 ">
                   <img className="w-5 h-5" src="images/game.png" alt="play" />
                   <p className="uppercase text-white text-[12px] font-bold">
                     Play
@@ -121,7 +121,7 @@ const Page16 = () => {
                   isActive ? activeLink : normalLink
                 }
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 ">
                   <img
                     className="w-5 h-5"
                     src="images/Group 277.png"

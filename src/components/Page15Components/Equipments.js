@@ -183,11 +183,13 @@ const Equipments = () => {
                       src={i.img}
                       alt=""
                     />
-                    <p className="text-24 mt-5">
+                    <p className="text-24 mt-5 hover:text-[#497BEE] cursor-pointer">
                       {i.name} {i.number}{" "}
                     </p>
                     <div className="flex items-center mt-3">
-                      <p className="text-18 ">By {i.author}</p>
+                      <p className="text-18 hover:text-[#497BEE] cursor-pointer">
+                        By {i.author}
+                      </p>
                       <img className="w-4 h-4 ml-2" src={i.img2} alt="" />
                     </div>
                   </div>
