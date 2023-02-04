@@ -29,7 +29,7 @@ const Login = () => {
         // ***********************
         <>
           <div className="fixed overflow-y-scroll inset-0 z-50 flex justify-center bg-themeColor bg-opacity-50 ">
-            <section class="py-28">
+            <section class="py-2">
               <div class=" flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
                 <div class="from-wrap  w-full  rounded-[20px] shadow-2xl  md:mt-0 sm:max-w-md border-1 border-[#497BEE]">
                   <div
@@ -45,17 +45,17 @@ const Login = () => {
                       <img class=" w-60 h-28 " src={logo} alt="logo" />
                     </Link>
                   </div>
-                  <div class=" space-y-4 md:space-y-6 sm:p-8">
+                  <div class=" space-y-4 md:space-y-3 sm:p-8">
                     <h1 class="text-35 font-bold text-white md:text-2xl  text-center">
                       Explore Metaverse
                     </h1>
-                    <form class="  space-y-4 md:space-y-6" action="#">
+                    <form class="  space-y-4 md:space-y-4" action="#">
                       <div className="user-div">
                         <input
                           type="name"
                           name="name"
                           id="name"
-                          className="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-16 font-normal placeholder-[#497BEE]  focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                          className="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-[55px] font-normal placeholder-[#497BEE]  focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                           placeholder="Username"
                           required=""
                         />
@@ -66,7 +66,7 @@ const Login = () => {
                           name="password"
                           id="password"
                           placeholder="Password"
-                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-16 font-normal placeholder-[#497BEE]  focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-[55px] font-normal placeholder-[#497BEE]  focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                           required=""
                         />
                       </div>
@@ -89,13 +89,13 @@ const Login = () => {
                       </div>
                       {/* social button */}
                       <div className="flex justify-center items-center">
-                        <div className="w-16 h-16 p-3 mr-3 border border-inputBorder rounded-lg  flex justify-center items-center mt-5 cursor-pointer button-shrink">
+                        <div className="w-16 h-16 p-3 mr-3 border border-inputBorder rounded-lg  flex justify-center items-center  cursor-pointer button-shrink">
                           <a href="#">
                             {" "}
                             <img className="w-7 h-7" src={go} />
                           </a>
                         </div>
-                        <div className="w-16 h-16 p-3 flex justify-center items-center border border-inputBorder rounded-lg mt-5 cursor-pointer button-shrink">
+                        <div className="w-16 h-16 p-3 flex justify-center items-center border border-inputBorder rounded-lg cursor-pointer button-shrink">
                           <a href="#">
                             <img className="w-4 h-7" src={fb} />
                           </a>
@@ -103,7 +103,7 @@ const Login = () => {
                       </div>
                       <div className="flex justify-around ">
                         <div>
-                          <div className=" p-3 border flex items-center  border-inputBorder rounded-lg mt-5 cursor-pointer button-shrink">
+                          <div className="p-3 border flex items-center  border-inputBorder rounded-lg cursor-pointer button-shrink">
                             <img className="w-7 h-7 mr-4" src={walit} />
                             <p
                               onClick={() => setSelectWallet(!selectWallet)}
@@ -117,11 +117,11 @@ const Login = () => {
                           )}
                         </div>
                       </div>
-                      <div className="flex items-center py-4">
-                        <div className="div-hr "></div>
+                      <div className="flex items-center py-3">
+                        <div className="div-hr"></div>
                       </div>
                       <div className="flex items-center justify-center">
-                        <p class="text-sm text-center font-light  text-gray-500 dark:text-gray-400">
+                        <p class="text-sm text-center font-light  text-gray-500 ">
                           Don’t have an account?
                         </p>
                         <div
@@ -151,7 +151,7 @@ const Login = () => {
         // ************************
         <div>
           <div className="fixed overflow-y-scroll inset-0 z-50 flex justify-center bg-themeColor bg-opacity-50">
-            <section class="pt-28">
+            <section class="pt-2">
               <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0">
                 <div class="from-wrap  w-full  rounded-[20px] shadow-2xl  md:mt-0 sm:max-w-md">
                   <div
@@ -171,17 +171,17 @@ const Login = () => {
                       <img class=" w-60 h-28 " src={logo} alt="logo" />
                     </Link>
                   </div>
-                  <div class=" space-y-4 md:space-y-6 sm:p-8">
+                  <div class=" space-y-4 md:space-y-3 sm:p-8">
                     <h1 class="text-35  font-extraBold text-white md:text-2xl  text-center">
                       Sign Up
                     </h1>
-                    <form class="  space-y-4 md:space-y-6" action="#">
+                    <form class="  space-y-4 md:space-y-4" action="#">
                       <div className="user-div">
                         <input
                           type="text"
                           name="name"
                           id="name"
-                          className="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-16 font-normal placeholder-[#497BEE] focus:ring-inputBorder focus:border-inputBorder block w-full p-2.5 "
+                          className="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-[55px] font-normal placeholder-[#497BEE] focus:ring-inputBorder focus:border-inputBorder block w-full p-2.5 "
                           placeholder="Username"
                           required=""
                         />
@@ -191,7 +191,7 @@ const Login = () => {
                           type="email"
                           name="email"
                           id="email"
-                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg h-16 font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg h-[55px] font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                           placeholder="Email"
                           required=""
                         />
@@ -202,7 +202,7 @@ const Login = () => {
                           name="password"
                           id="password"
                           placeholder="Password"
-                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-16 font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-[55px] font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                           required=""
                         />
                       </div>
@@ -227,12 +227,12 @@ const Login = () => {
                       </div>
                       {/* social button */}
                       <div className="flex justify-center items-center">
-                        <div className="w-16 h-16 p-3 mr-3 border border-inputBorder rounded-lg  flex justify-center items-center mt-5 cursor-pointer button-shrink">
+                        <div className="w-16 h-16 p-3 mr-3 border border-inputBorder rounded-lg  flex justify-center items-center  cursor-pointer button-shrink">
                           <a href="https://www.google.com/">
                             <img className="w-7 h-7" src={go} />
                           </a>
                         </div>
-                        <div className="w-16 h-16 p-3 flex justify-center items-center border border-inputBorder rounded-lg mt-5 cursor-pointer button-shrink ">
+                        <div className="w-16 h-16 p-3 flex justify-center items-center border border-inputBorder rounded-lg cursor-pointer button-shrink ">
                           <a href="https://www.facebook.com/">
                             <img className="w-4 h-7" src={fb} />
                           </a>
@@ -240,19 +240,25 @@ const Login = () => {
                       </div>
                       <div className="flex justify-around ">
                         <a href="#">
-                          <div className=" p-3 border flex items-center  border-inputBorder rounded-lg mt-5 cursor-pointer button-shrink">
+                          <div className=" p-3 border flex items-center  border-inputBorder rounded-lg  cursor-pointer button-shrink">
                             <img className="w-7 h-7 mr-4" src={walit} />
-                            <p className="text-18 text-white uppercase">
+                            <p
+                              className="text-18 text-white uppercase"
+                              onClick={() => setSelectWallet(!selectWallet)}
+                            >
                               sign up with wallet
                             </p>
                           </div>
                         </a>
                       </div>
-                      <div className="flex items-center py-4">
+                      {selectWallet && (
+                        <SelectWallet setSelectWallet={setSelectWallet} />
+                      )}
+                      <div className="flex items-center py-3">
                         <div className="div-hr"></div>
                       </div>
                       <div className="flex items-center justify-center">
-                        <p class="text-sm text-center font-light  text-gray-500 dark:text-gray-400">
+                        <p class="text-sm text-center font-light text-gray-500">
                           Already have an account?
                         </p>
                         <div

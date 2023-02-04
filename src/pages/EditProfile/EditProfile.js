@@ -63,17 +63,17 @@ const EditProfile = () => {
           <from>
             <div className="grid grid-cols-3 gap-4 ">
               {/* from image div */}
-              <div className="w-full flex justify-start gap-4 ">
+              <div className="w-full flex justify-start">
                 <label>
                   <div className="relative">
                     <img
-                      className="  w-36 h-36 md:w-[305px] md:h-[310px] mr-4 -mt-24  md:-mt-32 bg-[#A5A5A5]  cursor-pointer rounded-full
+                      className="  w-36 h-36 md:w-[305px] md:h-[310px] ml-10 -mt-24  md:-mt-32 bg-[#A5A5A5]  cursor-pointer rounded-full
                     "
                       src={fils}
                       alt="Upload"
                     />
                     <img
-                      className="absolute top-[235px] right-[55px] w-[76px] h-[76px] md:w-[85px] md:h-[85px]  bg-[#DEE0E6] rounded-full cursor-pointer
+                      className="absolute top-[235px] right-[40px] w-[76px] h-[76px] md:w-[85px] md:h-[85px]  bg-[#DEE0E6] rounded-full cursor-pointer
                     "
                       src={userC}
                       alt="Upload"
@@ -176,7 +176,11 @@ const EditProfile = () => {
                       placeholder="test@email.it"
                     />
                     <div className="flex items-center justify-end">
-                      <img className="w-3 h-3 mr-1" src={editicon} />
+                      <img
+                        className="w-3 h-3 mr-1"
+                        src="images/edit.png"
+                        alt="edit profile"
+                      />
                       <a href="#">Change</a>
                     </div>
                   </div>

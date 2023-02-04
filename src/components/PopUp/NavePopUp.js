@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NavePopUp = () => {
   return (
     <div>
-      <div className="fixed top-[276px]  w-[207px] h-[186px] bg-[#100E4F]  rounded-5">
+      <div className="fixed top-[228px] md:top-[276px]  w-[207px] h-[186px] bg-[#100E4F]  rounded-5">
         <Link
           to="#"
           className="flex items-start  gap-3 border-b-1 border-[#2A268D] py-3 px-5 cursor-pointer hover:bg-[#171564] hover:rounded-t-5"

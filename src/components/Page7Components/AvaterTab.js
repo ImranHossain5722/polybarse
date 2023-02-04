@@ -8,7 +8,7 @@ import Hero from "../../components/Page7Components/Hero";
 import "./TabSection.css";
 const AvaterTab = () => {
   const activeLink =
-    "border-b-2 border-[#D75D29] text-white pb-[10px] w-[100px]";
+    "border-b-2 border-[#D75D29] text-white pb-[35px] w-[100px]";
   const normalLink = "";
   const s = [
     {
@@ -135,8 +135,8 @@ const AvaterTab = () => {
             </Link>
           </div>
         </div>
-        <section className=" mt-5 md:mt-9">
-          <div className=" grid grid-cols-2 md:grid-cols-5 lg:grid-cols-8 place-content-center w-full h-20 bg-[#322F6F] rounded-5 px-9 py-6 overflow-hidden">
+        <section className="mt-5 md:mt-9">
+          <div className="w-full h-full md:h-16 flex flex-col md:flex-row gap-14  bg-[#322F6F] rounded-5 px-3 md:px-9 py-6 overflow-hidden">
             {/* nav1 */}
             <NavLink
               to="/page7"
@@ -176,7 +176,7 @@ const AvaterTab = () => {
               to="/land"
               className={({ isActive }) => (isActive ? activeLink : normalLink)}
             >
-              <div className="flex items-center  pl-8">
+              <div className="flex items-center  md:pl-8">
                 <p className="uppercase text-white text-18 font-extraBold">
                   Land
                 </p>
@@ -198,7 +198,7 @@ const AvaterTab = () => {
               </p>
               <div className="flex items-center mt-3 hover:text-[#497BEE] cursor-pointer">
                 <p className="text-18 ">By {i.author}</p>
-                <img className="w-4 h-4 ml-5" src={i.img2} alt="" />
+                <img className="w-4 h-4 ml-2" src={i.img2} alt="" />
               </div>
             </div>
           ))}

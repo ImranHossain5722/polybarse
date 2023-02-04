@@ -10,7 +10,7 @@ const Page22 = () => {
   return (
     <div>
       <NaveHeader></NaveHeader>
-      <div className="my-[110px]">
+      <div className="my-[60px]">
         <Balance />
         <PalyCard />
         <ChooseYourPlan />

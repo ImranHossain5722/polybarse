@@ -17,7 +17,7 @@ export default function Navbar2() {
   const [setFreezescroll] = useFreezescroll();
   const width = useWindowsize();
   const [mobileNav, setMobileNav] = useState(false);
-  const [showNavPopup, setShowNavPopUp] = useState(false);
+  const [showNavPopup, setShowNavPopUp] = useState();
   useEffect(() => {
     if (width < 769) {
       setMobileNav(false);
@@ -54,7 +54,7 @@ export default function Navbar2() {
               }}
             >
               <img
-                className="rounded-full w-[45px] h-[45px] mx-9 "
+                className="rounded-full w-[45px] h-[45px] mx-4 md:mx-9 "
                 src="images/tol.png"
                 alt="User Profile"
               />

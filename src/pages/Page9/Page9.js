@@ -10,7 +10,7 @@ const Page9 = () => {
     <div>
       <NaveHeader></NaveHeader>
       <Container className="max-w-[1200px]">
-        <div className=" grid grid-cols-1 md:grid-cols-2  place-content-center my-[175px]">
+        <div className=" grid grid-cols-1 md:grid-cols-2  place-content-center my-[60px]">
           <div className="boxAvatar ">
             <img
               className="w-full h-full md:w-[474px] md:h-[547px]"

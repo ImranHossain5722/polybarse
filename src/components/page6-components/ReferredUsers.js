@@ -30,7 +30,7 @@ const ReferredUsers = memo(() => {
                         </div>
                       </th>
                       <th className="py-2 ">
-                        <div className="font-semibold text-right text-white text-20 pr-6">
+                        <div className="font-semibold text-right pr-16 text-white text-20">
                           Your Earn
                         </div>
                       </th>

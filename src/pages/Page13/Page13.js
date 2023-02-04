@@ -11,7 +11,7 @@ const Page13 = () => {
       {/* <Page13Nav></Page13Nav> */}
 
       <NaveHeader></NaveHeader>
-      <div className="my-[110px]">
+      <div className="my-[60px]">
         <LeaderBoard />
         <TopPlayersArchery />
       </div>

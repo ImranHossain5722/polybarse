@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./MapFilter.css";
 
 const MapFilter = () => {
   const [showFilters, setShowfilters] = useState(true);
@@ -66,9 +67,9 @@ const MapFilter = () => {
               Availability
             </p>
           </div>
-          <div className=" mt-5 grid grid-cols-1">
+          <div className=" mt-2 grid grid-cols-1">
             <div className="checkbox-buyNow">
-              <label class="main">
+              <label class="mains">
                 <p className="text-[15px] font-medium text-white">For Sale </p>
                 <input
                   type="checkbox"
@@ -78,12 +79,15 @@ const MapFilter = () => {
                   checked={forSale}
                   onChange={changeHandler}
                 />
-                <span class="geekmark"></span>
+                <span
+                  class="geekmarks
+"
+                ></span>
               </label>
             </div>
 
             <div className="checkbox-buyNow">
-              <label class="main">
+              <label class="mains">
                 <p className="text-[15px] font-medium text-white">Premium</p>
                 <input
                   type="checkbox"
@@ -93,21 +97,27 @@ const MapFilter = () => {
                   checked={Premium}
                   onChange={changeHandler}
                 />
-                <span class="geekmark"></span>
+                <span
+                  class="geekmarks
+"
+                ></span>
               </label>
             </div>
             <div className="checkbox-buyNow">
-              <label class="main">
+              <label class="mains">
                 <p className="text-[15px] font-medium text-white">Sold</p>
                 <input
                   type="checkbox"
-                  className="w-4 h-4 mr-2"
+                  className="w-4 h-4 "
                   name="sold"
                   value="sold"
                   checked={sold}
                   onChange={changeHandler}
                 />
-                <span class="geekmark"></span>
+                <span
+                  class="geekmarks
+"
+                ></span>
               </label>
             </div>
           </div>
@@ -119,7 +129,7 @@ const MapFilter = () => {
           </div>
           <div className=" mt-4 grid grid-cols-1 gap-y-2 flex-wrap">
             <div className="checkbox-Head">
-              <label class="main">
+              <label class="mains">
                 <p className="text-[15px] font-medium text-white">1x1</p>
                 <input
                   type="checkbox"
@@ -129,12 +139,15 @@ const MapFilter = () => {
                   checked={xl}
                   onChange={changeHandler}
                 />
-                <span class="geekmark"></span>
+                <span
+                  class="geekmarks
+"
+                ></span>
               </label>
             </div>
 
             <div className="checkbox-body">
-              <label class="main">
+              <label class="mains">
                 <p className="text-[15px] font-medium text-white">3x3</p>
                 <input
                   type="checkbox"
@@ -144,11 +157,14 @@ const MapFilter = () => {
                   checked={xxxl}
                   onChange={changeHandler}
                 />
-                <span class="geekmark"></span>
+                <span
+                  class="geekmarks
+"
+                ></span>
               </label>
             </div>
             <div className="checkbox-arms">
-              <label class="main">
+              <label class="mains">
                 <p className="text-[15px] font-medium text-white">6x6</p>
                 <input
                   type="checkbox"
@@ -158,11 +174,14 @@ const MapFilter = () => {
                   checked={xxxxxxl}
                   onChange={changeHandler}
                 />
-                <span class="geekmark"></span>
+                <span
+                  class="geekmarks
+"
+                ></span>
               </label>
             </div>
             <div className="checkbox-legs">
-              <label class="main">
+              <label class="mains">
                 <p className="text-[15px] font-medium text-white">24x24</p>
                 <input
                   type="checkbox"
@@ -172,7 +191,10 @@ const MapFilter = () => {
                   checked={twintyFourXtwintyFour}
                   onChange={changeHandler}
                 />
-                <span class="geekmark"></span>
+                <span
+                  class="geekmarks
+"
+                ></span>
               </label>
             </div>
           </div>

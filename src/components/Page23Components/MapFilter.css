@@ -1,6 +1,13 @@
 /* Creating a custom checkbox based on demand */
-
-.geekmark {
+.mains {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #497bee;
+}
+.geekmarks {
   position: absolute;
   top: 0;
   left: 0;
@@ -13,27 +20,27 @@
 
 /* Checkmark to be shown in checkbox */
 /* It is not be shown when not checked */
-.geekmark:after {
+.geekmarks :after {
   content: "";
   position: absolute;
   display: none;
 }
 /* Specify the background color to be
         shown when checkbox is checked */
-.main input:checked ~ .geekmark {
+.mains input:checked ~ .geekmarks {
   background-color: #07062b;
 }
 
 /* Checkmark to be shown in checkbox */
 /* It is not be shown when not checked */
-.geekmark:after {
+.geekmarks :after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Display checkmark when checked */
-.main input:checked ~ .geekmark:after {
+.mains input:checked ~ .geekmarks :after {
   display: block;
 }
 
@@ -41,7 +48,7 @@
 /* Rotated the rectangle by 45 degree and 
       showing only two border to make it look
       like a tickmark */
-.main .geekmark:after {
+.mains .geekmarks :after {
   left: 8px;
   bottom: 8px;
   width: 6px;

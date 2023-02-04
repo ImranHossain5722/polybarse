@@ -20,7 +20,7 @@ const LeaderBoard = () => {
             </div>
           </div>
           <div className="lg:flex items-center w-full">
-            <div className="translate-y-full ">
+            <div className="translate-y-full">
               <SwiperPrev />
             </div>
             <Swiper
@@ -31,7 +31,7 @@ const LeaderBoard = () => {
                 nextEl: ".nextslide",
                 prevEl: ".prevslide",
               }}
-              className="mt-10 md:mt-20"
+              className="mt-10 md:mt-10"
               modules={[Navigation]}
               breakpoints={{
                 640: {

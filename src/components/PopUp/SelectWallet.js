@@ -8,9 +8,9 @@ const SelectWallet = ({ setSelectWallet }) => {
   return (
     <div>
       <div className="fixed  inset-0 z-50">
-        <section class="pt-32 mb-32">
+        <section class="pt-2">
           <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0 ">
-            <div class="from-wrap  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative">
+            <div class="from-wraps  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative border-1 border-[#497BEE]">
               <div className="">
                 <div className="flex items-center mt-5 ml-3 gap-1">
                   <BsArrowLeftShort className="text-white w-5 h-5 " />

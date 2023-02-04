@@ -8,7 +8,7 @@ const Transfer = ({ setTransfer }) => {
       <div className="fixed  inset-0 z-50">
         <section class="pt-32 mb-32">
           <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0 ">
-            <div class="from-wrap  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative">
+            <div class="from-wraps w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative border-1 border-[#497BEE]">
               <h1 class="text-35 font-extraBold text-white  text-center  md:py-4">
                 Transfer
               </h1>

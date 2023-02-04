@@ -14,7 +14,7 @@ const YourAreAlmostDone = () => {
       <div className="pt-36">
         <section class="pt-32 mb-32">
           <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0">
-            <div class="from-wrap  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md">
+            <div class="from-wraps  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md border-1 border-[#497BEE]">
               <div className="close-wrap flex justify-end cursor-pointer ">
                 <img
                   className="pt-5 pr-5 w-[30px] h-[30px]

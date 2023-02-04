@@ -3,7 +3,7 @@ import MapFilter from "./MapFilter";
 
 const Map = () => {
   return (
-    <div className="mt-40">
+    <div className="my-[60px]">
       <div className="flex">
         <div className=" w-full md:w-[200px] h-full bg-[#061E42] rounded-5">
           <div className="category-wrap">
