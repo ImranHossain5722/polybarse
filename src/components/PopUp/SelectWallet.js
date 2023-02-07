@@ -21,7 +21,7 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
             }}
             className="popUp-wrap"
           ></div>
-          <div className="popup-container">
+          <div className="fixed top-0 left-[35%]">
             <section class="pt-32 mb-32">
               <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0">
                 <div class="from-wraps  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md border-1 border-[#497BEE]">
@@ -112,7 +112,7 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
             className="popUp-wrap"
           ></div>
           <div>
-            <div className="popup-container">
+            <div className="fixed top-[8%] -left-[3%] w-full">
               <section class="pt-2">
                 <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0 ">
                   <div class="from-wraps  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative border-1 border-[#497BEE]">

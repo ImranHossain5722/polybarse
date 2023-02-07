@@ -127,7 +127,7 @@ const MapFilter = () => {
           <div className=" flex space-x-2">
             <p className="text-20 font-semibold text-white pt-2">Size</p>
           </div>
-          <div className=" mt-4 grid grid-cols-1 gap-y-2 flex-wrap">
+          <div className=" mt-2 grid grid-cols-1">
             <div className="checkbox-Head">
               <label class="mains">
                 <p className="text-[15px] font-medium text-white">1x1</p>

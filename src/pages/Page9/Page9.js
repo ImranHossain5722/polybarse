@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../../components/container";
-import DashBoardNav from "../../components/DashBoardNav/DashBoardNav";
 import NaveHeader from "../../components/DashBoardNav/NaveHeader";
-import Page9NavBar from "../../components/Page9Components/Page9NavBar";
 
 const Page9 = () => {
   return (
