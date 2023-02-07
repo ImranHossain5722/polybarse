@@ -63,14 +63,14 @@ const ChildeNavBar = () => {
       <Container className="max-w-[1200px]">
         <div className="mt-28">
           {/* tab items */}
-          <div className="tab-wrap my-12 flex justify-center md:ml-[250px]">
-            <div className="flex flex-col justify-center">
+          <div className="tab-wrap my-12 flex justify-center">
+            <div className="md:flex flex-col justify-center items-center ">
               <TabGroup numTabs={3} direction={TabGroup.direction.HORIZONTAL}>
                 {/* tab header */}
-                <TabGroup.TabList className="bg-[#322F6F] min-w-fit md:w-[600px] rounded-5">
+                <TabGroup.TabList className="bg-[#322F6F] w-full md:w-[720px] rounded-5 flex justify-center items-center">
                   <TabGroup.Tab
                     index={0}
-                    className="h-12 px-7 text-[12px] transition-colors duration-150 uppercase md:border-r-4 border-[#534F9C] py-3 "
+                    className="w-full h-full md:h-12 px-7 text-[12px] transition-colors duration-150 uppercase md:border-r-4 border-[#534F9C] py-3 "
                     activeClassName="text-white border-b-2 border-btnb focus:outline-none mb-3 md:mb-0"
                     inactiveClassName="text-white"
                   >
@@ -81,12 +81,12 @@ const ChildeNavBar = () => {
 
                   <TabGroup.Tab
                     index={1}
-                    className="h-12 px-20 text-[12px] text-center transition-colors duration-150 uppercase md:border-r-4 border-[#534F9C] "
+                    className="w-full h-full md:h-12 px-20 text-[12px] text-center transition-colors duration-150 uppercase md:border-r-4  border-[#534F9C]  "
                     activeClassName="text-white "
                     inactiveClassName="text-white"
                   >
                     <div className="relative">
-                      <div className=" absolute -top-[40px] bottom-0 -left-5 right-0 w-[80px] ">
+                      <div className=" absolute -top-[25px] md:-top-[40px] bottom-0 left-5 right-0 w-[80px] ">
                         <p className="text-white text-[8px] text-center uppercase bg-red-700 p-2 rounded-md">
                           coming soon
                         </p>
@@ -98,17 +98,17 @@ const ChildeNavBar = () => {
                   </TabGroup.Tab>
                   <TabGroup.Tab
                     index={2}
-                    className="h-12 px-20 text-[12px] text-center transition-colors duration-150 uppercase "
+                    className="w-full h-full md:h-12 px-20 text-[12px] text-center transition-colors duration-150 uppercase "
                     activeClassName="text-white "
                     inactiveClassName="text-white"
                   >
                     <div className="relative">
-                      <div className=" absolute -top-[23px] md:-top-[40px] bottom-0 -left-3 right-0 w-[80px] ">
+                      <div className=" absolute -top-[23px] md:-top-[40px] bottom-0 left-[45px] md:left-[15px] right-0 w-[80px] ">
                         <p className="text-white text-[8px] text-center uppercase bg-red-700 p-2 rounded-md">
                           coming soon
                         </p>
                       </div>
-                      <p className="text-[15px] md:text-[12px]  font-extraBold">
+                      <p className="text-[15px] md:text-[12px]  font-extraBold -ml-[14px]md:-ml-0">
                         Configure
                       </p>
                     </div>
@@ -148,6 +148,7 @@ const ChildeNavBar = () => {
                     </Link>
                   </div>
                 </TabGroup.TabPanel>
+
                 <TabGroup.TabPanel
                   index={1}
                   className="p-16 transition-all transform"
@@ -180,6 +181,7 @@ const ChildeNavBar = () => {
                     </Link>
                   </div>
                 </TabGroup.TabPanel>
+
                 <TabGroup.TabPanel
                   index={2}
                   className="p-16 transition-all transform"

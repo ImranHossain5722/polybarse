@@ -7,8 +7,7 @@ import Map from "../../components/Page23Components/Map";
 import { Link, NavLink } from "react-router-dom";
 
 const Page23 = () => {
-  const activeLink =
-    "border-b-2 border-[#D75D29] text-white pb-[35px] w-[100px]";
+  const activeLink = "border-b-2 border-[#D75D29] text-white pb-[35px]";
   const normalLink = "";
   return (
     <div>

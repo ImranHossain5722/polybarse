@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../components/buttons/button.css";
 import {
   FaFacebookF,
@@ -18,7 +18,26 @@ import PlaceBid from "../buttons/PlaceBid";
 import Sell from "../PopUp/Sell";
 import Transfer from "../PopUp/Transfer";
 import Auction from "../PopUp/Auction";
+// // close popup if click outside
+// let useClickOutside = (handler) => {
+//   let domNode = useRef();
 
+//   useEffect(() => {
+//     let maybeHandler = (event) => {
+//       if (!domNode.current.contains(event.target)) {
+//         handler();
+//       }
+//     };
+
+//     document.addEventListener("mousedown", maybeHandler);
+
+//     return () => {
+//       document.removeEventListener("mousedown", maybeHandler);
+//     };
+//   });
+
+//   return domNode;
+// };
 const AvatarProfile = () => {
   // social media array
   const s = [
@@ -48,6 +67,11 @@ const AvatarProfile = () => {
   const [transfer, setTransfer] = useState(false);
   const [auction, setAuction] = useState(false);
   const [sell, setSell] = useState(false);
+
+  // let domNode = useClickOutside(() => {
+  //   setAuction(false);
+  // });
+
   return (
     <div className="mt-[110px]">
       <div className="flex justify-between">

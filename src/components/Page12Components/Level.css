@@ -14,3 +14,10 @@
 .gold-btn {
   background: linear-gradient(180deg, #b67529 0%, #fedf58 100%);
 }
+
+.button-hero {
+  transition: all 0.2s ease-in-out;
+}
+.button-hero:hover {
+  transform: scale(0.9);
+}

@@ -6,10 +6,10 @@ import rightshap from "../../images/redShape.png";
 import AvatarProfile from "../../components/Page18Components/AvatarProfile";
 import History from "../../components/Page18Components/History";
 import { Link, NavLink } from "react-router-dom";
+import Auction from "../../components/PopUp/Auction";
 
 const Page18 = () => {
-  const activeLink =
-    "border-b-2 border-[#D75D29] text-white pb-[35px] w-[100px]";
+  const activeLink = "border-b-2 border-[#D75D29] text-white pb-[35px]";
   const normalLink = "";
   return (
     <div>

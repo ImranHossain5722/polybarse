@@ -67,9 +67,9 @@ const EditProfile = () => {
                 <label>
                   <div className="relative">
                     <img
-                      className="  w-36 h-36 md:w-[305px] md:h-[310px] ml-10 -mt-24  md:-mt-32 bg-[#A5A5A5]  cursor-pointer rounded-full
+                      className="  w-36 h-36 md:w-[310px] md:h-[310px] ml-10 -mt-24  md:-mt-32 bg-[#A5A5A5]  cursor-pointer rounded-full
                     "
-                      src={fils}
+                      src="images/Mask group.png"
                       alt="Upload"
                     />
                     <img

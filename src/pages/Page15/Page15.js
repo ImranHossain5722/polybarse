@@ -7,8 +7,7 @@ import greenshapbg from "../../images/green-shap.png";
 import rightshap from "../../images/redShape.png";
 
 const Page15 = () => {
-  const activeLink =
-    "border-b-2 border-[#D75D29] text-white pb-[35px] w-[100px]";
+  const activeLink = "border-b-2 border-[#D75D29] text-white pb-[35px]";
   const normalLink = "";
   return (
     <div>

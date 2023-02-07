@@ -12,18 +12,18 @@ const TopPlayersArchery = () => {
             <p className="font-extraBold text-30 text-white">
               Top Players Archery
             </p>
-            <div className="flex items-center  ">
-              <p className="font-medium text-[12px] ">
+            <div className="flex items-center">
+              <p className="font-medium text-[12px]">
                 Next Leaderboard Update in
               </p>
               <TimerReword />
             </div>
           </div>
-          <div className="w-[780px] mx-auto shadow-lg rounded-sm">
+          <div className=" w-full md:w-[780px] mx-auto shadow-lg rounded-sm">
             <div className="px-7 py-5">
               {/* table player archery */}
               <div className="overflow-x-auto">
-                <table className="table-auto w-[475px] md:w-full">
+                <table className="table-auto w-full">
                   <thead className=" h-16 font-semibold capitalize text-white border-2 border-[#0D0A3A] bg-[#0C2B58] rounded-5">
                     <tr className="">
                       <th className="py-2 px-8 whitespace-nowrap border-2 border-[#0D0A3A]">
@@ -66,7 +66,7 @@ const TopPlayersArchery = () => {
                               alt="coin"
                             />
                           </div>
-                          <div className="font-medium text-20 text-center w-8 text-white">
+                          <div className="font-medium text-20 text-center w-full md:w-8 text-white">
                             <p className="uppercase">1M</p>
                           </div>
                         </div>
@@ -94,7 +94,7 @@ const TopPlayersArchery = () => {
                               alt="coin"
                             />
                           </div>
-                          <div className="font-medium text-20 text-center text-white w-8">
+                          <div className="font-medium text-20 text-center text-white w-full md:w-8">
                             <p className="uppercase">500K</p>
                           </div>
                         </div>
@@ -122,7 +122,10 @@ const TopPlayersArchery = () => {
                               alt="coin"
                             />
                           </div>
-                          <div className="font-medium text-20 text-center text-white w-8">
+                          <div
+                            className="font-medium text-20 text-center text-white w-full 
+                          md:w-8"
+                          >
                             <p className="uppercase">100K</p>
                           </div>
                         </div>
@@ -150,7 +153,7 @@ const TopPlayersArchery = () => {
                               alt="coin"
                             />
                           </div>
-                          <div className="font-medium text-20 text-center text-white w-8">
+                          <div className="font-medium text-20 text-center text-white w-full md:w-8">
                             <p className="uppercase">-</p>
                           </div>
                         </div>
@@ -178,7 +181,7 @@ const TopPlayersArchery = () => {
                               alt="coin"
                             />
                           </div>
-                          <div className="font-medium text-20 text-center text-white w-8">
+                          <div className="font-medium text-20 text-center text-white w-full md:w-8">
                             <p className="uppercase">-</p>
                           </div>
                         </div>
@@ -206,7 +209,7 @@ const TopPlayersArchery = () => {
                               alt="coin"
                             />
                           </div>
-                          <div className="font-medium text-20 text-center text-white w-8">
+                          <div className="font-medium text-20 text-center text-white w-full md:w-8">
                             <p className="uppercase">-</p>
                           </div>
                         </div>
@@ -234,7 +237,7 @@ const TopPlayersArchery = () => {
                               alt="coin"
                             />
                           </div>
-                          <div className="font-medium text-20 text-center text-white w-8">
+                          <div className="font-medium text-20 text-center text-white w-full md:w-8">
                             <p className="uppercase">-</p>
                           </div>
                         </div>
@@ -262,7 +265,7 @@ const TopPlayersArchery = () => {
                               alt="coin"
                             />
                           </div>
-                          <div className="font-medium text-20 text-center text-white w-8">
+                          <div className="font-medium text-20 text-center text-white w-full md:w-8">
                             <p className="uppercase">-</p>
                           </div>
                         </div>
@@ -290,7 +293,7 @@ const TopPlayersArchery = () => {
                               alt="coin"
                             />
                           </div>
-                          <div className="font-medium text-20 text-center text-white w-8">
+                          <div className="font-medium text-20 text-center text-white w-full md:w-8">
                             <p className="uppercase">-</p>
                           </div>
                         </div>
@@ -318,7 +321,7 @@ const TopPlayersArchery = () => {
                               alt="coin"
                             />
                           </div>
-                          <div className="font-medium text-20 text-center text-white w-8">
+                          <div className="font-medium text-20 text-center text-white w-full md:w-8">
                             <p className="uppercase">-</p>
                           </div>
                         </div>

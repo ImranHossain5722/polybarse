@@ -3,7 +3,7 @@ import "./ProgressBar.css";
 const ProgressBar = () => {
   return (
     <div className="max-w-[900px]">
-      <p className="capitalize text-white text-16 ">Season 1</p>
+      <p className="capitalize text-white text-16 mt-7 md:mt-0">Season 1</p>
       {/* progress bar cod */}
       <div className="relative pt-14 ml-14 ">
         <div
@@ -18,7 +18,7 @@ const ProgressBar = () => {
         </div>
 
         <div className="ml-28">
-          <p className=" text-left text-20 uppercase font-extraBold">
+          <p className=" text-left text-sm md:text-20 uppercase font-extraBold">
             SEASON PASS LEVEL
           </p>
         </div>
@@ -29,7 +29,9 @@ const ProgressBar = () => {
           ></div>
         </div>
         <div className="ml-28">
-          <p className=" text-left text-20 uppercase font-extraBold">335xp</p>
+          <p className=" text-left text-sm md:text-20 uppercase font-extraBold">
+            335xp
+          </p>
         </div>
       </div>
     </div>

@@ -24,6 +24,9 @@ const Level = () => {
             className="mt-10 md:mt-20"
             modules={[Navigation]}
             breakpoints={{
+              375: {
+                slidesPerView: 2,
+              },
               640: {
                 slidesPerView: 2,
               },
@@ -126,13 +129,12 @@ const Level = () => {
                   <div className="relative">
                     <div className="relative flex justify-center ">
                       <img
-                        className=" w-[100px] h-[100px] pt-11 px-5 opacity-40"
+                        className="w-[100px] h-[100px] pt-11 px-5 opacity-40"
                         src="/images/glass.png"
                         alt=""
                       />
-                      <div className="absolute top-[77px]">
-                        <Link className="py-1 px-3 border-2 border-[#6E3C22] text-[#6E3C22] uppercase text-[22px] bg-[#F9D357] font-bold rounded-[10px]">
-                          {" "}
+                      <div className="absolute top-[77px] button-hero">
+                        <Link className="py-1 px-3 border-2 border-[#6E3C22] text-[#6E3C22] uppercase text-[22px] bg-[#F9D357] font-bold rounded-[10px] button-hero">
                           Claim
                         </Link>
                       </div>
@@ -198,9 +200,8 @@ const Level = () => {
                         src="/images/goldBag.png"
                         alt=""
                       />
-                      <div className="absolute top-[77px]">
-                        <Link className="py-1 px-3 border-2 border-[#6E3C22] text-[#6E3C22] uppercase text-[22px] bg-[#F9D357] font-bold rounded-[10px]">
-                          {" "}
+                      <div className="absolute top-[77px] button-hero">
+                        <Link className="py-1 px-3 border-2 border-[#6E3C22] text-[#6E3C22] uppercase text-[22px] bg-[#F9D357] font-bold rounded-[10px] button-hero">
                           Claim
                         </Link>
                       </div>
@@ -248,7 +249,7 @@ const Level = () => {
                       </p>
                     </div>
                     <div className="absolute top-[60px] left-[30px] flex justify-center">
-                      <Link className="py-1 px-3 border-2 border-[#3D4744] text-[#3D4744] uppercase text-[22px] bg-[#ECFAF1] font-bold rounded-[10px]">
+                      <Link className="py-1 px-3 border-2 border-[#3D4744] text-[#3D4744] uppercase text-[22px] bg-[#ECFAF1] font-bold rounded-[10px] button-hero">
                         {" "}
                         Claim
                       </Link>
@@ -267,8 +268,8 @@ const Level = () => {
                         src="/images/glass.png"
                         alt=""
                       />
-                      <div className="absolute top-[77px]">
-                        <Link className="py-1 px-3 border-2 border-[#6E3C22] text-[#6E3C22] uppercase text-[22px] bg-[#F9D357] font-bold rounded-[10px]">
+                      <div className="absolute top-[77px] button-hero">
+                        <Link className="py-1 px-3 border-2 border-[#6E3C22] text-[#6E3C22] uppercase text-[22px] bg-[#F9D357] font-bold rounded-[10px] ">
                           {" "}
                           Claim
                         </Link>
@@ -459,12 +460,12 @@ const Level = () => {
         <div>
           <div className=" md:flex justify-end mt-6 mr-10">
             <Link to="#">
-              <button className="mr-4 py-6 px-20 uppercase md:text-24 font-black bg-btnbg rounded-full button-hero">
+              <button className="mr-4 py-4 px-14 uppercase md:text-24 font-black bg-btnbg rounded-full button-hero">
                 Stake for pass
               </button>
             </Link>
             <Link to="#">
-              <button className="gold-btn py-6 px-20 uppercase md:text-24 text-[#793512] font-black rounded-full button-hero">
+              <button className="gold-btn py-4 px-14 uppercase md:text-24 text-[#793512] font-black rounded-full button-hero">
                 GET GOLD PASS
               </button>
             </Link>

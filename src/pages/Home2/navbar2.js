@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.svg";
 import { HiOutlineBars2 } from "react-icons/hi2";
@@ -17,7 +17,7 @@ export default function Navbar2() {
   const [setFreezescroll] = useFreezescroll();
   const width = useWindowsize();
   const [mobileNav, setMobileNav] = useState(false);
-  const [showNavPopup, setShowNavPopUp] = useState();
+  const [showNavPopup, setShowNavPopUp] = useState(false);
   useEffect(() => {
     if (width < 769) {
       setMobileNav(false);

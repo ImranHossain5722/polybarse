@@ -11,10 +11,11 @@ const RewardBanner = () => {
           <div className="flex justify-between ">
             <div className="img-box">
               <img
-                className="w-[506px] h-[309px]"
+                className="w-full h-full md:w-[506px] md:h-[309px]"
                 src="/images/Reward Pass.png"
+                alt="banner"
               />
-              <p className="capitalize text-white text-45 font-bold">
+              <p className="capitalize text-white text-[20px] md:text-45 font-bold">
                 Reward Pass
               </p>
             </div>

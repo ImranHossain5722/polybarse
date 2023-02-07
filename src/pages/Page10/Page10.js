@@ -6,8 +6,7 @@ import greenshapbg from "../../images/green-shap.png";
 import rightshap from "../../images/redShape.png";
 
 const Page10 = () => {
-  const activeLink =
-    "border-b-2 border-[#D75D29] text-white pb-[16px] w-[100px]";
+  const activeLink = "border-b-2 border-[#D75D29] text-white pb-[16px]";
   const normalLink = "";
   return (
     <div>
@@ -173,7 +172,7 @@ const Page10 = () => {
           </div>
         </section>
         {/*  */}
-        <div className=" grid grid-cols-1 md:grid-cols-2  place-content-center my-[60px]">
+        <div className=" grid grid-cols-1 md:grid-cols-2  place-content-center my-[100px] md:my-[60px]">
           <div className="boxAvatar">
             <img
               className="w-full h-full md:w-[276px] md:h-[547px]"

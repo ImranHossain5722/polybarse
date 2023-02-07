@@ -41,7 +41,7 @@ const Market = () => {
     <Container className="max-w-[1200px]">
       <div>
         <div>
-          <p className="text-35 font-extraBold text-white text-left mb-11">
+          <p className="text-20 md:text-35 font-extraBold text-white text-left mb-11">
             Welcome to the Polyverse NFT Market
           </p>
         </div>

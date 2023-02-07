@@ -34,6 +34,9 @@ const LeaderBoard = () => {
               className="mt-10 md:mt-10"
               modules={[Navigation]}
               breakpoints={{
+                375: {
+                  slidesPerView: 2,
+                },
                 640: {
                   slidesPerView: 2,
                 },
@@ -54,7 +57,10 @@ const LeaderBoard = () => {
               {m.map((i) => (
                 <SwiperSlide key={i.id}>
                   <div className="relative mt-8 bg-[#061E42] p-3 rounded-5 ">
-                    <Link className="absolute -top-3 right-16" to="#">
+                    <Link
+                      className="absolute -top-3 right-12 md:right-16"
+                      to="#"
+                    >
                       <button className="py-2 px-2 uppercase text-[12px] font-extraBold bg-[#A2D132] rounded-5 button-hero">
                         Archery
                       </button>

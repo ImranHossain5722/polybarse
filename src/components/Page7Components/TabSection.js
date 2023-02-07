@@ -139,84 +139,174 @@ const TabSection = () => {
               </Link>
             </div>
           </div>
+          {/* tab */}
+          <div className="tab-wrap mt-5 md:mt-9  flex">
+            <div className="md:flex flex-col justify-center items-center ">
+              <TabGroup numTabs={3} direction={TabGroup.direction.HORIZONTAL}>
+                {/* tab header */}
+                <TabGroup.TabList className="bg-[#322F6F] w-full  rounded-5 flex justify-start items-center">
+                  <TabGroup.Tab
+                    index={0}
+                    className="w-full h-full md:h-12 px-7 text-18 transition-colors duration-150 uppercase  py-3 "
+                    activeClassName="text-white border-b-2 border-[#D75D29] focus:outline-none mb-3 md:mb-0"
+                    inactiveClassName="text-white"
+                  >
+                    <div className="text-[15px] md:text-18 font-extraBold">
+                      All
+                    </div>
+                  </TabGroup.Tab>
 
-          <section className="mt-5 md:mt-9">
-            <div className="w-full h-full md:h-16 flex flex-col md:flex-row gap-14  bg-[#322F6F] rounded-5 px-3 md:px-9 py-6 overflow-hidden">
-              {/* nav1 */}
-              <NavLink
-                to="/page7"
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
-              >
-                <div className="flex items-center gap-2">
-                  <p className="uppercase text-white text-18 font-extraBold">
-                    All
-                  </p>
-                </div>
-              </NavLink>
+                  <TabGroup.Tab
+                    index={1}
+                    className="w-full h-full md:h-12 px-20 text-18 text-center transition-colors duration-150 uppercase"
+                    activeClassName="text-white border-b-2 border-[#D75D29]"
+                    inactiveClassName="text-white"
+                  >
+                    <div className="">
+                      <p className="text-[15px] md:text-18 font-extraBold">
+                        Avatar
+                      </p>
+                    </div>
+                  </TabGroup.Tab>
+                  <TabGroup.Tab
+                    index={2}
+                    className="w-full h-full md:h-12 px-20 text-18 text-center transition-colors duration-150 uppercase "
+                    activeClassName="text-white border-b-2 border-[#D75D29]"
+                    inactiveClassName="text-white"
+                  >
+                    <div className="">
+                      <p className="text-[15px] md:text-18  font-extraBold -ml-[14px]md:-ml-0">
+                        Equipments
+                      </p>
+                    </div>
+                  </TabGroup.Tab>
+                  <TabGroup.Tab
+                    index={3}
+                    className="w-full h-full md:h-12 px-20 text-18 text-center transition-colors duration-150 uppercase "
+                    activeClassName="text-white border-b-2 border-[#D75D29]"
+                    inactiveClassName="text-white"
+                  >
+                    <div className="">
+                      <p className="text-[15px] md:text-18  font-extraBold -ml-[14px]md:-ml-0">
+                        Land
+                      </p>
+                    </div>
+                  </TabGroup.Tab>
+                </TabGroup.TabList>
 
-              {/* nav2 */}
-              <NavLink
-                to="/avatar"
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
-              >
-                <div className="flex items-center gap-2">
-                  <p className="uppercase text-white text-18 font-extraBold">
-                    AVATAR
-                  </p>
-                </div>
-              </NavLink>
-              {/* nav3 */}
-              <NavLink
-                to="/equipment"
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
-              >
-                <div className="flex items-center ">
-                  <p className="uppercase text-white text-18 font-extraBold">
-                    EQUIPMENTS
-                  </p>
-                </div>
-              </NavLink>
-              {/* nav4 */}
-              <NavLink
-                to="/land"
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
-              >
-                <div className="flex items-center  md:pl-8">
-                  <p className="uppercase text-white text-18 font-extraBold">
-                    Land
-                  </p>
-                </div>
-              </NavLink>
+                {/* tab body */}
+                <TabGroup.TabPanel
+                  index={0}
+                  className="py-16 transition-all transform"
+                  activeClassName="opacity-100 duration-500 translate-x-0 "
+                  inactiveClassName="absolute opacity-0 -translate-x-2"
+                >
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-content-center  gap-4">
+                    {s.map((i) => (
+                      <div className="mb-10 ">
+                        <img
+                          className="w-52 h-48 md:w-52 md:h-52 hover:scale-110 hover:transition duration-1000 ease-in-out cursor-pointer"
+                          src={i.img}
+                          alt=""
+                        />
+                        <p className="text-24 mt-5 font-semibold hover:text-[#497BEE] cursor-pointer">
+                          {i.name} {i.number}{" "}
+                        </p>
+                        <div className="flex items-center mt-3">
+                          <p className="text-18 hover:text-[#497BEE] cursor-pointer">
+                            By {i.author}
+                          </p>
+                          <img className="w-4 h-4 ml-2 " src={i.img2} alt="" />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </TabGroup.TabPanel>
+
+                <TabGroup.TabPanel
+                  index={1}
+                  className="py-16 transition-all transform"
+                  activeClassName="opacity-100 duration-500 translate-x-0 "
+                  inactiveClassName="absolute opacity-0 -translate-x-2"
+                >
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-content-center  gap-4">
+                    {s.map((i) => (
+                      <div className="mb-10 ">
+                        <img
+                          className="w-52 h-48 md:w-52 md:h-52 hover:scale-110 hover:transition duration-1000 ease-in-out cursor-pointer"
+                          src={i.img}
+                          alt=""
+                        />
+                        <p className="text-24 mt-5 font-semibold hover:text-[#497BEE] cursor-pointer">
+                          {i.name} {i.number}{" "}
+                        </p>
+                        <div className="flex items-center mt-3">
+                          <p className="text-18 hover:text-[#497BEE] cursor-pointer">
+                            By {i.author}
+                          </p>
+                          <img className="w-4 h-4 ml-2 " src={i.img2} alt="" />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </TabGroup.TabPanel>
+
+                <TabGroup.TabPanel
+                  index={2}
+                  className="py-16 transition-all transform"
+                  activeClassName="opacity-100 duration-500 translate-x-0 border-b-2"
+                  inactiveClassName="absolute opacity-0 -translate-x-2"
+                >
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-content-center  gap-4">
+                    {s.map((i) => (
+                      <div className="mb-10 ">
+                        <img
+                          className="w-52 h-48 md:w-52 md:h-52 hover:scale-110 hover:transition duration-1000 ease-in-out cursor-pointer"
+                          src={i.img}
+                          alt=""
+                        />
+                        <p className="text-24 mt-5 font-semibold hover:text-[#497BEE] cursor-pointer">
+                          {i.name} {i.number}{" "}
+                        </p>
+                        <div className="flex items-center mt-3">
+                          <p className="text-18 hover:text-[#497BEE] cursor-pointer">
+                            By {i.author}
+                          </p>
+                          <img className="w-4 h-4 ml-2 " src={i.img2} alt="" />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </TabGroup.TabPanel>
+                <TabGroup.TabPanel
+                  index={3}
+                  className="py-16 transition-all transform"
+                  activeClassName="opacity-100 duration-500 translate-x-0"
+                  inactiveClassName="absolute opacity-0 -translate-x-2"
+                >
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-content-center  gap-4">
+                    {s.map((i) => (
+                      <div className="mb-10 ">
+                        <img
+                          className="w-52 h-48 md:w-52 md:h-52 hover:scale-110 hover:transition duration-1000 ease-in-out cursor-pointer"
+                          src={i.img}
+                          alt=""
+                        />
+                        <p className="text-24 mt-5 font-semibold hover:text-[#497BEE] cursor-pointer">
+                          {i.name} {i.number}{" "}
+                        </p>
+                        <div className="flex items-center mt-3">
+                          <p className="text-18 hover:text-[#497BEE] cursor-pointer">
+                            By {i.author}
+                          </p>
+                          <img className="w-4 h-4 ml-2 " src={i.img2} alt="" />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </TabGroup.TabPanel>
+              </TabGroup>
             </div>
-          </section>
-          {/* content*/}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-content-center  gap-4 mt-16">
-            {s.map((i) => (
-              <div className="mb-10 ">
-                <img
-                  className="w-52 h-48 md:w-52 md:h-52 hover:scale-110 hover:transition duration-1000 ease-in-out cursor-pointer"
-                  src={i.img}
-                  alt=""
-                />
-                <p className="text-24 mt-5 font-semibold hover:text-[#497BEE] cursor-pointer">
-                  {i.name} {i.number}{" "}
-                </p>
-                <div className="flex items-center mt-3">
-                  <p className="text-18 hover:text-[#497BEE] cursor-pointer">
-                    By {i.author}
-                  </p>
-                  <img className="w-4 h-4 ml-2 " src={i.img2} alt="" />
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </Container>

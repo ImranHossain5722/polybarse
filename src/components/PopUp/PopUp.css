@@ -108,3 +108,20 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   margin-top: 8px;
 }
+
+.popUp-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #06042b;
+  opacity: 0.6;
+}
+.popup-container {
+  position: fixed;
+  top: -60%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 500px;
+}

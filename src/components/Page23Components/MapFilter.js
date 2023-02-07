@@ -58,7 +58,7 @@ const MapFilter = () => {
         {/* availability */}
         <div className="availability px-1 md:px-6">
           <div>
-            <p className="text-20 md:text-35 font-extraBold text-white text-left px-4 pt-5">
+            <p className="text-20 md:text-35 font-extraBold text-white text-left  pt-5">
               Map
             </p>
           </div>

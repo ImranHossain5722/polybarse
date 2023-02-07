@@ -9,7 +9,7 @@ const Page20 = () => {
   return (
     <div>
       <NaveHeader></NaveHeader>
-      <div className="my-[60px]">
+      <div className="mt-[60px] pb-[250px]">
         <StakingBanner></StakingBanner>
         <SecondSection></SecondSection>
         <ThirdSection></ThirdSection>

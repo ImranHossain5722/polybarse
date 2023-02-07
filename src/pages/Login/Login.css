@@ -95,3 +95,20 @@ input[type="checkbox"] {
   border: 1px solid #497bee;
   border-radius: 16px;
 }
+
+.popUp-wraps {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #06042b;
+  opacity: 0.6;
+}
+.popup-containers {
+  position: fixed;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 500px;
+}
