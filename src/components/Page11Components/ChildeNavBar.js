@@ -67,7 +67,7 @@ const ChildeNavBar = () => {
             <div className="md:flex flex-col justify-center items-center ">
               <TabGroup numTabs={3} direction={TabGroup.direction.HORIZONTAL}>
                 {/* tab header */}
-                <TabGroup.TabList className="bg-[#322F6F] w-full md:w-[720px] rounded-5 flex justify-center items-center">
+                <TabGroup.TabList className="bg-[#322F6F] w-full md:w-[720px] rounded-5 md:flex justify-center items-center">
                   <TabGroup.Tab
                     index={0}
                     className="w-full h-full md:h-12 px-7 text-[12px] transition-colors duration-150 uppercase md:border-r-4 border-[#534F9C] py-3 "
@@ -81,12 +81,12 @@ const ChildeNavBar = () => {
 
                   <TabGroup.Tab
                     index={1}
-                    className="w-full h-full md:h-12 px-20 text-[12px] text-center transition-colors duration-150 uppercase md:border-r-4  border-[#534F9C]  "
+                    className="w-full h-full md:h-12 pt-[10px] md:pt-0 px-20 text-[12px] text-center transition-colors duration-150 uppercase md:border-r-4  border-[#534F9C]  "
                     activeClassName="text-white "
                     inactiveClassName="text-white"
                   >
                     <div className="relative">
-                      <div className=" absolute -top-[25px] md:-top-[40px] bottom-0 left-5 right-0 w-[80px] ">
+                      <div className=" absolute -top-[25px] md:-top-[40px] bottom-0 left-[40px] md:left-5 right-0 w-[80px] ">
                         <p className="text-white text-[8px] text-center uppercase bg-red-700 p-2 rounded-md">
                           coming soon
                         </p>
@@ -98,7 +98,7 @@ const ChildeNavBar = () => {
                   </TabGroup.Tab>
                   <TabGroup.Tab
                     index={2}
-                    className="w-full h-full md:h-12 px-20 text-[12px] text-center transition-colors duration-150 uppercase "
+                    className="w-full h-full md:h-12 pt-[30px] md:pt-0 px-20  text-[12px] text-center transition-colors duration-150 uppercase "
                     activeClassName="text-white "
                     inactiveClassName="text-white"
                   >

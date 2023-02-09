@@ -19,7 +19,7 @@ const History = () => {
 
       <div className="my-14">
         <div className="overflow-x-auto">
-          <div className="bg-[#061E42] p-3">
+          <div className="bg-[#061E42] w-full p-3">
             <p className="text-24 font-extraBold uppercase">History</p>
           </div>
           <table className="table-auto w-[475px] md:w-full">

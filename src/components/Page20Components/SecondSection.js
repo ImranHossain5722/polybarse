@@ -41,7 +41,7 @@ const SecondSection = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-5 left-[100px]">
+            <div className="absolute -bottom-5 left-[130px] md:left-[100px]">
               <Clam />
             </div>
           </div>
@@ -64,30 +64,36 @@ const SecondSection = () => {
                 />
               </div>
               <div className="">
-                <div className="flex gap-2 items-center">
-                  <p className="text-30 font-extraBold">MULTIPLIER</p>
+                <div className="flex gap-2 items-center justify-center">
+                  <p className="text-30 font-extraBold text-center">
+                    MULTIPLIER
+                  </p>
                   <img className="w-3 h-3 " src="images/i.png" alt="images" />
                 </div>
-                <p className="text-30 text-[#FF3300] font-extraBold uppercase md:text-center">
+                <p className="text-30 text-[#FF3300] font-extraBold uppercase text-center">
                   X1
                 </p>
               </div>
             </div>
-            <div className="w-1 h-52 bg-[#1B1757]"></div>
+            <div className=" hidden md:block w-1 h-52 bg-[#1B1757]"></div>
             {/* box-2 */}
-            <div className=" bg-[#06042A] p-6 ">
-              <p className="text-20 font-extraBold md:text-center">Earnings</p>
-              <div className="flex items-center md:justify-center gap-4">
-                <p className="text-30 text-[#A2D132] font-extraBold uppercase">
-                  1K PLV
-                </p>
-                <img
-                  className="w-5 h-5 "
-                  src="images/singleCoin.png"
-                  alt="images"
-                />
+            <div className=" bg-[#06042A] p-6 flex items-center justify-center">
+              <div className="w-full">
+                <p className="text-20 font-extraBold text-center">Earnings</p>
+                <div className="flex items-center justify-center gap-4">
+                  <p className="text-30 text-[#A2D132] font-extraBold uppercase">
+                    1K PLV
+                  </p>
+                  <img
+                    className="w-5 h-5 "
+                    src="images/singleCoin.png"
+                    alt="images"
+                  />
+                </div>
+                <div className="flex items-center justify-center">
+                  <Clam />
+                </div>
               </div>
-              <Clam />
             </div>
           </div>
         </div>

@@ -143,7 +143,7 @@ const Balance = () => {
                   </div>
                 </label>
               </div>
-              <div className="absolute left-0 md:left-20 lg:left-60 top-56 form-button bg-[#D75D29] px-7 py-3 rounded-full flex items-center justify-center button-hero">
+              <div className="absolute left-[45px] md:left-20 lg:left-60 top-56 form-button bg-[#D75D29] px-7 py-3 rounded-full flex items-center justify-center button-hero">
                 <button className="uppercase font-bold text-24 ">
                   Confirm
                 </button>

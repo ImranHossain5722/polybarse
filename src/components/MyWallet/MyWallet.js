@@ -45,7 +45,7 @@ const MyWallet = () => {
               <hr className=" my-4 md:my-6" />
               <div className="singleCoin-wrap md:flex items-center justify-around ">
                 <div className="flex items-center justify-center gap-2 md:mb-7">
-                  <p className="w-30 text-16 md:text-30 font-extraBold">
+                  <p className="w-48 text-16 md:text-30 font-extraBold">
                     1000 V-COIN
                   </p>
                   <img
@@ -55,7 +55,7 @@ const MyWallet = () => {
                   />
                 </div>
                 <div className="flex items-center justify-center gap-2 md:mb-7">
-                  <p className="w-30 text-16 md:text-30 font-extraBold">
+                  <p className="w-48 text-16 md:text-30 font-extraBold">
                     150.50 PLV
                   </p>
                   <img

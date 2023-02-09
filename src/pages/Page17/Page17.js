@@ -35,10 +35,10 @@ const Page17 = () => {
             className="object-contain object-right"
           />
         </div>
-        <Popup className="hidden md:block w-32 h-32 top-1/3 left-5 bottom-0 z-10">
+        <Popup className="hidden shape  md:block w-32 h-32 top-1/3 left-5 bottom-0 z-10">
           <img src={greenshapbg} alt="shape" />
         </Popup>
-        <Popup className="hidden md:block right-0 top-1/3 w-32  z-10">
+        <Popup className="hidden shape md:block right-0 top-1/3 w-32  z-10">
           <img src={rightshap} alt="shape" />
         </Popup>
         <Container className="max-w-[1200px]">

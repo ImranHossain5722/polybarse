@@ -14,6 +14,7 @@ import {
 import { Link } from "react-router-dom";
 import Buyland from "../buttons/buy-land";
 import BuyNow from "../buttons/buy-now";
+import "./AvatarProfile.css";
 
 const AvatarProfile = () => {
   // social media array
@@ -43,10 +44,10 @@ const AvatarProfile = () => {
   ];
   return (
     <div className="mt-[110px]">
-      <div className="flex justify-between">
-        <div className="w-2/4 pr-14">
+      <div className=" md:flex justify-between">
+        <div className="w-full h-full md:w-2/4 md:pr-14">
           <img
-            className="w-[500px] h-[500px] rounded-3xl"
+            className="md:w-[500px] md:h-[500px] rounded-3xl"
             src="images/avatarProfile.png"
             alt="avatar profile"
           />
@@ -71,7 +72,7 @@ const AvatarProfile = () => {
             </div>
           </div>
         </div>
-        <div className="w-2/4 pl-14">
+        <div className="mt-5 md:mt-0 w-full md:w-2/4 pl-10 md:pl-14">
           <div className="">
             <p className="text-35 text-white font-bold">Avatar #001</p>
           </div>
@@ -83,7 +84,7 @@ const AvatarProfile = () => {
               Epic
             </Link>
           </div>
-          <div className="flex items-center gap-20 mt-6">
+          <div className="boxes-wraps flex items-center gap-7 md:gap-20 mt-6">
             <div className="box-1">
               <div className="flex items-center mt-3">
                 <p className="text-20 font-semibold uppercase">Creator</p>
@@ -99,7 +100,7 @@ const AvatarProfile = () => {
                 alt=""
               />
             </div>
-            <div className="bpx-2">
+            <div className="bpx-1">
               <p className="text-20 font-semibold uppercase">Stock</p>
               <div className="flex items-center mt-3">
                 <p className="text-[14px] font-semibold uppercase">6/10</p>

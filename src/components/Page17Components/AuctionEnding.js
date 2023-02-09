@@ -8,8 +8,8 @@ const AuctionEnding = () => {
         <div className="w-10 h-10 flex items-center ml-2 sm:mr-3">
           <img className=" w-9 h-9 " src="/images/axe.png" alt="coin" />
         </div>
-        <div className="font-extraBold text-24  text-white">
-          <p className="uppercase">Auction ending in:</p>
+        <div className="font-extraBold text-24  text-white md:mx-0">
+          <p className="uppercase mb-3 md:mb-0">Auction ending in:</p>
           <TimerReword />
         </div>
       </div>

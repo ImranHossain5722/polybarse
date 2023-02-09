@@ -6,6 +6,7 @@ import rightshap from "../../images/redShape.png";
 import AvatarProfile from "../../components/Page16Components/AvatarProfile";
 import History from "../../components/Page16Components/History";
 import { Link, NavLink } from "react-router-dom";
+import "../../components/Page16Components/AvatarProfile.css";
 
 const Page16 = () => {
   const activeLink = "border-b-2 border-[#D75D29] text-white pb-[35px]";
@@ -20,7 +21,7 @@ const Page16 = () => {
             className="object-contain object-right"
           />
         </div>
-        <div className=" hidden md:block absolute max-w-xl -left-0 top-2/4 -translate-y-[45%] -z-10">
+        <div className=" hidden  md:block absolute max-w-xl -left-0 top-2/4 -translate-y-[45%] -z-10">
           <img
             src="/images/dottss.png"
             alt="herobg"
@@ -34,10 +35,10 @@ const Page16 = () => {
             className="object-contain object-right"
           />
         </div>
-        <Popup className="hidden md:block w-32 h-32 top-1/3 left-5 bottom-0 z-10">
+        <Popup className="shape hidden md:block w-32 h-32 top-1/3 left-5 bottom-0 z-10">
           <img src={greenshapbg} alt="shape" />
         </Popup>
-        <Popup className="hidden md:block right-0 top-1/3 w-32  z-10">
+        <Popup className="shape hidden md:block right-0 top-1/3 w-32  z-10">
           <img src={rightshap} alt="shape" />
         </Popup>
         <Container className="max-w-[1200px]">

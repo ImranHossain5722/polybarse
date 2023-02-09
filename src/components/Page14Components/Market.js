@@ -45,53 +45,55 @@ const Market = () => {
             Welcome to the Polyverse NFT Market
           </p>
         </div>
-        <div className="flex">
+        <div className="md:flex">
           <div className=" w-full md:w-[200px] h-[250px] bg-[#061E42] rounded-5">
             <p className="text-20 font-semibold p-3">Category</p>
             <div className="category-wrap">
               <div className="h-1 w-full bg-[#203D69] mb-3"></div>
               {/* avatar */}
-              <div className="avatar pl-6">
-                <Link to="#" className="flex ">
-                  <img
-                    className="w-6 h-6"
-                    src="images/monkeyAvter.png"
-                    alt="avatar"
-                  ></img>
-                  <p className="text-white text-[15px] ml-3">Avatar</p>
-                </Link>
-              </div>
-              {/* Equipments */}
-              <div className="Equipments my-5 pl-2 md:pl-6">
-                <Link to="#" className="flex  ">
-                  <img
-                    className="w-6 h-6"
-                    src="images/equipments.png"
-                    alt="avatar"
-                  ></img>
-                  <p className="text-white text-[15px] ml-3">Equipments</p>
-                </Link>
-              </div>
-              {/* avatar */}
-              <div className="Land my-5 pl-6">
-                <Link to="#" className="flex ">
-                  <img
-                    className="w-6 h-6"
-                    src="images/land.png"
-                    alt="avatar"
-                  ></img>
-                  <p className="text-white text-[15px] ml-3">Land</p>
-                </Link>
-              </div>
-              <div className="Art pl-6">
-                <Link to="#" className="flex ">
-                  <img
-                    className="w-6 h-6"
-                    src="images/Art.png"
-                    alt="avatar"
-                  ></img>
-                  <p className="text-white text-[15px] ml-3">Art</p>
-                </Link>
+              <div className="grid grid-cols-3 gap-2 place-items-center md:block">
+                <div className="avatar pl-6">
+                  <Link to="#" className="flex ">
+                    <img
+                      className="w-6 h-6"
+                      src="images/monkeyAvter.png"
+                      alt="avatar"
+                    ></img>
+                    <p className="text-white text-[15px] ml-3">Avatar</p>
+                  </Link>
+                </div>
+                {/* Equipments */}
+                <div className="Equipments my-5 pl-2 md:pl-6">
+                  <Link to="#" className="flex  ">
+                    <img
+                      className="w-6 h-6"
+                      src="images/equipments.png"
+                      alt="avatar"
+                    ></img>
+                    <p className="text-white text-[15px] ml-3">Equipments</p>
+                  </Link>
+                </div>
+                {/* avatar */}
+                <div className="Land my-5 pl-6">
+                  <Link to="#" className="flex ">
+                    <img
+                      className="w-6 h-6"
+                      src="images/land.png"
+                      alt="avatar"
+                    ></img>
+                    <p className="text-white text-[15px] ml-3">Land</p>
+                  </Link>
+                </div>
+                <div className="Art pl-6">
+                  <Link to="#" className="flex ">
+                    <img
+                      className="w-6 h-6"
+                      src="images/Art.png"
+                      alt="avatar"
+                    ></img>
+                    <p className="text-white text-[15px] ml-3">Art</p>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -99,8 +101,10 @@ const Market = () => {
           <div className="w-[931px] ml-9">
             {/* Avatars */}
             <div className="Avatars-wrap">
-              <div className=" flex justify-between mb-6">
-                <p className="text-30 font-semibold text-white">Avatars</p>
+              <div className="flex items-center gap-16 md:gap-0 md:justify-between mb-6">
+                <p className="text-20 md:text-30 font-semibold text-white">
+                  Avatars
+                </p>
                 <div>
                   <Link
                     className="flex items-center justify-between text-sm font-semibold hover:text-btnbg"
@@ -137,8 +141,10 @@ const Market = () => {
             </div>
             {/* Equipments */}
             <div className="Equipments-wrap">
-              <div className=" flex justify-between mb-6">
-                <p className="text-30 font-semibold text-white">Equipments</p>
+              <div className=" flex items-center gap-16 md:gap-0 md:justify-between mb-6">
+                <p className="text-20 md:text-30 font-semibold text-white">
+                  Equipments
+                </p>
                 <div>
                   <Link
                     className="flex items-center justify-between text-sm font-semibold hover:text-btnbg"
@@ -174,8 +180,10 @@ const Market = () => {
             </div>
             {/* Lands */}
             <div className="Lands-wrap">
-              <div className=" flex justify-between mb-6">
-                <p className="text-30 font-semibold text-white">Lands</p>
+              <div className=" flex items-center gap-16 md:gap-0 md:justify-between mb-6">
+                <p className="text-20 md:text-30 font-semibold text-white">
+                  Lands
+                </p>
                 <div>
                   <Link
                     className="flex items-center justify-between text-sm font-semibold hover:text-btnbg"

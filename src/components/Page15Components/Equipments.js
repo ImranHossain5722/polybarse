@@ -104,14 +104,14 @@ const Equipments = () => {
 
   return (
     <div className="mt-[110px]">
-      <div className="flex justify-between">
+      <div className="md:flex justify-between">
         <div>
           <p className="text-20 md:text-35 font-extraBold text-white text-left mb-11">
             NFT Market
           </p>
         </div>
         {/* search bar  */}
-        <div className="searchBar-wrap">
+        <div className="searchBar-wrap my-8 md:my-0">
           <div class="max-w-md mx-auto">
             <div class="relative flex items-center w-full h-full rounded-lg focus-within:shadow-lg bg-[#061E42] overflow-hidden border border-[#A2D132]">
               <div class="grid place-items-center h-full w-12 text-gray-300">
@@ -141,7 +141,8 @@ const Equipments = () => {
           </div>
         </div>
       </div>
-      <div className="flex">
+
+      <div className="md:flex">
         <div className=" w-full md:w-[200px] h-full bg-[#061E42] rounded-5">
           <div className="category-wrap">
             {/* category*/}
@@ -149,15 +150,15 @@ const Equipments = () => {
           </div>
         </div>
 
-        <div className="w-[931px] ml-9">
+        <div className="w-full md:w-[931px] md:ml-9">
           {/* Equipments */}
           <div className="Equipments-wrap">
-            <div className=" md:flex justify-between  mb-6">
+            <div className=" md:flex justify-between mb-6">
               <p className="text-18 md:text-30 font-semibold text-white">
                 Equipments <span>(145)</span>
               </p>
               {/* filter  */}
-              <div className="flex items-center justify-between">
+              <div className="flex items-center md:justify-between gap-36 md:gap-0">
                 <div>
                   <p className="mr-2 mt-2 font-semibold text-sm"> Order By</p>
                 </div>
@@ -175,11 +176,11 @@ const Equipments = () => {
             </div>
             {/* Equipments start */}
             <div>
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
                 {s.map((i) => (
                   <div className="mb-10 ">
                     <img
-                      className="w-52 h-52  hover:scale-110 hover:transition duration-1000 ease-in-out cursor-pointer"
+                      className="w-52 h-48 md:h-52  hover:scale-110 hover:transition duration-1000 ease-in-out cursor-pointer"
                       src={i.img}
                       alt=""
                     />

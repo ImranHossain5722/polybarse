@@ -21,3 +21,12 @@
   padding-right: 20px;
   margin-left: -60px;
 }
+@media only screen and (min-width: 375px) and (max-width: 840px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+  .swiper-slide-active .div {
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -114px;
+  }
+}

@@ -11,8 +11,8 @@ const Cart = () => {
     <div className="my-[70px]">
       <div className="md:flex gap-1 justify-between">
         <div className="w-[740px]">
-          <div className="flex items-center justify-between border-b-1 border-[#444172] py-14 ">
-            <div className="flex gap-8 items-center">
+          <div className="md:flex items-center justify-between border-b-1 border-[#444172] py-14 ">
+            <div className="md:flex gap-8 items-center">
               <img
                 className="w-28 h-28 rounded-5"
                 src="images/avatarProfile.png"
@@ -44,8 +44,8 @@ const Cart = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-between border-b-1 border-[#444172] py-14 ">
-            <div className="flex gap-8 items-center">
+          <div className="md:flex items-center justify-between border-b-1 border-[#444172] py-14 ">
+            <div className="md:flex gap-8 items-center">
               <img
                 className="w-28 h-28 rounded-5"
                 src="images/avatarProfile.png"
@@ -79,7 +79,7 @@ const Cart = () => {
           </div>
         </div>
 
-        <div className="mt-[35px] relative w-[302px] h-[430px] bg-[#061E42] rounded-2xl">
+        <div className="mt-[35px] relative w-full md:w-[302px] h-[430px] bg-[#061E42] rounded-2xl">
           <div className="bg-[#0C2B58] p-5 rounded-t-2xl ">
             <p className="text-35 text-white font-extraBold text-center">
               Total Cart
@@ -107,7 +107,7 @@ const Cart = () => {
               </p>
             </div>
           </div>
-          <div className="absolute  -bottom-5 right-20">
+          <div className="absolute  -bottom-5 right-32 md:right-20">
             <button className="inline-flex items-center text-xs sm:text-sm lg:text-18 font-semibold font-inter px-3 md:px-7 py-2 border-2 bg-btnbg border-btnbg hover:bg-transparent rounded-full lg:px-8 lg:py-3 uppercase text-center mt-8 button-hero">
               <span className="mr-2">
                 <AiOutlineShoppingCart />

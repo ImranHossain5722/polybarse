@@ -131,7 +131,7 @@ const InventoryTab = () => {
             <div className="md:flex flex-col justify-center items-center ">
               <TabGroup numTabs={3} direction={TabGroup.direction.HORIZONTAL}>
                 {/* tab header */}
-                <TabGroup.TabList className="bg-[#322F6F] w-full  rounded-5 flex justify-start items-center">
+                <TabGroup.TabList className="bg-[#322F6F] w-full  rounded-5 md:flex justify-start items-center">
                   <TabGroup.Tab
                     index={0}
                     className="w-full h-full md:h-12 px-7 text-18 transition-colors duration-150 uppercase  py-3 "
