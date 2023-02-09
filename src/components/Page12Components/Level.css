@@ -21,3 +21,10 @@
 .button-hero:hover {
   transform: scale(0.9);
 }
+
+.mySwiper {
+  width: 1329px;
+}
+.swiper-slide .swiper-slide-duplicate.swiper-slide-duplicate-next {
+  width: 1329px;
+}

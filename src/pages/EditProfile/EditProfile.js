@@ -61,19 +61,19 @@ const EditProfile = () => {
 
         <Container className="max-w-[1200px] pb-14">
           <from>
-            <div className="grid grid-cols-3 gap-4 ">
+            <div className="grid grid-cols-3 place-content-center md:gap-40 -ml-[50px] md:ml-[25px]">
               {/* from image div */}
-              <div className="w-full flex justify-start">
+              <div className="flex ">
                 <label>
                   <div className="relative">
                     <img
-                      className="  w-36 h-36 md:w-[310px] md:h-[310px] ml-10 -mt-24  md:-mt-32 bg-[#A5A5A5]  cursor-pointer rounded-full
+                      className="  w-24 h-24 md:w-[300px] md:h-[300px] ml-12 -mt-12 md:-mt-48 bg-[#A5A5A5]  cursor-pointer rounded-full
                     "
                       src="images/Mask group.png"
                       alt="Upload"
                     />
                     <img
-                      className="absolute top-[235px] right-[40px] w-[76px] h-[76px] md:w-[85px] md:h-[85px]  bg-[#DEE0E6] rounded-full cursor-pointer
+                      className="absolute top-[67px] md:top-[224px] right-[155px] md:-right-[2px] w-[40px] h-[40px] md:w-[85px] md:h-[85px]  bg-[#DEE0E6] rounded-full cursor-pointer
                     "
                       src={userC}
                       alt="Upload"
@@ -83,15 +83,15 @@ const EditProfile = () => {
                 </label>
               </div>
               {/* from inputs div */}
-              <div className="w-full h-full flex items-center justify-center ml-20">
+              <div className=" flex items-center justify-center -mr-[126px] -ml-[76px] md:-ml-0 md:-mr-[60px] mt-[84px] md:mt-0">
                 <div className="w-full">
-                  <p className="text-30 mb-6 font-extraBold">
+                  <p className="text-20 text-left  md:text-30 mb-6 font-extraBold">
                     Personal Information
                   </p>
                   <div className="userName ">
                     <label
                       htmlFor="UserName"
-                      className="text-white text-24 pb-4 font-semibold"
+                      className="text-white text-16 md:text-24 pb-4 font-semibold"
                     >
                       User Name
                     </label>
@@ -108,7 +108,7 @@ const EditProfile = () => {
                   <div className="name">
                     <label
                       htmlFor="name"
-                      className="text-white text-24 font-semibold"
+                      className="text-white text-16 md:text-24 font-semibold"
                     >
                       Name
                     </label>
@@ -123,7 +123,10 @@ const EditProfile = () => {
                     />
                   </div>
                   <div className="website">
-                    <label htmlFor="website" className="text-white text-24">
+                    <label
+                      htmlFor="website"
+                      className="text-white text-16 md:text-24"
+                    >
                       Website
                     </label>
                     <input
@@ -139,7 +142,7 @@ const EditProfile = () => {
                   <div className="Bio">
                     <label
                       htmlFor="Bio"
-                      className="text-white text-24 font-semibold"
+                      className="text-white text-16 md:text-24 font-semibold"
                     >
                       Bio
                     </label>
@@ -155,14 +158,14 @@ const EditProfile = () => {
                     />
                   </div>
 
-                  <p className="text-30 mt-20 mb-16 font-extraBold">
+                  <p className="text-16 md:text-30 my-5 md:my-14 font-extraBold">
                     Email & Password
                   </p>
 
                   <div className="email">
                     <label
                       htmlFor="email"
-                      className="text-white text-24 font-semibold"
+                      className="text-white text-16 md:text-24 font-semibold"
                     >
                       Email
                     </label>
@@ -187,7 +190,7 @@ const EditProfile = () => {
                   <div className="password">
                     <label
                       htmlFor="password"
-                      className="text-white text-24 font-semibold"
+                      className="text-white text-16 md:text-24 font-semibold"
                     >
                       Password
                     </label>
@@ -205,12 +208,12 @@ const EditProfile = () => {
                       <a href="#">Change</a>
                     </div>
                   </div>
-                  <p className="text-30 my-14">Social</p>
+                  <p className="text-16 md:text-30 my-5 md:my-14">Social</p>
                   {/* telegram */}
                   <div className="telegram">
                     <label
                       htmlFor="telegram"
-                      className="text-white text-24 font-semibold"
+                      className="text-white text-16 md:text-24 font-semibold"
                     >
                       Telegram
                     </label>
@@ -227,7 +230,7 @@ const EditProfile = () => {
                   <div className="instagram">
                     <label
                       htmlFor="instagram"
-                      className="text-white text-24 font-semibold"
+                      className="text-white text-16 md:text-24 font-semibold"
                     >
                       Instagram
                     </label>
@@ -244,7 +247,7 @@ const EditProfile = () => {
                   <div className="discord">
                     <label
                       htmlFor="discord"
-                      className="text-white text-24 font-semibold"
+                      className="text-white text-16 md:text-24 font-semibold"
                     >
                       Discord
                     </label>
@@ -261,7 +264,7 @@ const EditProfile = () => {
                   <div className="facebook">
                     <label
                       htmlFor="facebook"
-                      className="text-white text-24 font-semibold"
+                      className="text-white text-16 md:text-24 font-semibold"
                     >
                       Facebook
                     </label>
@@ -278,7 +281,7 @@ const EditProfile = () => {
                   <div className="youtube">
                     <label
                       htmlFor="youtube"
-                      className="text-white text-24 font-semibold"
+                      className="text-white text-16 md:text-24 font-semibold"
                     >
                       Youtube
                     </label>
@@ -295,7 +298,7 @@ const EditProfile = () => {
                   <div className="tiktok">
                     <label
                       htmlFor="tiktok"
-                      className="text-white text-24 font-semibold"
+                      className="text-white text-16 md:text-24 font-semibold"
                     >
                       Tiktok
                     </label>
@@ -317,7 +320,7 @@ const EditProfile = () => {
                 </div>
               </div>
               {/* edit profile button */}
-              <div className="flex gap-1 justify-end w-full ">
+              <div className="flex gap-1 ml-[40px] md:ml-0">
                 <EditProfileButton></EditProfileButton>
               </div>
             </div>
