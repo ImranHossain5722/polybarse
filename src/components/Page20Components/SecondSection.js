@@ -6,7 +6,7 @@ const SecondSection = () => {
   return (
     <Container className="max-w-[1200px]">
       <div>
-        <div className="w-full md:flex gap-5 bg-[#0D0A3A] shadow-2xl mt-16 p-7">
+        <div className="w-full md:flex gap-5 bg-[#0D0A3A] shadow-2xl mt-16 p-2 md:p-7">
           {/* box-Stake for pass */}
           <div className="w-full md:w-[330px] bg-[#06042A] p-6  pt-8 rounded-5 relative ">
             <div className="flex gap-4">
@@ -41,7 +41,7 @@ const SecondSection = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-5 left-[130px] md:left-[100px]">
+            <div className="absolute -bottom-5 left-[70px] md:left-[100px]">
               <Clam />
             </div>
           </div>

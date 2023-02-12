@@ -10,9 +10,9 @@ const Chart = () => {
           </p>
         </div>
 
-        <div className="flex items-center justify-between gap-2 pt-4">
-          <div className="text-white uppercase text-[14px] font-extrabold">
-            lvel 10
+        <div className="flex items-center justify-between gap-2 pt-4 ">
+          <div className="text-white uppercase text-[14px] font-extrabold mt-0 md:mt-[22px] text-center">
+            Lvl 10
           </div>
           <div className=" grid grid-cols-10 gap-[1.5rem] md:gap-[2px] mr-[25px] md:mr-0 -scale-y-[1]">
             <div className="w-[20px] h-[3px]  bg-[#FFF6E2]"></div>
@@ -28,8 +28,8 @@ const Chart = () => {
           </div>
           <div>
             {" "}
-            <p className="uppercase text-white text-[14px] font-extrabold">
-              LevL 11{" "}
+            <p className="uppercase text-white text-[14px] font-extrabold mt-0 md:mt-[22px] text-center">
+              LvL 11{" "}
             </p>
           </div>
         </div>

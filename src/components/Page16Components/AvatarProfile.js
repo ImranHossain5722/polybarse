@@ -44,6 +44,21 @@ const AvatarProfile = () => {
   ];
   return (
     <div className="mt-[110px]">
+      {/* Only For Mobile title and epic button */}
+      <div className="flex justify-center items-center my-5 gap-4 w-full md:hidden">
+        <div className="">
+          <p className="text-35 text-white font-bold">Avatar #001</p>
+        </div>
+        <div className="">
+          <Link
+            className="py-2 px-10 bg-[#A2D132] font-semibold rounded-full text-18"
+            to="#"
+          >
+            Epic
+          </Link>
+        </div>
+      </div>
+      {/* --end---Only For Mobile title and epic button */}
       <div className=" md:flex justify-between">
         <div className="w-full h-full md:w-2/4 md:pr-14">
           <img
@@ -73,17 +88,21 @@ const AvatarProfile = () => {
           </div>
         </div>
         <div className="mt-5 md:mt-0 w-full md:w-2/4 pl-10 md:pl-14">
-          <div className="">
-            <p className="text-35 text-white font-bold">Avatar #001</p>
+          <div className="w-full hidden md:block">
+            {/* Desktop and Tab version  */}
+            <div className="">
+              <p className="text-35 text-white font-bold">Avatar #001</p>
+            </div>
+            <div className="mt-4">
+              <Link
+                className="py-2 px-10 bg-[#A2D132] font-semibold rounded-full text-18"
+                to="#"
+              >
+                Epic
+              </Link>
+            </div>
           </div>
-          <div className="mt-4">
-            <Link
-              className="py-2 px-10 bg-[#A2D132] font-semibold rounded-full text-18"
-              to="#"
-            >
-              Epic
-            </Link>
-          </div>
+          {/* ---end---Desktop and Tab version  */}
           <div className="boxes-wraps flex items-center gap-7 md:gap-20 mt-6">
             <div className="box-1">
               <div className="flex items-center mt-3">
@@ -166,7 +185,7 @@ const AvatarProfile = () => {
               />
             </div>
           </div>
-          <div>
+          <div className="w-full flex items-center justify-center">
             <BuyNow></BuyNow>
           </div>
         </div>

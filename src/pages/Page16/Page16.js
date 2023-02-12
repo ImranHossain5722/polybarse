@@ -43,7 +43,7 @@ const Page16 = () => {
         </Popup>
         <Container className="max-w-[1200px]">
           {/* nav */}
-          <section className="mt-40">
+          <section className="mt-40 hidden md:block">
             <div className="w-full h-full md:h-[63px] bg-[#100E4F] rounded-5 font-bold   flex flex-col md:flex-row gap-14 px-9 py-6 overflow-hidden ">
               {/* nav1 */}
 

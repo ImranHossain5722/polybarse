@@ -13,3 +13,14 @@
   padding: 50px;
   background-color: #0d0a3a;
 }
+
+@media only screen and (min-width: 275px) and (max-width: 768px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+
+  .border-wrap {
+    border: none;
+    padding: none;
+    background-color: #d75d29;
+    border-radius: 15px;
+  }
+}

@@ -5,7 +5,7 @@ import Container from "../container";
 const StakingBanner = () => {
   return (
     <Container className="max-w-[1200px]">
-      <div>
+      <div className="mt-[80px] md:mt-0">
         <div className="bg-[#061E42] relative rounded-15">
           <div className="Staking px-8 py-10">
             <p className="text-50 font-extraBold">Staking</p>

@@ -98,6 +98,92 @@ function List() {
             Staking
           </Link>
         </li>
+        {/* Only mobile view */}
+        <ul className="block md:hidden">
+          <li className="py-3 md:py-0 md:px-5 hover:text-btnbg">
+            <Link to="/page9" className="">
+              <div className="flex items-center gap-2 ">
+                <img className="w-5 h-5" src="images/game.png" alt="play" />
+                <p className="capitalize text-white  font-extraBold ">Play</p>
+              </div>
+            </Link>
+          </li>
+          <li className="py-3 md:py-0 md:px-5 hover:text-btnbg">
+            <Link to="/page12" className="">
+              <div className="flex items-center gap-2">
+                <img className="w-5 h-5" src="images/cup.png" alt="play" />
+                <p className="capitalize text-white  font-extraBold">Rewards</p>
+              </div>
+            </Link>
+          </li>
+          <li className="py-3 md:py-0 md:px-5  hover:text-btnbg">
+            <Link to="/page13" className="">
+              <div className="flex items-center gap-2">
+                <img className="w-5 h-5" src="images/tofe.png" alt="play" />
+                <p className="capitalize text-white  font-extraBold">
+                  Leaderboard
+                </p>
+              </div>
+            </Link>
+          </li>
+          <li className="py-3 md:py-0 md:px-5 hover:text-btnbg">
+            <Link to="/page14" className="">
+              <div className="flex items-center gap-2">
+                <img
+                  className="w-5 h-5"
+                  src="images/Group 276.png"
+                  alt="play"
+                />
+                <p className="capitalize text-white  font-extraBold">market</p>
+              </div>
+            </Link>
+          </li>
+          <li className="py-3 md:py-0 md:px-5 hover:text-btnbg">
+            <Link to="/page20" className="">
+              <div className="flex items-center gap-2 ">
+                <img
+                  className="w-5 h-5"
+                  src="images/Group 277.png"
+                  alt="play"
+                />
+                <p className="capitalize text-white font-extraBold">Staking</p>
+              </div>
+            </Link>
+          </li>
+          <li className="py-3 md:py-0 md:px-5 hover:text-btnbg">
+            <Link to="/page22" className="">
+              <div className="flex items-center gap-2">
+                <img
+                  className="w-5 h-5"
+                  src="images/Group (1).png"
+                  alt="play"
+                />
+                <p className="capitalize text-white font-extraBold">Polycard</p>
+              </div>
+            </Link>
+          </li>
+          <li className="py-3 md:py-0 md:px-5 hover:text-btnbg">
+            <Link to="nothing" className="">
+              <div className="flex items-center gap-2">
+                <img className="w-5 h-5" src="images/map.png" alt="play" />
+                <p className="capitalize text-white font-extraBold">Map</p>
+              </div>
+            </Link>
+          </li>
+          <li className="py-3 md:py-0 md:px-5 hover:text-btnbg">
+            <Link to="empty" className="">
+              <div className="flex items-center gap-2">
+                <img
+                  className="w-5 h-5"
+                  src="images/bookCheck.png"
+                  alt="play"
+                />
+                <p className="capitalize text-white font-extraBold">Guide</p>
+              </div>
+            </Link>
+          </li>
+        </ul>
+        {/* Only mobile view end*/}
       </ul>
     </motion.div>
   );

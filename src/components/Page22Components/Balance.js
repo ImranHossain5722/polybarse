@@ -13,17 +13,19 @@ const Balance = () => {
           <div className="w-full md:w-[370px] ">
             <div className="flex gap-2 items-center bg-[#BC4D1E] p-6 pb-11 rounded-t-15 ">
               <img
-                className="w-5 h-5  md:w-16 md:h-16 "
+                className="w-14 h-14  md:w-16 md:h-16 "
                 src="images/white-bg.png"
                 alt="images"
               />
-              <p className="text-30 font-extraBold">Total Balance:</p>
+              <p className="text-20 md:text-30 font-extraBold">
+                Total Balance:
+              </p>
             </div>
-            <div className="overflow-x-auto">
-              <table className="table-auto w-[475px] md:w-full ">
+            <div className="">
+              <table className="table-auto w-full ">
                 <tbody className="text-sm  ">
                   <tr className=" bg-[#D75D29] h-20">
-                    <td className="p-2 whitespace-nowrap border-b-2 border-[#fff]">
+                    <td className="whitespace-nowrap border-b-2 border-[#fff] bg-[#D75D29]">
                       <div className="flex items-center ">
                         <div className="w-10 h-10 flex items-center ml-2 sm:mr-3">
                           <img
@@ -37,7 +39,7 @@ const Balance = () => {
                         </div>
                       </div>
                     </td>
-                    <td className="p-2 whitespace-nowrap  border-b-2 border-[#fff] ">
+                    <td className="whitespace-nowrap  border-b-2 border-[#fff] bg-[#D75D29] ">
                       <div className="flex items-center justify-center">
                         <div className="font-medium text-20 text-center text-white">
                           <p className="uppercase">18.324,15</p>
@@ -46,7 +48,7 @@ const Balance = () => {
                     </td>
                   </tr>
                   <tr className=" bg-[#D75D29] h-20 ">
-                    <td className="p-2 whitespace-nowrap rounded-bl-15 ">
+                    <td className=" whitespace-nowrap rounded-bl-15 bg-[#D75D29]">
                       <div className="flex items-center">
                         <div className="w-10 h-10 flex items-center ml-2 sm:mr-3">
                           <img
@@ -60,7 +62,7 @@ const Balance = () => {
                         </div>
                       </div>
                     </td>
-                    <td className="p-2 whitespace-nowrap  rounded-br-15 ">
+                    <td className=" whitespace-nowrap  rounded-br-15 bg-[#D75D29]">
                       <div className="flex items-center justify-center">
                         <div className="font-medium text-20 text-center text-white">
                           <p className="uppercase">58.515,10</p>

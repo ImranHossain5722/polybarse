@@ -8,7 +8,7 @@ const Page20 = () => {
   return (
     <div>
       <NaveHeader></NaveHeader>
-      <div className="mt-[60px] pb-[250px]">
+      <div className="mt-[60px] pb-[50px]">
         <StakingBanner></StakingBanner>
         <SecondSection></SecondSection>
         <ThirdSection></ThirdSection>

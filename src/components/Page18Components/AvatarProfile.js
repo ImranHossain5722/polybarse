@@ -74,6 +74,21 @@ const AvatarProfile = () => {
 
   return (
     <div className="mt-[110px]">
+      {/* Only For Mobile title and epic button */}
+      <div className="flex justify-center items-center my-5 gap-4 w-full md:hidden">
+        <div className="">
+          <p className="text-35 text-white font-bold">Avatar #001</p>
+        </div>
+        <div className="">
+          <Link
+            className="py-2 px-10 bg-[#A2D132] font-semibold rounded-full text-18"
+            to="#"
+          >
+            Epic
+          </Link>
+        </div>
+      </div>
+      {/* --end---Only For Mobile title and epic button */}
       <div className="md:flex justify-between">
         <div className="w-full md:w-2/4 md:pr-14">
           <img
@@ -102,17 +117,19 @@ const AvatarProfile = () => {
             </div>
           </div>
         </div>
-        <div className="w-full mt-5 md:mt-0 md:w-2/4 pl-10 md:pl-14">
-          <div className="">
-            <p className="text-35 text-white font-abold">Avatar #001</p>
-          </div>
-          <div className="mt-4">
-            <Link
-              className="py-2 px-10 text-18 bg-[#A2D132] font-semibold rounded-full"
-              to="#"
-            >
-              Epic
-            </Link>
+        <div className="w-full mt-5 md:mt-0 md:w-2/4 px-5 md:pl-14">
+          <div className="w-full hidden md:block">
+            <div className="">
+              <p className="text-35 text-white font-abold">Avatar #001</p>
+            </div>
+            <div className="mt-4">
+              <Link
+                className="py-2 px-10 text-18 bg-[#A2D132] font-semibold rounded-full"
+                to="#"
+              >
+                Epic
+              </Link>
+            </div>
           </div>
           <div className="flex items-center gap-10 md:gap-20 mt-6">
             <div className="box-1">
@@ -212,7 +229,7 @@ const AvatarProfile = () => {
           <div>
             <button
               onClick={() => setSell(!sell)}
-              className="inline-flex items-center text-xs sm:text-sm lg:text-18 border-2 border-[#497BEE] font-semibold font-inter px-3 md:px-7 py-2  bg-[#497BEE] hover:bg-transparent rounded-full lg:px-44 lg:py-3 uppercase text-center mt-8 button-hero"
+              className="inline-flex items-center text-xs sm:text-sm lg:text-18 border-2 border-[#497BEE] font-semibold font-inter px-36 md:px-7 py-2  bg-[#497BEE] hover:bg-transparent rounded-lg md:rounded-full lg:px-44 lg:py-3 uppercase text-center mt-8 button-hero"
             >
               Sell
             </button>

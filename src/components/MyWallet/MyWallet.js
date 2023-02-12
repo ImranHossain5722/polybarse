@@ -12,7 +12,7 @@ import "./Mywallet.css";
 
 const MyWallet = () => {
   return (
-    <div className="relative pt-28">
+    <div className="relative pt-8 md:pt-28">
       <div className=" hidden md:block absolute max-w-xl -left-32 top-3/4 -translate-y-[45%] -z-10">
         <img
           src="/images/dottss.png"
@@ -20,10 +20,10 @@ const MyWallet = () => {
           className="object-contain object-right"
         />
       </div>
-      <Popup className="hidden md:block w-32 h-32 top-1/4 left-5 bottom-0 z-10">
+      <Popup className="hidden shape md:block w-32 h-32 top-1/4 left-5 bottom-0 z-10">
         <img src={greenshapbg} alt="shape" />
       </Popup>
-      <Popup className="hidden md:block w-32 right-0 bottom-1/2 z-10">
+      <Popup className="hidden shape md:block w-32 right-0 bottom-1/2 z-10">
         <img src={rightRedShap} alt="shape" />
       </Popup>
       <Container className="max-w-[1200px]">
@@ -33,10 +33,13 @@ const MyWallet = () => {
           </p>
           <div className=" flex item-center border-wrap relative ">
             <div className="org-div bg-arrwoActive ">
-              <div className=" flex items-center gap-x-4 md:gap-x-72">
+              <div className=" flex items-center gap-x-16 md:gap-x-72">
                 <div className="flex items-center ">
-                  <img className="w-16 h-16 mr-2" src={whitecoin} />
-                  <p className="text-16 md:text-30 font-extraBold">Balance</p>
+                  <img
+                    className=" w-8 h-8 md:w-16 md:h-16 mr-2"
+                    src={whitecoin}
+                  />
+                  <p className="text-18 md:text-30 font-extraBold">Balance</p>
                 </div>
                 <div>
                   <img className="w-6 h-6" src={Whitearow} />
@@ -54,7 +57,7 @@ const MyWallet = () => {
                     alt="coin"
                   />
                 </div>
-                <div className="flex items-center justify-center gap-2 md:mb-7">
+                <div className="flex items-center justify-center gap-2 mt-2 md:mt-0 md:mb-7">
                   <p className="w-48 text-16 md:text-30 font-extraBold">
                     150.50 PLV
                   </p>

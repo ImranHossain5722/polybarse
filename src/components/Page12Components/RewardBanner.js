@@ -7,7 +7,7 @@ const RewardBanner = () => {
   return (
     <div>
       <Container className="max-w-[1200px]">
-        <div className="">
+        <div className="mt-[40px] md:mt-0">
           <div className="flex justify-between ">
             <div className="img-box">
               <img

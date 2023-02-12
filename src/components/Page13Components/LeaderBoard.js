@@ -11,7 +11,7 @@ const LeaderBoard = () => {
     <div>
       <div>
         <Container className="max-w-[1200px] z-20">
-          <div className="">
+          <div className="mt-[90px] md:mt-0">
             <div className="flex items-start">
               <img className="w-14 h-14" src="images/leader.png" alt="cup" />
               <p className="font-extraBold text-45 text-white ml-3">

@@ -14,7 +14,7 @@ const EditPassword = () => {
     setOpen(!open);
   };
   return (
-    <div className=" relative bg-themeColor py-36">
+    <div className=" relative bg-themeColor pt-24 md:py-36">
       <div className="hidden md:block absolute w-[500px] -left-32 top-0 z-10 opacity-25">
         <img
           src="/images/bg-right.png"
@@ -38,7 +38,7 @@ const EditPassword = () => {
 
       <Container className="max-w-[1200px] pt-5 md:pt-32 lg:pt-32">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center gap-8 ">
-          <div className="from-div order-2 md:order-1 px-6 md:px-0 lg:px-0">
+          <div className="from-div px-4 md:px-0 lg:px-0">
             <p className="text-45 mb-6 font-extraBold">Edit Password</p>
             <p className="text-xl  mb-6">
               For your security, we highly recommend that you choose a unique
@@ -139,7 +139,7 @@ const EditPassword = () => {
             </div>
           </div>
           {/* image */}
-          <div className=" order-1 md:order-2">
+          <div className="hidden md:block">
             <img className=" md:w-full md:h-full" src={lock} alt="lock" />
           </div>
         </div>

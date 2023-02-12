@@ -61,17 +61,16 @@ const Referrals = () => {
       <Container className="max-w-[1200px]">
         <div className="relative max-w-[1170px]">
           <p className="text-30 my-7 font-extraBold">Referrals</p>
-          <div className="three-box md:flex items-center justify-around bg-[#0D0A3A] p-8 rounded-md">
-            <div className="box-1 bg-[#06042A] p-5 md:w-4/12 m-5 pt-16 pb-16  rounded-md ">
-              <p className="text-18 md:text-30 text-center font-extraBold">
+
+          <div className="three-box w-full md:flex items-center justify-around bg-[#0D0A3A] p-8 rounded-md">
+            <div className="box-1 bg-[#06042A] p-5 w-full h-full md:w-4/12 md:m-5 pt-16 pb-16  rounded-md ">
+              <p className="text-20 md:text-30 text-center font-extraBold">
                 Friend Referred
               </p>
-              <p className="text-18 md:text-50 text-center font-extraBold">
-                04
-              </p>
+              <p className="text-50 text-center font-extraBold">04</p>
             </div>
-            <div className="box-2 bg-[#06042A] p-5 md:w-4/12 m-5  rounded-md">
-              <p className="text-18 md:text-30 text-center font-extraBold">
+            <div className="box-2 bg-[#06042A] p-5 w-full h-full md:w-4/12 my-5 md:m-5  rounded-md">
+              <p className="text-20 md:text-30 text-center font-extraBold">
                 Invite your friend
               </p>
               <div className="email">
@@ -86,22 +85,22 @@ const Referrals = () => {
                 />
                 <button
                   type="submit"
-                  className="uppercase mt-14 bg-btnbg py-4 px-6 w-full rounded-md font-bold button-hero"
+                  className="uppercase md:mt-14 bg-btnbg py-4 px-6 w-full rounded-md font-bold button-hero"
                 >
                   Invite Now
                 </button>
               </div>
             </div>
-            <div className="box-3 bg-[#06042A] p-5 md:w-4/12 m-5  rounded-md ">
-              <p className=" text-18 md:text-30 text-center font-extraBold">
+            <div className="box-3 bg-[#06042A] w-full h-full p-5 md:w-4/12  md:m-5  rounded-md ">
+              <p className=" text-20 md:text-30 text-center font-extraBold">
                 Your Earnings
               </p>
-              <p className="text-18 md:text-40 text-center font-extraBold">
+              <p className="text-20 md:text-40 text-center font-extraBold">
                 4000,15 PLV
               </p>
               <button
                 type="submit"
-                className="button-hero uppercase mt-14 bg-btnbg py-4 px-6 w-full rounded-md font-bold"
+                className="button-hero uppercase md:mt-14 bg-btnbg py-4 px-6 w-full rounded-md font-bold"
               >
                 CLAIM
               </button>
@@ -125,11 +124,11 @@ const Referrals = () => {
         {/* share your referrals link section */}
         <div className="mt-16 ">
           <div className="flex items-center justify-center">
-            <div className="box-2 bg-[#0D0A3A] p-5 w-4/6 m-5 rounded-md ">
+            <div className="box-2 bg-[#0D0A3A] px-3 md:p-5 w-full md:w-4/6 md:m-5 rounded-md ">
               <p className="text-18 md:text-30 text-center font-extraBold pt-9">
                 Share your referrals link
               </p>
-              <div className="text mx-10 mt-9 relative">
+              <div className="text md:mx-10 mt-9 relative">
                 <input
                   id="text"
                   name="text"
@@ -158,18 +157,18 @@ const Referrals = () => {
             </div>
           </div>
           {/* share social media */}
-          <div className="flex items-center justify-center">
-            <p className="md:text-24 font-semibold capitalize mt-5 mr-3 md:mt-8">
+          <div className="md:flex items-center justify-center">
+            <p className="text-center md:text-left text-24 font-semibold capitalize mt-5 mr-3 md:mt-8">
               Share this on:
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 md:mt-8">
+            <div className="grid place-items-center grid-cols-4 gap-2 md:gap-5 mt-5 md:mt-8">
               {s.map((i) => (
                 <a
                   href={i.link}
                   key={i.id}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-block text-lg md:text-3xl text-black bg-white p-4 rounded-full hover:text-btnbg"
+                  className="inline-block text-lg  text-center md:text-3xl text-black bg-white p-4 rounded-full hover:text-btnbg"
                 >
                   {i.icon}
                 </a>

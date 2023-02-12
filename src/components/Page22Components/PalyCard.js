@@ -9,14 +9,14 @@ const PalyCard = () => {
         <div>
           <p className="text-30 font-extraBold mt-[170px] mb-6">Poly Card</p>
         </div>
-        <div className="relative bg-[#0D0A3A] border-1 border-[#A2D132] rounded-5">
+        <div className="relative bg-[#0D0A3A] border-1 border-[#A2D132] rounded-5 pb-5 md:pb-0">
           <div className="absolute left-[90px] md:left-[510px] -top-6 z-20 ">
             <button className="uppercase border-1 border-[#A2D132] px-9 py-3 rounded-full bg-[#0D0A3A] font-bold">
               Your Plan
             </button>
           </div>
           {/* two button */}
-          <div className=" absolute right-4 md:right-28 twoButton mt-5 py-8">
+          <div className="absolute right-4 bottom-[80px] md:bottom-0 md:right-28 twoButton mt-5 py-8">
             <button className="uppercase  bg-[#1B1757] px-9 py-3 mr-11 button-hero text-16 font-extraBold ">
               LIMIT
             </button>
@@ -25,7 +25,7 @@ const PalyCard = () => {
             </button>
           </div>
 
-          <div className="md:flex items-center gap-x-36 py-32 md:py-20">
+          <div className="md:flex items-center gap-x-36 pt-12 pb-44 md:py-20">
             <div className="pl-12">
               <img
                 className="w-60 h-40"
@@ -101,7 +101,7 @@ const PalyCard = () => {
             </div>
           </div>
           {/* upgrade plan*/}
-          <div>
+          <div className="">
             <button className="absolute left-[50px] md:left-[450px] bottom-4 uppercase  bg-[#D75D29] px-9 py-4  rounded-full font-bold text-24 button-hero">
               upgrade plan
             </button>

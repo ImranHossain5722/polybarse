@@ -108,10 +108,10 @@ const InventoryTab = () => {
           className="object-contain object-right"
         />
       </div>
-      <Popup className="hidden md:block w-32 h-32 top-1/4 left-5 bottom-0 z-10">
+      <Popup className="hidden shape md:block w-32 h-32 top-1/4 left-5 bottom-0 z-10">
         <img src={greenshapbg} alt="shape" />
       </Popup>
-      <Popup className="hidden md:block right-0 top-[580px] w-32  z-10">
+      <Popup className="hidden shape md:block right-0 top-[580px] w-32  z-10">
         <img src={rightshap} alt="shape" />
       </Popup>
       <Container className="max-w-[1200px]">
@@ -131,11 +131,11 @@ const InventoryTab = () => {
             <div className="md:flex flex-col justify-center items-center ">
               <TabGroup numTabs={3} direction={TabGroup.direction.HORIZONTAL}>
                 {/* tab header */}
-                <TabGroup.TabList className="bg-[#322F6F] w-full  rounded-5 md:flex justify-start items-center">
+                <TabGroup.TabList className="bg-[#322F6F] w-full  rounded-5 flex justify-start items-center">
                   <TabGroup.Tab
                     index={0}
-                    className="w-full h-full md:h-12 px-7 text-18 transition-colors duration-150 uppercase  py-3 "
-                    activeClassName="text-white border-b-2 border-[#D75D29] focus:outline-none mb-3 md:mb-0"
+                    className="w-full h-full md:h-12 md:px-7 text-18 transition-colors duration-150 uppercase  py-3 "
+                    activeClassName="text-white border-b-2 border-[#D75D29] focus:outline-none"
                     inactiveClassName="text-white"
                   >
                     <div className="text-[15px] md:text-18 font-extraBold">
@@ -145,7 +145,7 @@ const InventoryTab = () => {
 
                   <TabGroup.Tab
                     index={1}
-                    className="w-full h-full md:h-12 px-20 text-18 text-center transition-colors duration-150 uppercase"
+                    className="w-full h-full md:h-12 md:px-20 text-18 text-center transition-colors duration-150 uppercase py-3 "
                     activeClassName="text-white border-b-2 border-[#D75D29]"
                     inactiveClassName="text-white"
                   >
@@ -157,7 +157,7 @@ const InventoryTab = () => {
                   </TabGroup.Tab>
                   <TabGroup.Tab
                     index={2}
-                    className="w-full h-full md:h-12 px-20 text-18 text-center transition-colors duration-150 uppercase "
+                    className="w-full h-full md:h-12 md:px-20 text-18 text-center transition-colors duration-150 uppercase py-3"
                     activeClassName="text-white border-b-2 border-[#D75D29]"
                     inactiveClassName="text-white"
                   >
@@ -169,7 +169,7 @@ const InventoryTab = () => {
                   </TabGroup.Tab>
                   <TabGroup.Tab
                     index={3}
-                    className="w-full h-full md:h-12 px-20 text-18 text-center transition-colors duration-150 uppercase "
+                    className="w-full h-full md:h-12 md:px-20 text-18 text-center transition-colors duration-150 uppercase py-3"
                     activeClassName="text-white border-b-2 border-[#D75D29]"
                     inactiveClassName="text-white"
                   >
@@ -184,7 +184,7 @@ const InventoryTab = () => {
                 {/* tab body */}
                 <TabGroup.TabPanel
                   index={0}
-                  className="py-16 transition-all transform"
+                  className="pt-16 transition-all transform"
                   activeClassName="opacity-100 duration-500 translate-x-0 "
                   inactiveClassName="absolute opacity-0 -translate-x-2"
                 >
@@ -212,7 +212,7 @@ const InventoryTab = () => {
 
                 <TabGroup.TabPanel
                   index={1}
-                  className="py-16 transition-all transform"
+                  className="pt-16 transition-all transform"
                   activeClassName="opacity-100 duration-500 translate-x-0 "
                   inactiveClassName="absolute opacity-0 -translate-x-2"
                 >
@@ -240,7 +240,7 @@ const InventoryTab = () => {
 
                 <TabGroup.TabPanel
                   index={2}
-                  className="py-16 transition-all transform"
+                  className="pt-16 transition-all transform"
                   activeClassName="opacity-100 duration-500 translate-x-0 border-b-2"
                   inactiveClassName="absolute opacity-0 -translate-x-2"
                 >
@@ -267,7 +267,7 @@ const InventoryTab = () => {
                 </TabGroup.TabPanel>
                 <TabGroup.TabPanel
                   index={3}
-                  className="py-16 transition-all transform"
+                  className="pt-16 transition-all transform"
                   activeClassName="opacity-100 duration-500 translate-x-0"
                   inactiveClassName="absolute opacity-0 -translate-x-2"
                 >

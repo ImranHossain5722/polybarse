@@ -13,7 +13,7 @@ const ThirdSection = () => {
           <table className="table-auto w-[475px] md:w-full">
             <thead className=" h-16 font-semibold capitalize text-white  rounded-5">
               <tr className="">
-                <th className="py-2 px-8 whitespace-nowrap ">
+                <th className="py-2 px-8 whitespace-nowrap hidden md:block ">
                   <div className="font-extraBold text-center text-white text-18 m-1 uppercase">
                     Token
                   </div>
@@ -32,7 +32,7 @@ const ThirdSection = () => {
             </thead>
             <tbody className="text-sm  ">
               <tr className=" bg-[#0D0A3A] h-20">
-                <td className="p-2 whitespace-nowrap border-r-2 border-[#1B1757]">
+                <td className="p-2 whitespace-nowrap border-r-2 border-[#1B1757] hidden md:block">
                   <div className="flex items-center justify-center">
                     <div className="w-10 h-10 flex items-center ml-2 sm:mr-3">
                       <img

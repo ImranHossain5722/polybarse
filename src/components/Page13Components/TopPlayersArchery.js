@@ -6,8 +6,8 @@ import TimerReword from "../Page13Components/TimerReword";
 const TopPlayersArchery = () => {
   return (
     <Container className="max-w-[1200px]">
-      <div className="md:flex justify-between mt-20  ">
-        <div className="w-full md:w-[786px]  bg-[#061E42] mr-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[26rem] mt-20  ">
+        <div className="order-2 md:order-1 w-full md:w-[786px]  bg-[#061E42] mr-3 mt-12 md:mt-0">
           <div className=" md:flex px-7 py-5 items-center justify-between">
             <p className="font-extraBold text-30 text-white">
               Top Players Archery
@@ -20,7 +20,7 @@ const TopPlayersArchery = () => {
             </div>
           </div>
           <div className=" w-full md:w-[780px] mx-auto shadow-lg rounded-sm">
-            <div className="px-7 py-5">
+            <div className="px-2 md:px-7 py-3 md:py-5">
               {/* table player archery */}
               <div className="overflow-x-auto">
                 <table className="table-auto w-full">
@@ -365,7 +365,7 @@ const TopPlayersArchery = () => {
         </div>
 
         {/*total rewards div  */}
-        <div className=" w-full md:w-[374px]  bg-[#0A264F] px-6 mt-4 md:mt-0 pb-3 md:pb-0 rounded-5">
+        <div className="order-1 md:order-2 w-full md:w-[374px]  bg-[#0A264F] px-6 mt-4 md:mt-0 pb-3 md:pb-0 rounded-5">
           <p className="font-extraBold text-30 text-white text-center pt-5">
             Total Rewards
           </p>

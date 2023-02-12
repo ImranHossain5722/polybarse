@@ -31,16 +31,16 @@ const Page10 = () => {
           className="object-contain object-right"
         />
       </div>
-      <Popup className="hidden md:block w-32 h-32 top-1/3 left-5 bottom-0 z-10">
+      <Popup className="hidden shape md:block w-32 h-32 top-1/3 left-5 bottom-0 z-10">
         <img src={greenshapbg} alt="shape" />
       </Popup>
-      <Popup className="hidden md:block right-0 top-1/3 w-32  z-10">
+      <Popup className="hidden shape md:block right-0 top-1/3 w-32  z-10">
         <img src={rightshap} alt="shape" />
       </Popup>
 
       <Container className="max-w-[1200px]">
         {/* nav */}
-        <section className="mt-40">
+        <section className="mt-40 hidden md:block">
           <div className="w-full h-full md:h-[63px] bg-[#100E4F] rounded-5 font-bold   flex flex-col md:flex-row gap-14 px-9 py-6 overflow-hidden ">
             {/* nav1 */}
 
@@ -182,7 +182,7 @@ const Page10 = () => {
             <div className="bt-2 my-12 flex items-center justify-center md:flex-none md:items-start md:justify-start ">
               <Link
                 to="#"
-                className="uppercase text-white text-sm font-semibold bg-btnbg rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
+                className="uppercase text-white text-18 md:text-sm font-semibold bg-btnbg rounded-3xl py-3 px-16 md:px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
               >
                 CHOOSE YOUR AVATAR
               </Link>
@@ -198,7 +198,7 @@ const Page10 = () => {
             <div className="bt-2 my-12 flex items-center justify-center">
               <Link
                 to="#"
-                className="uppercase flex items-center justify-center border-4 border-black text-[25px] font-extraBold text-black bg-btnBorder rounded-3xl py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
+                className="uppercase flex items-center justify-center border-4 border-black text-[25px] font-extraBold text-black bg-btnBorder rounded-3xl py-3 px-16 md:px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
               >
                 Play now
                 <img

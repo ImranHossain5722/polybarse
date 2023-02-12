@@ -18,13 +18,13 @@ const Page9 = () => {
             <div className="bt-2 mt-12 flex justify-center">
               <Link
                 to="#"
-                className="uppercase text-white text-sm bg-btnbg rounded-3xl font-semibold py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
+                className="uppercase text-white text-20 bg-btnbg rounded-3xl font-semibold py-3 px-16 md:px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
               >
                 CHOOSE YOUR AVATAR
               </Link>
             </div>
           </div>
-          <div className="boxMap mt-44 md:mt-0">
+          <div className="boxMap mt-44 md:mt-1">
             <img
               className="w-full h-full md:w-[523px] md:h-[523px]"
               src="/images/play.png"
@@ -34,7 +34,7 @@ const Page9 = () => {
             <div className="bt-2 mt-12 flex justify-center">
               <Link
                 to="#"
-                className="uppercase text-white text-sm bg-btnbg rounded-3xl font-semibold py-3 px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
+                className="uppercase text-white text-18 bg-btnbg rounded-3xl font-semibold py-3 px-16 md:px-10 hover:scale-75 hover:transition duration-300  cursor-pointer"
               >
                 CHOOSE YOUR AVATAR
               </Link>

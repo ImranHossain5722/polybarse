@@ -47,3 +47,41 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@media only screen and (min-width: 275px) and (max-width: 768px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+
+  .div1 {
+    width: 345px;
+    height: 380px;
+    border: 8px solid #0b5d7e;
+    border-radius: 50px;
+    background: radial-gradient(
+      45% 45% at 45% 45%,
+      #0b5d7e 0%,
+      rgba(4, 87, 117, 0) 100%
+    );
+  }
+  .div2 {
+    width: 345px;
+    height: 380px;
+    border: 8px solid #0b5d7e;
+    border-radius: 50px;
+    background: radial-gradient(
+      45% 45% at 45% 45%,
+      #0b5d7e 0%,
+      rgba(4, 87, 117, 0) 100%
+    );
+  }
+  .div3 {
+    width: 345px;
+    height: 380px;
+    border: 8px solid #0b5d7e;
+    border-radius: 50px;
+    background: radial-gradient(
+      45% 45% at 45% 45%,
+      #0b5d7e 0%,
+      rgba(4, 87, 117, 0) 100%
+    );
+  }
+}

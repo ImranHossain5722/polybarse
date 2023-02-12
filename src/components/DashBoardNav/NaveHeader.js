@@ -10,7 +10,7 @@ const NaveHeader = () => {
   const normalLink = "";
 
   return (
-    <div className="mt-40">
+    <div className="mt-40 hidden md:block">
       <div className=" hidden md:block absolute max-w-xl -left-44 top-0 -translate-y-[45%] -z-10">
         <img
           src="/images/dottss.png"

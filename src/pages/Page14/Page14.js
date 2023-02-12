@@ -6,7 +6,7 @@ const Page14 = () => {
   return (
     <div>
       <NaveHeader></NaveHeader>
-      <div className="my-[60px]">
+      <div className="mt-[60px]">
         <Market />
       </div>
     </div>

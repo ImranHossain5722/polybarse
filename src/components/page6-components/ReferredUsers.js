@@ -5,7 +5,7 @@ const ReferredUsers = memo(() => {
   return (
     <Container className="max-w-[1200px]">
       {/* < component  */}
-      <div className="antialiased  text-gray-600 px-8 mt-28 mb-36">
+      <div className="antialiased  text-gray-600 md:px-8 mt-3 md:mt-28 md:mb-36">
         <div className="flex flex-col justify-center h-full">
           {/* <!-- Table --> */}
           <div className=" bg-[#0D0A3A] shadow-lg rounded-sm">

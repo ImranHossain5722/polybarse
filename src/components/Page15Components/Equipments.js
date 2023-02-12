@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
+
 import Filter1 from "./Filter1";
+import FilterMenu from "./FilterMenu";
+import OrderByMenu from "./OrderByMenu";
 const Equipments = () => {
   const s = [
     {
@@ -144,8 +147,8 @@ const Equipments = () => {
 
       <div className="md:flex">
         <div className=" w-full md:w-[200px] h-full bg-[#061E42] rounded-5">
-          <div className="category-wrap">
-            {/* category*/}
+          <div className="category-wrap hidden md:block">
+            {/* Desktop category*/}
             <Filter1 />
           </div>
         </div>
@@ -158,19 +161,29 @@ const Equipments = () => {
                 Equipments <span>(145)</span>
               </p>
               {/* filter  */}
-              <div className="flex items-center md:justify-between gap-36 md:gap-0">
-                <div>
-                  <p className="mr-2 mt-2 font-semibold text-sm"> Order By</p>
+              {/* filter categories for mobile  */}
+              <div className="block md:hidden mt-3">
+                <div className="flex items-center justify-between gap-3 w-full">
+                  <FilterMenu />
+                  <OrderByMenu />
                 </div>
-                <div class="grid grid-cols-1  gap-4 mt-4">
-                  <select
-                    class="px-4 py-3 w-full rounded-md bg-[#061E42] border border-[#133567]   
+              </div>
+              {/* order by filter Desktop */}
+              <div className="hidden md:flex">
+                <div className="flex items-center md:justify-between gap-36 md:gap-0 ">
+                  <div>
+                    <p className="mr-2 mt-2 font-semibold text-sm"> Order By</p>
+                  </div>
+                  <div class="grid grid-cols-1  gap-4 mt-4">
+                    <select
+                      class="px-4 py-3 w-full rounded-md bg-[#061E42] border border-[#133567]   
                    focus:bg-[#061E42] focus:ring-0 text-sm"
-                  >
-                    <option value="">All Type</option>
-                    <option value="for-rent">For Rent</option>
-                    <option value="for-sale">For Sale</option>
-                  </select>
+                    >
+                      <option value="">All Type</option>
+                      <option value="for-rent">For Rent</option>
+                      <option value="for-sale">For Sale</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
