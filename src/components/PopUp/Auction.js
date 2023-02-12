@@ -14,7 +14,7 @@ const Auction = ({ setAuction }) => {
         className="popUp-wrap"
       ></div>
       <div>
-        <div className="popup-container">
+        <div className="popup-containers">
           <section class="pt-32 mb-32">
             <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0 ">
               <div class="from-wraps  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative border-1 border-[#497BEE]">
@@ -66,7 +66,7 @@ const Auction = ({ setAuction }) => {
                         Auction end date/time
                       </h1>
                     </div>
-                    <div className="flex gap-6">
+                    <div className="md:flex gap-6">
                       <div className="from-date">
                         <label className="relative">
                           <input
@@ -76,11 +76,6 @@ const Auction = ({ setAuction }) => {
                             required
                             className="d my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 "
                           />
-                          {/* <div className="flex items-center absolute top-6 right-3">
-                          <div className="flex items-center">
-                            <RiCalendar2Line className="w-8 h-8 text-[#497BEE]" />
-                          </div>
-                        </div> */}
                         </label>
                       </div>
                       <div className="from-Time">

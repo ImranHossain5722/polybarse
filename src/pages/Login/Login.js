@@ -38,8 +38,8 @@ const Login = () => {
           ></div>
           <div className="popup-containers">
             <section class="py-2">
-              <div class=" flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-                <div class="from-wrap  w-full  rounded-[20px] shadow-2xl  md:mt-0 sm:max-w-md border-1 border-[#497BEE]">
+              <div class="flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0 ">
+                <div class="from-wraps  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative border-1 border-[#497BEE]">
                   <div
                     onClick={() => {
                       setShowLoginPopUp(false);
@@ -50,46 +50,52 @@ const Login = () => {
                   </div>
                   <div className="logo-wrap flex justify-center">
                     <Link to="/">
-                      <img class=" w-60 h-28 " src={logo} alt="logo" />
+                      <img
+                        class="w-full md:w-60 md:h-28 "
+                        src={logo}
+                        alt="logo"
+                      />
                     </Link>
                   </div>
                   <div class=" space-y-4 md:space-y-3 sm:p-8">
-                    <h1 class="text-35 font-bold text-white md:text-2xl  text-center">
+                    <h1 class="text-16 md:text-35 font-bold text-white md:text-2xl  text-center">
                       Explore Metaverse
                     </h1>
                     <form class="  space-y-4 md:space-y-4" action="#">
-                      <div className="user-div">
+                      <div className="user-div flex justify-center">
                         <input
                           type="name"
                           name="name"
                           id="name"
-                          className="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-[55px] font-normal placeholder-[#497BEE]  focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                          className="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  
+                          mx-4 md:mx-0 w-full h-[55px] font-normal placeholder-[#497BEE]  focus:ring-primary-600 focus:border-primary-600 block  p-2.5 "
                           placeholder="Username"
                           required=""
                         />
                       </div>
-                      <div>
+                      <div className="password-div flex justify-center">
                         <input
                           type="password"
                           name="password"
                           id="password"
                           placeholder="Password"
-                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-[55px] font-normal placeholder-[#497BEE]  focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-[55px] font-normal placeholder-[#497BEE]  focus:ring-primary-600 focus:border-primary-600 block mx-4 md:mx-0 w-full p-2.5 "
                           required=""
                         />
                       </div>
                       <div class="ml-3 text-sm">
-                        <p class="font-medium text-center capitalize text-textColor1  underline font-normal ">
-                          Forgot Password
+                        <p class="font-medium text-center capitalize text-textColor1  underline ">
+                          <Link to="/editpassword">Forgot Password</Link>
                         </p>
                       </div>
-
-                      <button
-                        type="submit"
-                        class="w-full text-white bg-btnbg text-18 hover:bg-primary-700  rounded-2xl text-sm px-5 py-2.5 text-center  uppercase button-shrink font-semibold"
-                      >
-                        Log-in
-                      </button>
+                      <div className="flex justify-center">
+                        <button
+                          type="submit"
+                          class="md:w-full text-white bg-btnbg text-18 hover:bg-primary-700  rounded-2xl text-sm px-5 py-2.5 text-center  uppercase button-shrink font-semibold"
+                        >
+                          Log-in
+                        </button>
+                      </div>
                       <div className="flex items-center justify-evenly">
                         <div className="div-or"></div>
                         <p className="text-white">OR</p>
@@ -174,9 +180,9 @@ const Login = () => {
           ></div>
           <div>
             <div className="popup-containers">
-              <section class="pt-2">
-                <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0">
-                  <div class="from-wrap  w-full  rounded-[20px] shadow-2xl  md:mt-0 sm:max-w-md border-1 border-[#497BEE]">
+              <section class="pt-2  ">
+                <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0 ">
+                  <div class="from-wraps  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative border-1 border-[#497BEE]">
                     <div
                       className="close-wrap flex justify-end cursor-pointer "
                       onClick={() => {
@@ -191,7 +197,11 @@ const Login = () => {
                     </div>
                     <div className="logo-wrap flex justify-center">
                       <Link to="/">
-                        <img class=" w-60 h-28 " src={logo} alt="logo" />
+                        <img
+                          class="w-full h-full md:w-60 md:h-28 "
+                          src={logo}
+                          alt="logo"
+                        />
                       </Link>
                     </div>
                     <div class=" space-y-4 md:space-y-3 sm:p-8">
@@ -199,50 +209,55 @@ const Login = () => {
                         Sign Up
                       </h1>
                       <form class="  space-y-4 md:space-y-4" action="#">
-                        <div className="user-div">
+                        <div className="user-div flex  justify-center">
                           <input
                             type="text"
                             name="name"
                             id="name"
-                            className="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-[55px] font-normal placeholder-[#497BEE] focus:ring-inputBorder focus:border-inputBorder block w-full p-2.5 "
+                            className="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  
+                            mx-4 md:mx-0 w-full md:h-[55px] font-normal placeholder-[#497BEE] focus:ring-inputBorder focus:border-inputBorder block  p-2.5 "
                             placeholder="Username"
                             required=""
                           />
                         </div>
-                        <div className="user-div">
+                        <div className="email-div flex  justify-center">
                           <input
                             type="email"
                             name="email"
                             id="email"
-                            class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg h-[55px] font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                            class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg 
+                            mx-4 md:mx-0 w-full md:h-[55px] font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block  p-2.5 "
                             placeholder="Email"
                             required=""
                           />
                         </div>
-                        <div>
+                        <div className="password-div flex justify-center">
                           <input
                             type="password"
                             name="password"
                             id="password"
                             placeholder="Password"
-                            class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-[55px] font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                            class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg 
+                            mx-4 md:mx-0 w-full md:h-[55px] font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block  p-2.5 "
                             required=""
                           />
                         </div>
-                        <div className="checkbox">
+                        <div className="checkbox flex justify-center">
                           <label class="main text-16">
                             By creating an account, By creating an account,
                             <input type="checkbox" />
-                            <span class="geekmark"></span>
+                            <span class="mx-2 md:mx-0 geekmark"></span>
                           </label>
                         </div>
-                        <button
-                          type="submit"
-                          className="w-full text-white bg-btnbg 
+                        <div className="flex justify-center">
+                          <button
+                            type="submit"
+                            className="md:w-full text-white bg-btnbg 
                      text-18 rounded-2xl text-sm px-5 py-2.5 text-center uppercase button-shrink font-semibold"
-                        >
-                          Sign up
-                        </button>
+                          >
+                            Sign up
+                          </button>
+                        </div>
                         <div className="flex items-center justify-evenly">
                           <div className="div-or"></div>
                           <p className="text-white">OR</p>

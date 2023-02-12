@@ -107,8 +107,17 @@ input[type="checkbox"] {
 }
 .popup-containers {
   position: fixed;
-  top: -50%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
   width: 500px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+  .popup-containers {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+  }
 }

@@ -17,7 +17,7 @@ const MapFilter = () => {
 
   const {
     forSale,
-    Premium,
+    premium,
     sold,
     body,
     xl,
@@ -37,7 +37,7 @@ const MapFilter = () => {
     setCheck({
       ...check,
       forSale: false,
-      Premium: false,
+      premium: false,
       sold: false,
       body: false,
       xl: false,
@@ -100,7 +100,7 @@ const MapFilter = () => {
                     className="w-4 h-4 mr-2"
                     name="premium"
                     value="premium"
-                    checked={Premium}
+                    checked={premium}
                     onChange={changeHandler}
                   />
                   <span

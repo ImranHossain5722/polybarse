@@ -5,7 +5,7 @@ import close from "../../images/Vector.png";
 import walit from "../../images/walit.png";
 import { BsArrowLeftShort } from "react-icons/bs";
 import "./PopUp.css";
-import YourAreAlmostDone from "./YourAreAlmostDone";
+
 const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
   const [showAlmostDone, setShowAlmostDone] = useState(false);
   // const [selectWallet, setSelectWallet] = useState();
@@ -21,7 +21,7 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
             }}
             className="popUp-wrap"
           ></div>
-          <div className="fixed top-0 left-[35%]">
+          <div className="popup-containers">
             <section class="pt-32 mb-32">
               <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0">
                 <div class="from-wraps  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md border-1 border-[#497BEE]">
@@ -41,61 +41,67 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                   </div>
                   <div className="logo-wrap flex justify-center">
                     <Link to="/">
-                      <img class=" w-60 h-28 " src={logo} alt="logo" />
+                      <img
+                        class="w-full md:w-60 md:h-28 "
+                        src={logo}
+                        alt="logo"
+                      />
                     </Link>
                   </div>
                   <div class=" space-y-4 md:space-y-6 sm:p-8">
                     <h1 class="text-35  font-extraBold text-white md:text-2xl  text-center">
                       You are almost done!
                     </h1>
-                    <form class="  space-y-4 md:space-y-6" action="#">
+                    <form class="space-y-4 md:space-y-6" action="#">
                       {/* user Name */}
-                      <div className="user-div">
+                      <div className="user-div flex justify-center">
                         <input
                           type="text"
                           name="name"
                           id="name"
-                          className="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-16 font-normal placeholder-[#497BEE] focus:ring-inputBorder focus:border-inputBorder block w-full p-2.5 "
+                          className="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-16 font-normal placeholder-[#497BEE] focus:ring-inputBorder focus:border-inputBorder block mx-4 md:mx-0 w-full p-2.5 "
                           placeholder="Username"
                           required=""
                         />
                       </div>
                       {/* email */}
-                      <div className="email-div">
+                      <div className="email-div flex justify-center">
                         <input
                           type="email"
                           name="email"
                           id="email"
-                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg h-16 font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg h-16 font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block mx-4 md:mx-0 w-full p-2.5 "
                           placeholder="Email"
                           required=""
                         />
                       </div>
                       {/* password */}
-                      <div>
+                      <div className="flex justify-center">
                         <input
                           type="password"
                           name="password"
                           id="password"
                           placeholder="Password"
-                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-16 font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                          class="bg-themeColor border border-inputBorder text-white sm:text-sm rounded-lg  h-16 font-normal placeholder-[#497BEE] focus:ring-primary-600 focus:border-primary-600 block mx-4 md:mx-0 w-full p-2.5 "
                           required=""
                         />
                       </div>
-                      <div className="checkbox">
+                      <div className="checkbox flex justify-center">
                         <label class="main text-16">
                           By creating an account, By creating an account,
                           <input type="checkbox" />
-                          <span class="geekmark"></span>
+                          <span class="mx-2 md:mx-0 geekmark"></span>
                         </label>
                       </div>
-                      <button
-                        type="submit"
-                        className="w-full text-white bg-btnbg
+                      <div className="flex justify-center">
+                        <button
+                          type="submit"
+                          className="w-full text-white bg-btnbg mx-4 md:mx-0 
                         text-18 rounded-2xl text-sm px-5 py-2.5 text-center uppercase button-shrink font-semibold"
-                      >
-                        Sign up
-                      </button>
+                        >
+                          Sign up
+                        </button>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -112,10 +118,10 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
             className="popUp-wrap"
           ></div>
           <div>
-            <div className="fixed top-[8%] -left-[3%] w-full">
+            <div className="popup-containers">
               <section class="pt-2">
-                <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0 ">
-                  <div class="from-wraps  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative border-1 border-[#497BEE]">
+                <div class="flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0 ">
+                  <div class="from-wraps w-full rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative border-1 border-[#497BEE]">
                     <div className="">
                       <div className="flex items-center mt-5 ml-3 gap-1">
                         <BsArrowLeftShort className="text-white w-5 h-5 " />
