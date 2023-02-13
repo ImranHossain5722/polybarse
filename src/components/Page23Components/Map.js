@@ -7,7 +7,7 @@ const Map = () => {
     <div className="my-[60px]">
       <div className="md:flex">
         {/*mobile view category  */}
-        <div className=" my-16 block md:hidden">
+        <div className=" mt-32 mb-4 block md:hidden">
           <MapFilterMenu />
         </div>
         <div className=" w-full md:w-[200px] h-full bg-[#061E42] rounded-5">

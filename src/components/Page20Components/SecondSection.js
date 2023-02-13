@@ -11,14 +11,16 @@ const SecondSection = () => {
           <div className="w-full md:w-[330px] bg-[#06042A] p-6  pt-8 rounded-5 relative ">
             <div className="flex gap-4">
               <img className="w-16 h-16" src="images/Rv.png" alt="rv" />
-              <div className="">
-                <div className="flex items-center">
-                  <div className="flex gap-2 items-center ">
-                    <p className="text-20 font-extraBold">Stake for pass</p>
+              <div className="w-full">
+                <div className="flex items-center justify-center md:justify-start">
+                  <div className="flex gap-2 items-center justify-center md:justify-start">
+                    <p className="text-30 md:text-20 font-extraBold">
+                      Stake for pass
+                    </p>
                     <img className="w-3 h-3 " src="images/i.png" alt="images" />
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center md:justify-start gap-4">
                   <p className="text-30 text-[#A2D132] font-extraBold uppercase">
                     50K plv
                   </p>
@@ -30,7 +32,7 @@ const SecondSection = () => {
                 </div>
                 {/* progress bar cod */}
                 <div className="max-w-[900px]">
-                  <div className="pt-5">
+                  <div className="-ml-[76px] md:-ml-0 pt-5">
                     <div className="overflow-hidden h-5  text-xs flex rounded bg-[#044C6B] border-2 border-[#234C89]">
                       <div
                         style={{ width: "50%" }}
@@ -41,7 +43,7 @@ const SecondSection = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-5 left-[70px] md:left-[100px]">
+            <div className="absolute -bottom-5 left-[10px] md:left-[100px]">
               <Clam />
             </div>
           </div>
@@ -50,7 +52,7 @@ const SecondSection = () => {
           <div className="w-full md:w-[750px] md:flex items-center justify-around bg-[#06042A] p-6 rounded-5">
             {/* box-1 */}
             <div className="bg-[#06042A] p-6  ">
-              <p className="text-20 font-extraBold text-center">
+              <p className="text-30 md:text-20 font-extraBold text-center">
                 Total Deposit
               </p>
               <div className="flex items-center justify-center gap-4">
@@ -63,12 +65,16 @@ const SecondSection = () => {
                   alt="images"
                 />
               </div>
-              <div className="">
+              <div className="flex items-center justify-center md:block gap-2">
                 <div className="flex gap-2 items-center justify-center">
                   <p className="text-30 font-extraBold text-center">
                     MULTIPLIER
                   </p>
-                  <img className="w-3 h-3 " src="images/i.png" alt="images" />
+                  <img
+                    className="hidden md:block w-3 h-3 "
+                    src="images/i.png"
+                    alt="images"
+                  />
                 </div>
                 <p className="text-30 text-[#FF3300] font-extraBold uppercase text-center">
                   X1

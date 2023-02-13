@@ -13,12 +13,16 @@ const Level = () => {
           <div className="translate-y-full">
             <SwiperPrev />
           </div>
-          <div className="freePass mt-12 md:mt-0 flex gap-3 md:gap-0 md:flex-none">
+          {/* for mobile level */}
+          <div className="md:w-[200px] bg-[#044C6B] rounded-md mt-[50px] md:mt-0 block md:hidden">
+            <p className="text-center text-18 text-white">Level</p>
+          </div>
+          <div className="freePass mt-4 md:mt-0 flex gap-3 md:gap-0 md:block">
             <div className="w-full md:w-[200px] h-[238px] rounded-5 ">
-              <div className="md:w-[200px] bg-[#044C6B] rounded-md">
+              <div className="w-full md:w-[200px] bg-[#044C6B] rounded-md hidden md:block">
                 <p className="text-center text-18 text-white">Level</p>
               </div>
-              <div className="w-[150px] md:w-[200px] bg-[#061E42] mt-2">
+              <div className="w-full md:w-[200px] bg-[#061E42] mt-2">
                 <div className="flex justify-center">
                   <img
                     className="w-[155px] h-[155px]"
@@ -32,7 +36,7 @@ const Level = () => {
               </div>
             </div>
             {/* gold */}
-            <div className="w-full md:w-[200px] rounded-5  mt-8 md:mt-3 ">
+            <div className="w-full md:w-[200px] rounded-5  mt-2 md:mt-3 ">
               <div className="relative bg-[#ffcb5bda]">
                 <div className="">
                   <div className="flex justify-center">
@@ -65,7 +69,7 @@ const Level = () => {
               nextEl: ".nextslide",
               prevEl: ".prevslide",
             }}
-            className="mySwiper mt-10 md:mt-20"
+            className="mySwiper mt-3 md:mt-20"
             modules={[Navigation]}
             breakpoints={{
               375: {
@@ -446,7 +450,7 @@ const Level = () => {
           </div>
         </div>
         <div>
-          <div className="flex justify-end mt-6 mr-10">
+          <div className="flex justify-end -mt-[50px] mr-10">
             <Link to="#">
               <button className="mr-4 py-3 px-6 md:px-12 uppercase text-sm md:text-24 font-black bg-btnbg rounded-full button-hero">
                 Stake for pass

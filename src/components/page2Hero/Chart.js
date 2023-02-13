@@ -3,7 +3,7 @@ import React from "react";
 const Chart = () => {
   return (
     <div>
-      <div className="bg-[#0D0A3A] shadow-2xl p-3 rounded-5">
+      <div className="bg-[#0D0A3A] shadow-2xl p-4 rounded-5">
         <div>
           <p className="text-white capitalize text-[14px] font-bold">
             Season Level

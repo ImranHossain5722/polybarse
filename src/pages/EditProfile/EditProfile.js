@@ -73,13 +73,13 @@ const EditProfile = () => {
                       alt="Upload"
                     />
                     <img
-                      className="absolute top-[67px] md:top-[224px] right-[155px] md:-right-[2px] w-[40px] h-[40px] md:w-[85px] md:h-[85px]  bg-[#DEE0E6] rounded-full cursor-pointer
+                      className="absolute top-[67px] md:top-[224px] left-[100px] md:left-[220px] w-[40px] h-[40px] md:w-[85px] md:h-[85px]  bg-[#DEE0E6] rounded-full cursor-pointer
                     "
                       src={userC}
                       alt="Upload"
                     />
+                    <input type="file" class="opacity-0" />
                   </div>
-                  <input type="file" class="opacity-0" />
                 </label>
               </div>
               {/* from inputs div */}

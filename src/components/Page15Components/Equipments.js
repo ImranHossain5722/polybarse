@@ -109,7 +109,7 @@ const Equipments = () => {
     <div className="mt-[110px]">
       <div className="md:flex justify-between">
         <div>
-          <p className="text-20 md:text-35 font-extraBold text-white text-left mb-11">
+          <p className="text-20 md:text-35 font-extraBold text-white text-left mb-3">
             NFT Market
           </p>
         </div>

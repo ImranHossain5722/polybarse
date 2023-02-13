@@ -35,11 +35,8 @@ const MyWallet = () => {
             <div className="org-div bg-arrwoActive ">
               <div className=" flex items-center gap-x-16 md:gap-x-72">
                 <div className="flex items-center ">
-                  <img
-                    className=" w-8 h-8 md:w-16 md:h-16 mr-2"
-                    src={whitecoin}
-                  />
-                  <p className="text-18 md:text-30 font-extraBold">Balance</p>
+                  <img className="w-16 h-16 mr-2" src={whitecoin} />
+                  <p className="text-30 font-extraBold">Balance</p>
                 </div>
                 <div>
                   <img className="w-6 h-6" src={Whitearow} />

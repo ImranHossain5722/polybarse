@@ -12,7 +12,7 @@ const Page2Hero = () => {
     <div className="pt-32">
       <div className="page2Hero">
         <img className="" src={herobg} />
-        <Container className="max-w-[1200px]">
+        <Container className="px-3 max-w-[1200px]">
           <div className="flex">
             <div className="flex items-start  ">
               <img

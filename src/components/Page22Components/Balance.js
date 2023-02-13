@@ -84,17 +84,17 @@ const Balance = () => {
                 <p className="text-[12px] text-white font-normal text-right">
                   Balance 57600,10
                 </p>
-                <label className="relative">
+                <label className="">
                   <input
                     id="User-Name"
                     name="UserName"
                     type="text"
                     autoComplete="text"
                     required
-                    className="my-3 bg-[#1B1757]  text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 "
+                    className="relative my-3 bg-[#1B1757]  text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 "
                     placeholder="From 0,0 "
                   />
-                  <div className="flex items-center absolute top-4 right-3">
+                  <div className="flex items-center absolute top-[40px] right-1">
                     <div className="flex items-center">
                       <p className="uppercase font-semibold text-18 text-center text-white">
                         Max
@@ -121,17 +121,17 @@ const Balance = () => {
                 <p className="text-[12px] text-white font-normal text-right">
                   Balance 57600,10
                 </p>
-                <label className="relative">
+                <label className="">
                   <input
                     id="to"
                     name="to"
                     type="text"
                     autoComplete="text"
                     required
-                    className="my-3 bg-[#1B1757]  text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 "
+                    className=" relative my-3 bg-[#1B1757]  text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 "
                     placeholder="To 0,0 "
                   />
-                  <div className="flex items-center absolute top-4 right-3">
+                  <div className="flex items-center absolute bottom-[15px] right-1">
                     <div className="flex items-center">
                       <img
                         className="rounded-full w-6 h-6 flex items-center ml-2 sm:mr-3"

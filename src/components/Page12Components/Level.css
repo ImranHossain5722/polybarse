@@ -28,3 +28,10 @@
 .swiper-slide .swiper-slide-duplicate.swiper-slide-duplicate-next {
   width: 1329px;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+  .boxes {
+    overflow-x: scroll;
+  }
+}

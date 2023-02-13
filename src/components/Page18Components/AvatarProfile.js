@@ -131,7 +131,7 @@ const AvatarProfile = () => {
               </Link>
             </div>
           </div>
-          <div className="flex items-center gap-10 md:gap-20 mt-6">
+          <div className="flex items-center justify-center md:justify-start gap-10 md:gap-20 mt-6">
             <div className="box-1">
               <div className="flex items-center mt-3">
                 <p className="text-20 font-semibold uppercase">Creator</p>
@@ -166,7 +166,7 @@ const AvatarProfile = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center  mt-6">
+          <div className="flex items-center justify-center md:justify-start mt-6">
             <div className="box-1">
               <div className="mt-3">
                 <p className="text-24 font-extraBold capitalize">
@@ -201,7 +201,7 @@ const AvatarProfile = () => {
             </div>
           </div>
           <div className="button-wrap mt-6">
-            <div className="flex justify-start gap-3 md:gap-6">
+            <div className="flex justify-center md:justify-start gap-3 md:gap-6">
               <button
                 onClick={() => {
                   setAuction(!auction);
@@ -226,10 +226,10 @@ const AvatarProfile = () => {
             {auction && <Auction setAuction={setAuction} />}
             {sell && <Sell setSell={setSell} />}
           </div>
-          <div>
+          <div className="flex justify-center md:justify-start ">
             <button
               onClick={() => setSell(!sell)}
-              className="inline-flex items-center text-xs sm:text-sm lg:text-18 border-2 border-[#497BEE] font-semibold font-inter px-36 md:px-7 py-2  bg-[#497BEE] hover:bg-transparent rounded-lg md:rounded-full lg:px-44 lg:py-3 uppercase text-center mt-8 button-hero"
+              className="inline-flex items-center text-18 lg:text-18 border-2 border-[#497BEE] font-semibold font-inter px-36 md:px-7 py-2  bg-[#497BEE] hover:bg-transparent rounded-lg md:rounded-full lg:px-44 lg:py-3 uppercase text-center mt-8 button-hero"
             >
               Sell
             </button>

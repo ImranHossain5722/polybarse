@@ -7,26 +7,28 @@ const PalyCard = () => {
     <Container className="max-w-[1200px]">
       <div>
         <div>
-          <p className="text-30 font-extraBold mt-[170px] mb-6">Poly Card</p>
+          <p className="text-30 font-extraBold mt-[50px] md:mt-[170px] mb-12 md:mb-6">
+            Poly Card
+          </p>
         </div>
         <div className="relative bg-[#0D0A3A] border-1 border-[#A2D132] rounded-5 pb-5 md:pb-0">
-          <div className="absolute left-[90px] md:left-[510px] -top-6 z-20 ">
-            <button className="uppercase border-1 border-[#A2D132] px-9 py-3 rounded-full bg-[#0D0A3A] font-bold">
+          <div className="">
+            <button className="absolute left-[93px] md:left-[510px] -top-6 z-20  uppercase border-1 border-[#A2D132] px-9 py-3 rounded-full bg-[#0D0A3A] font-bold">
               Your Plan
             </button>
           </div>
           {/* two button */}
-          <div className="absolute right-4 bottom-[80px] md:bottom-0 md:right-28 twoButton mt-5 py-8">
-            <button className="uppercase  bg-[#1B1757] px-9 py-3 mr-11 button-hero text-16 font-extraBold ">
+          <div className="absolute right-4 top-[200px] md:-top-[51px] md:bottom-0 md:right-24 twoButton mt-5 py-8">
+            <button className="uppercase  bg-[#1B1757] px-3 md:px-9 py-3 mr-9 md:mr-11 button-hero text-[12px] md:text-16 font-extraBold ">
               LIMIT
             </button>
-            <button className="uppercase  bg-[#1B1757] px-9 py-3 button-hero text-16 font-extraBold">
+            <button className="uppercase  bg-[#1B1757] px-3 md:px-9 py-3 button-hero text-[12px] md:text-16 font-extraBold">
               REACHED
             </button>
           </div>
 
-          <div className="md:flex items-center gap-x-36 pt-12 pb-44 md:py-20">
-            <div className="pl-12">
+          <div className="md:flex items-center gap-x-36 pt-12 md:pl-[75px] pb-44 md:py-20">
+            <div className="flex justify-center  items-center md:justify-start ">
               <img
                 className="w-60 h-40"
                 src="images/base-card.png"
@@ -34,7 +36,7 @@ const PalyCard = () => {
               />
             </div>
 
-            <div className="mt-5 md:mt-0">
+            <div className="mt-24 md:mt-0">
               <div className="flex items-center gap-4 md:gap-24 border-b-1 border-[#1B1757] pb-5 mb-5 mx-4 md:mx-0">
                 <div>
                   <p className="text-16 md:text-20">DAILY V-COIN SWAP LIMIT</p>

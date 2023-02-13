@@ -15,11 +15,22 @@ const RewardBanner = () => {
                 src="/images/Reward Pass.png"
                 alt="banner"
               />
-              <p className="capitalize text-white text-[20px] md:text-45 font-bold">
-                Reward Pass
-              </p>
+              <div className="flex gap-8">
+                <p className="capitalize text-white text-[25px] md:text-45 font-normal">
+                  Reward Pass
+                </p>
+                {/* Mobile view timer */}
+                <div
+                  className="block md:hidden
+                "
+                >
+                  <TimerReword />
+                </div>
+              </div>
             </div>
-            <div className="timerBox flex items-end">
+
+            {/* desktop timer */}
+            <div className="timerBox hidden md:flex items-end">
               <TimerReword></TimerReword>
             </div>
           </div>

@@ -137,7 +137,7 @@ const AvatarProfile = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center  mt-6">
+          <div className="flex items-center justify-center md:justify-start  mt-6">
             <div className="box-1">
               <div className="mt-3">
                 <p className="text-24 font-extraBold capitalize">
@@ -171,10 +171,10 @@ const AvatarProfile = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="flex justify-center md:justify-start">
             <AuctionEnding></AuctionEnding>
           </div>
-          <div>
+          <div className="flex justify-center md:justify-start">
             <PlaceBid />
           </div>
         </div>

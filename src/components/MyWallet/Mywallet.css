@@ -23,4 +23,10 @@
     background-color: #d75d29;
     border-radius: 15px;
   }
+  .org-div {
+    width: 579px;
+    height: 145px;
+    border-radius: 15px;
+    padding: 0px;
+  }
 }
