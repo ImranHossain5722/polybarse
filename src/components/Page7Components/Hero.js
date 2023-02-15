@@ -46,7 +46,7 @@ const Hero = () => {
                     </p>
                     <img className="w-3 h-3 ml-2" src={file} />
                   </div>
-                  <div className="mt-3">
+                  <div className="mt-3 chart">
                     <Chart />
                   </div>
                 </div>

@@ -34,7 +34,7 @@ const Page2Hero = () => {
                     src={file}
                   />
                 </div>
-                <div className="mt-3">
+                <div className="chart mt-3">
                   <Chart />
                 </div>
               </div>

@@ -30,3 +30,24 @@
     margin-left: -114px;
   }
 }
+@media only screen and (min-width: 374px) and (max-width: 414px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+  .yourPlane {
+    left: 122px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 375px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+  .yourPlane {
+    left: 96px;
+  }
+}
+@media only screen and (min-width: 380px) and (max-width: 390px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+  .yourPlane {
+    left: 106px;
+  }
+  .upgradePlane {
+    left: 58px;
+  }
+}

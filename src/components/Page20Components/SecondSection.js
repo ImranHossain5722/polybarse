@@ -43,7 +43,7 @@ const SecondSection = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-5 left-[10px] md:left-[100px]">
+            <div className="absolute -bottom-5 left-[22px] md:left-[100px]">
               <Clam />
             </div>
           </div>
@@ -51,6 +51,7 @@ const SecondSection = () => {
           {/* box Total-wrap*/}
           <div className="w-full md:w-[750px] md:flex items-center justify-around bg-[#06042A] p-6 rounded-5">
             {/* box-1 */}
+            <div className=" block md:hidden w-full h-1 bg-[#1B1757] mt-3"></div>
             <div className="bg-[#06042A] p-6  ">
               <p className="text-30 md:text-20 font-extraBold text-center">
                 Total Deposit
@@ -81,7 +82,7 @@ const SecondSection = () => {
                 </p>
               </div>
             </div>
-            <div className=" hidden md:block w-1 h-52 bg-[#1B1757]"></div>
+            <div className="hidden md:block w-1 h-52 bg-[#1B1757]"></div>
             {/* box-2 */}
             <div className=" bg-[#06042A] p-6 flex items-center justify-center">
               <div className="w-full">

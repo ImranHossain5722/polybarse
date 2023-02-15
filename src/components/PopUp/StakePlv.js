@@ -50,17 +50,17 @@ const StakePlv = ({ setStakePlv }) => {
                         </div>
                       </div>
 
-                      <label className="relative">
+                      <label className="">
                         <input
-                          id="User-Name"
-                          name="UserName"
+                          id="balance"
+                          name="balance"
                           type="text"
                           autoComplete="text"
                           required
-                          className="my-3 bg-[#07062B]  text-white text-18 font-semibold border-1 border-[#497BEE] rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 "
+                          className="relative my-3 bg-[#07062B]  text-white text-18 font-semibold border-1 border-[#497BEE] rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 "
                           placeholder="100,000.00"
                         />
-                        <div className="flex items-center absolute top-2 right-3">
+                        <div className="flex items-center absolute top-[106px] md:top-[140px] right-[30px]">
                           <div className="flex items-center">
                             <Link
                               to="#"

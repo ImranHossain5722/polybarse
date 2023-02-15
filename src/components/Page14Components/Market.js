@@ -7,6 +7,7 @@ import Container from "../container";
 import useFreezescroll from "../../hooks/useFreezescroll";
 import useWindowsize from "../../hooks/useWindowsize";
 import { AnimatePresence, motion } from "framer-motion";
+
 const Market = () => {
   const [categoryMobileMenu, setCategoryMobileMenu] = useState();
   const width = useWindowsize();
@@ -77,8 +78,8 @@ const Market = () => {
                   {categoryMobileMenu ? <IoMdClose /> : <HiOutlineBars2 />}
                 </button>
               </p>
-              {categoryMobileMenu && <List />}
             </div>
+            {categoryMobileMenu && <List />}
             {/* category for desktop */}
             <div className="category-wrap hidden md:block ">
               <div className="h-1 w-full bg-[#203D69] mb-3"></div>
@@ -262,44 +263,56 @@ export default Market;
 // catgory mobile menu list
 function List() {
   return (
-    <div className="fixed top-[209px]  bg-[#061E42] rounded-md py-4 px-2 md:hidden">
-      <div className="flex gap-4 ">
-        <div className="avatar">
-          <Link to="#" className="flex items-center gap-1">
-            <img
-              className="w-6 h-6"
-              src="images/monkeyAvter.png"
-              alt="avatar"
-            ></img>
-            <p className="text-white text-[15px]">Avatar</p>
-          </Link>
-        </div>
-        {/* Equipments */}
-        <div className="Equipments">
-          <Link to="#" className="flex items-center gap-1 ">
-            <img
-              className="w-6 h-6"
-              src="images/equipments.png"
-              alt="avatar"
-            ></img>
-            <p className="text-white text-[15px]">Equipments</p>
-          </Link>
-        </div>
-        {/* land */}
-        <div className="Land">
-          <Link to="#" className="flex items-center gap-1">
-            <img className="w-6 h-6" src="images/land.png" alt="avatar"></img>
-            <p className="text-white text-[15px] ">Land</p>
-          </Link>
-        </div>
-        {/* art */}
-        <div className="Art">
-          <Link to="#" className="flex items-center gap-1">
-            <img className="w-6 h-6" src="images/Art.png" alt="avatar"></img>
-            <p className="text-white text-[15px] ">Art</p>
-          </Link>
+    <Container className="max-w-[1200px]">
+      <div className="">
+        <div className="fixed left-[12px] right-[12px] top-[209px] bg-[#061E42] rounded-md py-4  md:hidden">
+          <div className="flex gap-4 ">
+            <div className="avatar">
+              <Link to="#" className="flex items-center gap-1 pl-2">
+                <img
+                  className="w-6 h-6"
+                  src="images/monkeyAvter.png"
+                  alt="avatar"
+                ></img>
+                <p className="text-white text-[15px]">Avatar</p>
+              </Link>
+            </div>
+            {/* Equipments */}
+            <div className="Equipments">
+              <Link to="#" className="flex items-center gap-1 ">
+                <img
+                  className="w-6 h-6"
+                  src="images/equipments.png"
+                  alt="avatar"
+                ></img>
+                <p className="text-white text-[15px]">Equipments</p>
+              </Link>
+            </div>
+            {/* land */}
+            <div className="Land">
+              <Link to="#" className="flex items-center gap-1">
+                <img
+                  className="w-6 h-6"
+                  src="images/land.png"
+                  alt="avatar"
+                ></img>
+                <p className="text-white text-[15px] ">Land</p>
+              </Link>
+            </div>
+            {/* art */}
+            <div className="Art">
+              <Link to="#" className="flex items-center gap-1">
+                <img
+                  className="w-6 h-6"
+                  src="images/Art.png"
+                  alt="avatar"
+                ></img>
+                <p className="text-white text-[15px]">Art</p>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

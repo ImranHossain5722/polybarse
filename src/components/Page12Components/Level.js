@@ -450,14 +450,20 @@ const Level = () => {
           </div>
         </div>
         <div>
-          <div className="flex justify-end -mt-[50px] mr-10">
-            <Link to="#">
-              <button className="mr-4 py-3 px-6 md:px-12 uppercase text-sm md:text-24 font-black bg-btnbg rounded-full button-hero">
+          <div className="flex justify-end -mt-[40px] mr-10 ">
+            <Link
+              to="#"
+              className="flex justify-end cursor-pointer button-hero z-30"
+            >
+              <button className="mr-4 py-3 px-6 md:px-12 uppercase text-sm md:text-24 font-black bg-btnbg rounded-full ">
                 Stake for pass
               </button>
             </Link>
-            <Link to="#">
-              <button className="gold-btn py-3 px-4 md:px-12 uppercase text-sm md:text-24 text-[#793512] font-black rounded-full button-hero">
+            <Link
+              className="flex justify-end  button-hero cursor-pointer z-30"
+              to="#"
+            >
+              <button className="gold-btn py-3 px-4 md:px-12 uppercase text-sm md:text-24 text-[#793512] font-black rounded-full">
                 GET GOLD PASS
               </button>
             </Link>

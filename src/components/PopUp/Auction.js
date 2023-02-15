@@ -41,17 +41,17 @@ const Auction = ({ setAuction }) => {
                     {/* user Name */}
                     <div className="from-div">
                       <div className="from-div">
-                        <label className="relative">
+                        <label className="">
                           <input
                             id="price"
                             name="price"
                             type="text"
                             autoComplete="text"
                             required
-                            className="my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 "
+                            className="relative my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 "
                             placeholder="0,00 "
                           />
-                          <div className="flex items-center absolute top-4 right-3">
+                          <div className="flex items-center absolute top-[124px] md:top-[185px] right-[30px] md:right-[20px]">
                             <div className="flex items-center">
                               <img
                                 className="rounded-full w-6 h-6 flex items-center ml-2 sm:mr-3"
@@ -67,25 +67,25 @@ const Auction = ({ setAuction }) => {
                       </h1>
                     </div>
                     <div className="md:flex gap-6">
-                      <div className="from-date">
+                      <div className="from-date flex justify-center items-center">
                         <label className="relative">
                           <input
                             id="date"
                             name="date"
                             type="date"
                             required
-                            className="d my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 "
+                            className="relative d bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block  p-2.5 w-[280px] md:w-[190px]"
                           />
                         </label>
                       </div>
-                      <div className="from-Time">
+                      <div className="from-Time flex justify-center items-center mt-3 md:mt-0">
                         <label className="relative">
                           <input
                             id="time"
                             name="time"
                             type="time"
                             required
-                            className="t my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                            className="t bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block  p-2.5 w-[280px] md:w-[190px]"
                             placeholder="00:00:00"
                           />
                         </label>

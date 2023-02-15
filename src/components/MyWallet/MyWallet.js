@@ -33,7 +33,7 @@ const MyWallet = () => {
           </p>
           <div className=" flex item-center border-wrap relative ">
             <div className="org-div bg-arrwoActive ">
-              <div className=" flex items-center gap-x-16 md:gap-x-72">
+              <div className=" flex items-center gap-x-28 md:gap-x-[21rem]">
                 <div className="flex items-center ">
                   <img className="w-16 h-16 mr-2" src={whitecoin} />
                   <p className="text-30 font-extraBold">Balance</p>
@@ -45,7 +45,7 @@ const MyWallet = () => {
               <hr className=" my-4 md:my-6" />
               <div className="singleCoin-wrap md:flex items-center justify-around ">
                 <div className="flex items-center justify-center gap-2 md:mb-7">
-                  <p className="w-48 text-16 md:text-30 font-extraBold">
+                  <p className="w-64 text-16 md:text-30 font-extraBold">
                     1000 V-COIN
                   </p>
                   <img
@@ -55,7 +55,7 @@ const MyWallet = () => {
                   />
                 </div>
                 <div className="flex items-center justify-center gap-2 mt-2 md:mt-0 md:mb-7">
-                  <p className="w-48 text-16 md:text-30 font-extraBold">
+                  <p className="w-64 text-16 md:text-30 font-extraBold">
                     150.50 PLV
                   </p>
                   <img

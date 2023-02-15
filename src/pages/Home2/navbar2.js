@@ -12,12 +12,14 @@ import useFreezescroll from "../../hooks/useFreezescroll";
 import Login from "../../pages/Login/Login";
 import Container from "../../components/container";
 import NavePopUp from "../../components/PopUp/NavePopUp";
+import BlancePopUp from "../../components/PopUp/BlancePopUp";
 
 export default function Navbar2() {
   const [setFreezescroll] = useFreezescroll();
   const width = useWindowsize();
   const [mobileNav, setMobileNav] = useState(false);
   const [showNavPopup, setShowNavPopUp] = useState(false);
+  const [showBlancePopup, setShowBlancePopUp] = useState(false);
   useEffect(() => {
     if (width < 769) {
       setMobileNav(false);
@@ -39,13 +41,21 @@ export default function Navbar2() {
             </Link>
           </div>
           <AnimatePresence>{mobileNav && <List />}</AnimatePresence>
-          <div className="flex flex-shrink-0 items-center">
-            <div>
+          <div className="flex items-center gap-[10px]">
+            <div
+              className="cursor-pointer"
+              onClick={() => {
+                setShowBlancePopUp(!showBlancePopup);
+              }}
+            >
               <img
-                className="w-[37px] h-[38px] "
+                className="w-[35px] md:w-[45px] h-[35px] md:h-[45px] "
                 src="images/singleCoin.png"
                 alt="coin"
               />
+              {showBlancePopup && (
+                <BlancePopUp setShowBlancePopUp={setShowBlancePopUp} />
+              )}
             </div>
             <div
               className="cursor-pointer"
@@ -54,7 +64,7 @@ export default function Navbar2() {
               }}
             >
               <img
-                className="rounded-full w-[45px] h-[45px] mx-4 md:mx-9 "
+                className="rounded-full w-[35px] md:w-[45px] h-[35px] md:h-[45px]  "
                 src="images/tol.png"
                 alt="User Profile"
               />
@@ -62,7 +72,7 @@ export default function Navbar2() {
             </div>
             <div>
               <img
-                className=" w-[45px] h-[45px] "
+                className=" w-[35px] md:w-[45px] h-[35px] md:h-[45px] "
                 src="images/cart.svg"
                 alt="User Profile"
               />

@@ -12,4 +12,26 @@
 /* .down-arrow ::before {
   background: url("../../images/tabDownAro.png");
   background-repeat: no-repeat;
-} */ 
+} */
+
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+
+  .chart {
+    width: 381px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 390px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+
+  .chart {
+    width: 356px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 375px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+
+  .chart {
+    width: 341px;
+  }
+}

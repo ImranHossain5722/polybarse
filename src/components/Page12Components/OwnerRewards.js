@@ -16,7 +16,7 @@ const OwnerRewards = () => {
           <div className="NFTOwnerBox ">
             <div className=" flex ">
               <div className="category">
-                <div className="w-44 md:w-52">
+                <div className="w-44 md:w-52 ">
                   <div className="bg-[#044C6B] mb-2 rounded-md ">
                     <p className="text-center font-extraBold text-18 text-white">
                       Level
@@ -186,12 +186,11 @@ const OwnerRewards = () => {
               </div>
             </div>
           </div>
-
           {/* Avatar Owner  box  */}
-          <div className="AvatarOwner mt-2">
+          <div className="AvatarOwner mt-[10px]">
             <div className="flex items-center">
               <div>
-                <div className="w-44 md:w-52 h-52">
+                <div className="w-44 md:w-52">
                   <div className="bg-[#061E42] pt-14  rounded-5">
                     <div className="flex items-center justify-center">
                       <img
@@ -329,139 +328,140 @@ const OwnerRewards = () => {
           </div>
 
           {/* Land Owner  box  */}
-          <div className="LandOwner mt-2 flex items-center">
-            {/*category-1 start */}
-            <div>
-              <div className="w-44 md:w-52 md:mt-5">
-                <div className="bg-[#061E42] pt-14  rounded-5">
-                  <div className="flex items-center justify-center">
-                    <img
-                      className=" w-[91px] h-[100px]"
-                      src="/images/landOwner.png"
-                      alt="nft owner"
-                    />
-                  </div>
-                  <div className="mt-6 pb-3">
-                    <p className="text-0 font-extraBold text-center text-white uppercase">
-                      land owner
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="md:w-full gap-44 grid grid-cols-6 overflow-scroll md:overflow-visible">
-              {/*category-1 end */}
-              <div className="w-[170px] md:w-48">
-                <div className="bg-[#061E42] ml-[15px]">
-                  <div className="flex items-center justify-center pt-14 rounded-5">
-                    <img
-                      className=" w-[86px] h-[82px] "
-                      src="/images/goldBag.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex items-center justify-center mt-7 pb-3">
-                    <img
-                      className=" w-[24px] h-[24px] "
-                      src="/images/singleCoin.png"
-                      alt=""
-                    />
-                    <p className="text-24 text-center text-white">10</p>
+          <div className="LandOwner mt-[10px]">
+            <div className="flex items-center">
+              <div>
+                <div className="w-44 md:w-52">
+                  <div className="bg-[#061E42] pt-14  rounded-5">
+                    <div className="flex items-center justify-center">
+                      <img
+                        className=" w-[97px] h-[79px]"
+                        src="/images/landOwner.png"
+                        alt="nft owner"
+                      />
+                    </div>
+                    <div className="mt-11 pb-3">
+                      <p className="text-0 font-extraBold text-center text-white uppercase">
+                        avatar owner
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="w-[170px] md:w-48">
-                <div className="bg-[#061E42] ml-[15px]">
-                  <div className="flex items-center justify-center pt-14 rounded-5">
-                    <img
-                      className=" w-[86px] h-[82px] "
-                      src="/images/goldBag.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex items-center justify-center mt-7 pb-3">
-                    <img
-                      className=" w-[24px] h-[24px] "
-                      src="/images/singleCoin.png"
-                      alt=""
-                    />
-                    <p className="text-24 text-center text-white">10</p>
-                  </div>
-                </div>
-              </div>
-              <div className="w-[170px] md:w-48">
-                <div className="bg-[#061E42] ml-[15px]">
-                  <div className="flex items-center justify-center pt-14 rounded-5">
-                    <img
-                      className=" w-[86px] h-[82px] "
-                      src="/images/goldBag.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex items-center justify-center mt-7 pb-3">
-                    <img
-                      className="w-[24px] h-[24px] "
-                      src="/images/singleCoin.png"
-                      alt=""
-                    />
-                    <p className="text-24 text-center text-white">10</p>
+              <div className=" md:w-full gap-44 grid grid-cols-6 overflow-scroll md:overflow-visible">
+                {/*category-1 end */}
+                <div className="w-[170px] md:w-48">
+                  <div className="bg-[#061E42] ml-[15px]">
+                    <div className="flex items-center justify-center pt-14 rounded-5">
+                      <img
+                        className=" w-[86px] h-[82px] "
+                        src="/images/goldBag.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex items-center justify-center mt-7 pb-3">
+                      <img
+                        className=" w-[24px] h-[24px] "
+                        src="/images/singleCoin.png"
+                        alt=""
+                      />
+                      <p className="text-24 text-center text-white">10</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="w-[170px] md:w-48">
-                <div className="bg-[#061E42] ml-[15px]">
-                  <div className="flex items-center justify-center pt-14 rounded-5">
-                    <img
-                      className=" w-[86px] h-[82px] "
-                      src="/images/goldBag.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex items-center justify-center mt-7 pb-3">
-                    <img
-                      className=" w-[24px] h-[24px] "
-                      src="/images/singleCoin.png"
-                      alt=""
-                    />
-                    <p className="text-24 text-center text-white">10</p>
-                  </div>
-                </div>
-              </div>
-              <div className="w-[170px] md:w-48">
-                <div className="bg-[#061E42] ml-[15px]">
-                  <div className="flex items-center justify-center pt-14 rounded-5">
-                    <img
-                      className=" w-[86px] h-[82px] "
-                      src="/images/goldBag.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex items-center justify-center mt-7 pb-3">
-                    <img
-                      className=" w-[24px] h-[24px] "
-                      src="/images/singleCoin.png"
-                      alt=""
-                    />
-                    <p className="text-24 text-center text-white">10</p>
+                <div className="w-[170px] md:w-48">
+                  <div className="bg-[#061E42] ml-[15px]">
+                    <div className="flex items-center justify-center pt-14 rounded-5">
+                      <img
+                        className=" w-[86px] h-[82px] "
+                        src="/images/goldBag.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex items-center justify-center mt-7 pb-3">
+                      <img
+                        className=" w-[24px] h-[24px] "
+                        src="/images/singleCoin.png"
+                        alt=""
+                      />
+                      <p className="text-24 text-center text-white">10</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="w-[170px] md:w-48">
-                <div className="bg-[#061E42] ml-[15px]">
-                  <div className="flex items-center justify-center pt-14 rounded-5">
-                    <img
-                      className=" w-[86px] h-[82px] "
-                      src="/images/goldBag.png"
-                      alt=""
-                    />
+                <div className="w-[170px] md:w-48">
+                  <div className="bg-[#061E42] ml-[15px]">
+                    <div className="flex items-center justify-center pt-14 rounded-5">
+                      <img
+                        className=" w-[86px] h-[82px] "
+                        src="/images/goldBag.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex items-center justify-center mt-7 pb-3">
+                      <img
+                        className=" w-[24px] h-[24px] "
+                        src="/images/singleCoin.png"
+                        alt=""
+                      />
+                      <p className="text-24 text-center text-white">10</p>
+                    </div>
                   </div>
-                  <div className="flex items-center justify-center mt-7 pb-3">
-                    <img
-                      className=" w-[24px] h-[24px] "
-                      src="/images/singleCoin.png"
-                      alt=""
-                    />
-                    <p className="text-24 text-center text-white">10</p>
+                </div>
+                <div className="w-[170px] md:w-48">
+                  <div className="bg-[#061E42] ml-[15px]">
+                    <div className="flex items-center justify-center pt-14 rounded-5">
+                      <img
+                        className=" w-[86px] h-[82px] "
+                        src="/images/goldBag.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex items-center justify-center mt-7 pb-3">
+                      <img
+                        className=" w-[24px] h-[24px] "
+                        src="/images/singleCoin.png"
+                        alt=""
+                      />
+                      <p className="text-24 text-center text-white">10</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-[170px] md:w-48">
+                  <div className="bg-[#061E42] ml-[15px]">
+                    <div className="flex items-center justify-center pt-14 rounded-5">
+                      <img
+                        className=" w-[86px] h-[82px] "
+                        src="/images/goldBag.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex items-center justify-center mt-7 pb-3">
+                      <img
+                        className=" w-[24px] h-[24px] "
+                        src="/images/singleCoin.png"
+                        alt=""
+                      />
+                      <p className="text-24 text-center text-white">10</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-[170px] md:w-48">
+                  <div className="bg-[#061E42] ml-[15px]">
+                    <div className="flex items-center justify-center pt-14 rounded-5">
+                      <img
+                        className=" w-[86px] h-[82px] "
+                        src="/images/goldBag.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex items-center justify-center mt-7 pb-3">
+                      <img
+                        className=" w-[24px] h-[24px] "
+                        src="/images/singleCoin.png"
+                        alt=""
+                      />
+                      <p className="text-24 text-center text-white">10</p>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -42,7 +42,7 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                   <div className="logo-wrap flex justify-center">
                     <Link to="/">
                       <img
-                        class="w-full md:w-60 md:h-28 "
+                        class="w-40 h-12 md:w-60 md:h-28 "
                         src={logo}
                         alt="logo"
                       />
@@ -130,10 +130,14 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                     </div>
                     <div className="logo-wrap flex justify-center pt-6">
                       <Link to="/">
-                        <img class=" w-60 h-28 " src={logo} alt="logo" />
+                        <img
+                          class="w-40 md:w-60 h-12 md:h-28 "
+                          src={logo}
+                          alt="logo"
+                        />
                       </Link>
                     </div>
-                    <h1 class="text-35 font-extraBold text-white  text-center  md:py-4">
+                    <h1 class="text-18 md:text-35 font-extraBold text-white  text-center  md:py-4">
                       Select a Wallet
                     </h1>
                     <div
@@ -151,8 +155,17 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                         {/* user Name */}
                         <div className="from-div">
                           <div className="from-metamask">
-                            <label className="relative">
-                              <div className="flex items-center absolute top-3 right-0 left-1">
+                            <label className="">
+                              <input
+                                id="price"
+                                name="price"
+                                type="text"
+                                autoComplete="text"
+                                required
+                                className="relative my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 pl-14"
+                                placeholder="Metamask"
+                              />
+                              <div className="flex items-center absolute top-[10.75rem] md:top-[18.75rem] right-0 left-[22px]">
                                 <div className="flex items-center">
                                   <img
                                     className="rounded-full w-9 h-9 flex items-center ml-2 sm:mr-3"
@@ -161,17 +174,7 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                                   />
                                 </div>
                               </div>
-                              <input
-                                id="price"
-                                name="price"
-                                type="text"
-                                autoComplete="text"
-                                required
-                                className="my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 pl-14"
-                                placeholder="Metamask"
-                              />
-
-                              <div className="flex items-center absolute top-2 right-3">
+                              <div className="flex items-center absolute top-[173px] md:top-[296px] right-[25px]">
                                 <div className="flex items-center">
                                   <Link
                                     to="#"
@@ -184,8 +187,17 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                             </label>
                           </div>
                           <div className="from-Coinbase py-2">
-                            <label className="relative">
-                              <div className="flex items-center absolute top-5 right-0 left-1">
+                            <label className="">
+                              <input
+                                id="CoinbaseWallet"
+                                name="CoinbaseWallete"
+                                type="text"
+                                autoComplete="text"
+                                required
+                                className="relative my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 pl-14"
+                                placeholder="Coinbase Wallet"
+                              />
+                              <div className="flex items-center absolute  top-[16.25rem] left-[1.25rem] md:top-[24.25rem] right-0 md:left-[1.25rem]">
                                 <div className="flex items-center">
                                   <img
                                     className="rounded-full w-9 h-9 flex items-center ml-2 sm:mr-3"
@@ -194,20 +206,20 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                                   />
                                 </div>
                               </div>
-                              <input
-                                id="CoinbaseWallet"
-                                name="CoinbaseWallete"
-                                type="text"
-                                autoComplete="text"
-                                required
-                                className="my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 pl-14"
-                                placeholder="Coinbase Wallet"
-                              />
                             </label>
                           </div>
                           <div className="from-Bitski">
-                            <label className="relative">
-                              <div className="flex items-center absolute top-3 right-0 left-1">
+                            <label className="">
+                              <input
+                                id="Bitski"
+                                name="Bitski"
+                                type="text"
+                                autoComplete="text"
+                                required
+                                className="relative my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 pl-14"
+                                placeholder="Bitski "
+                              />
+                              <div className="flex items-center absolute top-[352px] md:top-[474px] right-0 left-[20px]">
                                 <div className="flex items-center">
                                   <img
                                     className="rounded-full w-9 h-9 flex items-center ml-2 sm:mr-3"
@@ -216,20 +228,20 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                                   />
                                 </div>
                               </div>
-                              <input
-                                id="Bitski"
-                                name="Bitski"
-                                type="text"
-                                autoComplete="text"
-                                required
-                                className="my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 pl-14"
-                                placeholder="Bitski "
-                              />
                             </label>
                           </div>
                           <div className="from-walleConnect py-2">
-                            <label className="relative">
-                              <div className="flex items-center absolute top-5 right-0 left-1">
+                            <label className="">
+                              <input
+                                id="WalletConnect"
+                                name="WalletConnect"
+                                type="text"
+                                autoComplete="text"
+                                required
+                                className="relative my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 pl-14"
+                                placeholder="WalletConnect "
+                              />
+                              <div className="flex items-center absolute bottom-[186px] md:bottom-[194px]  right-0 left-[20px]">
                                 <div className="flex items-center">
                                   <img
                                     className="rounded-full w-9 h-9 flex items-center ml-2 sm:mr-3"
@@ -238,20 +250,20 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                                   />
                                 </div>
                               </div>
-                              <input
-                                id="WalletConnect"
-                                name="WalletConnect"
-                                type="text"
-                                autoComplete="text"
-                                required
-                                className="my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 pl-14"
-                                placeholder="WalletConnect "
-                              />
                             </label>
                           </div>
                           <div className="from-Venly">
-                            <label className="relative">
-                              <div className="flex items-center absolute top-3 right-0 left-1">
+                            <label className="">
+                              <input
+                                id="Venly"
+                                name="Venly"
+                                type="text"
+                                autoComplete="text"
+                                required
+                                className="relative my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 pl-14"
+                                placeholder="Venly"
+                              />
+                              <div className="flex items-center absolute bottom-[98px] md:bottom-[104px] left-[20px] right-0 md:left-1">
                                 <div className="flex items-center">
                                   <img
                                     className="rounded-full w-9 h-9 flex items-center ml-2 sm:mr-3"
@@ -260,15 +272,6 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                                   />
                                 </div>
                               </div>
-                              <input
-                                id="Venly"
-                                name="Venly"
-                                type="text"
-                                autoComplete="text"
-                                required
-                                className="my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 pl-14"
-                                placeholder="Venly"
-                              />
                             </label>
                           </div>
                         </div>

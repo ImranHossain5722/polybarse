@@ -94,9 +94,30 @@ input[type="checkbox"] {
   width: 27px;
   height: 30px;
   background: url("../../images/clock.png");
+  background-position-y: 15px;
   background-repeat: no-repeat;
-  margin-top: 8px;
+  height: 56px;
 }
+/* input.t {
+  background: url("../../images/clock.png");
+  background-repeat: no-repeat;
+  background-position-x: 106px;
+  background-position-y: 6px;
+  margin-top: 8px;
+  padding-top: 20px;
+  height: 56px;
+}
+input.d {
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("../../images/calender.png");
+  background-repeat: no-repeat;
+  background-position-x: 145px;
+  background-position-y: 6px;
+  margin-top: 8px;
+  padding-top: 20px;
+  height: 56px;
+} */
 .d {
   position: relative;
   height: 56px;
@@ -106,7 +127,8 @@ input[type="checkbox"] {
   height: 30px;
   background: url("../../images/calender.png");
   background-repeat: no-repeat;
-  margin-top: 8px;
+  background-position-y: 15px;
+  height: 56px;
 }
 
 .popUp-wrap {
@@ -125,3 +147,26 @@ input[type="checkbox"] {
   transform: translate(-50%, 50%);
   width: 500px;
 }
+/* @media only screen and (min-width: 300px) and (max-width: 768px) {
+  /* CSS rules for browser widths from 601px to 1200 px */
+
+/* input.t {
+    background: url("../../images/clock.png");
+    background-repeat: no-repeat;
+    background-position-x: 235px;
+    background-position-y: 6px;
+    margin-top: 8px;
+    padding-top: 20px;
+    height: 56px;
+  }
+  input.d {
+    appearance: none;
+    background: url("../../images/calender.png");
+    background-repeat: no-repeat;
+    background-position-x: 237px;
+    background-position-y: 6px;
+    margin-top: 15px;
+    padding-top: 20px;
+    height: 56px;
+  }
+} */

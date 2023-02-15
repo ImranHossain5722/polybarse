@@ -13,7 +13,7 @@ const PalyCard = () => {
         </div>
         <div className="relative bg-[#0D0A3A] border-1 border-[#A2D132] rounded-5 pb-5 md:pb-0">
           <div className="">
-            <button className="absolute left-[93px] md:left-[510px] -top-6 z-20  uppercase border-1 border-[#A2D132] px-9 py-3 rounded-full bg-[#0D0A3A] font-bold">
+            <button className="yourPlane absolute left-[93px] md:left-[510px] -top-6 z-20  uppercase border-1 border-[#A2D132] px-9 py-3 rounded-full bg-[#0D0A3A] font-bold">
               Your Plan
             </button>
           </div>
@@ -103,8 +103,8 @@ const PalyCard = () => {
             </div>
           </div>
           {/* upgrade plan*/}
-          <div className="">
-            <button className="absolute left-[50px] md:left-[450px] bottom-4 uppercase  bg-[#D75D29] px-9 py-4  rounded-full font-bold text-24 button-hero">
+          <div className="w-full">
+            <button className="upgradePlane absolute left-[50px] md:left-[450px] bottom-4 uppercase  bg-[#D75D29] px-9 py-4  rounded-full font-bold text-24 button-hero">
               upgrade plan
             </button>
           </div>

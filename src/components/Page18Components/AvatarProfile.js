@@ -131,7 +131,7 @@ const AvatarProfile = () => {
               </Link>
             </div>
           </div>
-          <div className="flex items-center justify-center md:justify-start gap-10 md:gap-20 mt-6">
+          <div className="boxes-wraps flex items-center justify-center md:justify-start gap-7 md:gap-20 mt-6">
             <div className="box-1">
               <div className="flex items-center mt-3">
                 <p className="text-20 font-semibold uppercase">Creator</p>
@@ -166,19 +166,19 @@ const AvatarProfile = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center md:justify-start mt-6">
+          <div className="flex items-center justify-center gap-2 md:gap-6 md:justify-start mt-6">
             <div className="box-1">
               <div className="mt-3">
                 <p className="text-24 font-extraBold capitalize">
                   Sold By
-                  <span className="text-24 text-[#4270ED] font-extraBold">
+                  <p className="text-24 text-[#4270ED] font-extraBold">
                     {" "}
                     @polyverse
-                  </span>{" "}
+                  </p>{" "}
                 </p>
               </div>
             </div>
-            <div className="bpx-2 ml-12">
+            <div className="bpx-2 md:ml-12">
               <p className="text-20 font-semibold uppercase">Tags</p>
               <div className="flex items-center justify-evenly mt-4">
                 <div>

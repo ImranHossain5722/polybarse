@@ -91,7 +91,7 @@ const Login = () => {
                       <div className="flex justify-center">
                         <button
                           type="submit"
-                          class="md:w-full text-white bg-btnbg text-18 hover:bg-primary-700  rounded-2xl text-sm px-5 py-2.5 text-center  uppercase button-shrink font-semibold"
+                          class="md:w-full text-white bg-btnbg text-18 hover:bg-primary-700  rounded-2xl text-sm px-28 md:px-5 py-2.5 text-center  uppercase button-shrink font-semibold"
                         >
                           Log-in
                         </button>
@@ -181,8 +181,8 @@ const Login = () => {
           <div>
             <div className="popup-containers">
               <section class="pt-2  ">
-                <div class=" flex flex-col items-center justify-center  px-6 py-8 mx-auto md:h-screen lg:py-0 ">
-                  <div class="from-wraps  w-full  rounded-lg shadow-2xl  md:mt-0 sm:max-w-md relative border-1 border-[#497BEE]">
+                <div class=" flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 ">
+                  <div class="from-wraps w-full rounded-lg shadow-2xl md:mt-0 sm:max-w-md relative border-1 border-[#497BEE]">
                     <div
                       className="close-wrap flex justify-end cursor-pointer "
                       onClick={() => {
@@ -198,14 +198,14 @@ const Login = () => {
                     <div className="logo-wrap flex justify-center">
                       <Link to="/">
                         <img
-                          class="w-full h-full md:w-60 md:h-28 "
+                          class="w-40 h-12 md:w-60 md:h-28 "
                           src={logo}
                           alt="logo"
                         />
                       </Link>
                     </div>
                     <div class=" space-y-4 md:space-y-3 sm:p-8">
-                      <h1 class="text-35  font-extraBold text-white md:text-2xl  text-center">
+                      <h1 class="text-18 md:text-35 font-extraBold text-white md:text-2xl  text-center">
                         Sign Up
                       </h1>
                       <form class="  space-y-4 md:space-y-4" action="#">
@@ -244,21 +244,21 @@ const Login = () => {
                         </div>
                         <div className="checkbox flex justify-center">
                           <label class="main text-16">
-                            By creating an account, By creating an account,
+                            By creating an account, By creating an account.
                             <input type="checkbox" />
                             <span class="mx-2 md:mx-0 geekmark"></span>
                           </label>
                         </div>
-                        <div className="flex justify-center">
+                        <div className="flex justify-center -mt-2 md:-mt-0">
                           <button
                             type="submit"
                             className="md:w-full text-white bg-btnbg 
-                     text-18 rounded-2xl text-sm px-5 py-2.5 text-center uppercase button-shrink font-semibold"
+                     text-18 rounded-2xl text-sm px-28 md:px-5 py-2.5 text-center uppercase button-shrink font-semibold"
                           >
                             Sign up
                           </button>
                         </div>
-                        <div className="flex items-center justify-evenly">
+                        <div className="flex items-center justify-evenly px-1">
                           <div className="div-or"></div>
                           <p className="text-white">OR</p>
                           <div className="div-or"></div>

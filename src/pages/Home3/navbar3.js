@@ -41,7 +41,7 @@ export default function Navbar3() {
             </Link>
           </div>
           <AnimatePresence>{mobileNav && <List />}</AnimatePresence>
-          <div className="flex flex-shrink-0 items-center">
+          <div className="flex items-center gap-[10px]">
             <div
               className="cursor-pointer"
               onClick={() => {
@@ -49,7 +49,7 @@ export default function Navbar3() {
               }}
             >
               <img
-                className="w-[37px] h-[38px] "
+                className="w-[35px] md:w-[45px] h-[35px] md:h-[45px]"
                 src="images/singleCoin.png"
                 alt="coin"
               />
@@ -64,7 +64,7 @@ export default function Navbar3() {
               }}
             >
               <img
-                className="rounded-full w-[45px] h-[45px] mx-9 "
+                className="rounded-full w-[35px] md:w-[45px] h-[35px] md:h-[45px]"
                 src="images/tol.png"
                 alt="User Profile"
               />
@@ -72,7 +72,7 @@ export default function Navbar3() {
             </div>
             <div className="relative">
               <img
-                className=" w-[45px] h-[45px] "
+                className="w-[35px] md:w-[45px] h-[35px] md:h-[45px]"
                 src="images/cart.svg"
                 alt="User Profile"
               />

@@ -12,7 +12,7 @@ const BlancePopUp = ({ setShowBlancePopUp }) => {
       ></div>
 
       <div>
-        <div className="fixed top-[276px] -ml-[75px] w-[207px] h-[186px] bg-[#100E4F]  rounded-5">
+        <div className="fixed top-[235px] md:top-[260px] -ml-[25px] w-[207px] h-[186px] bg-[#100E4F]  rounded-5">
           <div className="flex items-start  gap-3 border-b-1 border-[#2A268D] py-3 px-5 cursor-pointer hover:bg-[#171564] hover:rounded-t-5">
             <div>
               <p className="text-[14px] font-bold">Total Balance:</p>

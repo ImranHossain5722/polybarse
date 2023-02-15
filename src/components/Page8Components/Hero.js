@@ -7,6 +7,7 @@ import EditButton from "../buttons/EditButton";
 import ViewPublicProfile from "../buttons/ViewPublicProfile";
 import { Link } from "react-router-dom";
 import Chart from "../page2Hero/Chart";
+import "../page2Hero/page2Hero.css";
 const Hero = () => {
   return (
     <div>
@@ -32,7 +33,7 @@ const Hero = () => {
                       connect the wallet
                     </Link>
                   </div>
-                  <div className="mt-5">
+                  <div className="chart mt-5">
                     <Chart />
                   </div>
                 </div>
