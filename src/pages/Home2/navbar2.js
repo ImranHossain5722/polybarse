@@ -49,7 +49,7 @@ export default function Navbar2() {
               }}
             >
               <img
-                className="w-[35px] md:w-[45px] h-[35px] md:h-[45px] "
+                className="w-[35px] md:w-[60px] h-[35px] md:h-[45px] "
                 src="images/singleCoin.png"
                 alt="coin"
               />
@@ -64,7 +64,7 @@ export default function Navbar2() {
               }}
             >
               <img
-                className="rounded-full w-[35px] md:w-[45px] h-[35px] md:h-[45px]  "
+                className="rounded-full w-[35px] md:w-[60px] h-[35px] md:h-[45px]  "
                 src="images/tol.png"
                 alt="User Profile"
               />
@@ -72,7 +72,7 @@ export default function Navbar2() {
             </div>
             <div>
               <img
-                className=" w-[35px] md:w-[45px] h-[35px] md:h-[45px] "
+                className=" w-[35px] md:w-[60px] h-[35px] md:h-[45px] "
                 src="images/cart.svg"
                 alt="User Profile"
               />

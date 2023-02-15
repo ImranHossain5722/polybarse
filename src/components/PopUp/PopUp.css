@@ -98,6 +98,15 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   height: 56px;
 }
+
+.t::-moz-calendar-picker-indicator {
+  width: 27px;
+  height: 30px;
+  background: url("../../images/clock.png");
+  background-position-y: 15px;
+  background-repeat: no-repeat;
+  height: 56px;
+}
 /* input.t {
   background: url("../../images/clock.png");
   background-repeat: no-repeat;

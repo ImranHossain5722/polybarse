@@ -49,7 +49,7 @@ export default function Navbar3() {
               }}
             >
               <img
-                className="w-[35px] md:w-[45px] h-[35px] md:h-[45px]"
+                className="w-[35px] md:w-[60px] h-[35px] md:h-[45px]"
                 src="images/singleCoin.png"
                 alt="coin"
               />
@@ -64,7 +64,7 @@ export default function Navbar3() {
               }}
             >
               <img
-                className="rounded-full w-[35px] md:w-[45px] h-[35px] md:h-[45px]"
+                className="rounded-full w-[35px] md:w-[60px] h-[35px] md:h-[45px]"
                 src="images/tol.png"
                 alt="User Profile"
               />
@@ -72,7 +72,7 @@ export default function Navbar3() {
             </div>
             <div className="relative">
               <img
-                className="w-[35px] md:w-[45px] h-[35px] md:h-[45px]"
+                className="w-[35px] md:w-[60px] h-[35px] md:h-[45px]"
                 src="images/cart.svg"
                 alt="User Profile"
               />
@@ -80,10 +80,6 @@ export default function Navbar3() {
                 <p className="text-white text-20 text-center ">3</p>
               </div>
             </div>
-            {/* <div className="hidden sm:block ml-5">
-              <PlaynowBtn texthidden={true} />
-            </div> */}
-            {/* mobile menu  */}
             <button
               className="border-none outline-none text-3xl ml-4 md:hidden"
               onClick={() => {

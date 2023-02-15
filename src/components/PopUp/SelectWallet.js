@@ -263,7 +263,7 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                                 className="relative my-3 bg-[#07062B] border-1 border-[#497BEE] text-white text-18 font-semibold rounded-lg  placeholder-[#fff] focus:ring-primary-600 focus:border-primary-600 block w-full h-14 p-2.5 pl-14"
                                 placeholder="Venly"
                               />
-                              <div className="flex items-center absolute bottom-[98px] md:bottom-[104px] left-[20px] right-0 md:left-1">
+                              <div className="flex items-center absolute bottom-[98px] md:bottom-[104px] left-[20px] right-0 md:left-[18px]">
                                 <div className="flex items-center">
                                   <img
                                     className="rounded-full w-9 h-9 flex items-center ml-2 sm:mr-3"
@@ -280,7 +280,7 @@ const SelectWallet = ({ setShowLoginPopUp, setSelectWallet, selectWallet }) => {
                             setShowAlmostDone(true);
                             setShowLoginPopUp(false);
                           }}
-                          className="w-full text-white bg-btnbg
+                          className="w-full text-white bg-btnbg cursor-pointer
                  text-18 rounded-2xl text-sm px-5 py-2.5 text-center uppercase button-shrink font-semibold"
                         >
                           APPLY
