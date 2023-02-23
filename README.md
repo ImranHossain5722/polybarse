@@ -12,3 +12,5 @@
 - aos
 - framer-motion
 - react-router-dom
+
+* Firebase
